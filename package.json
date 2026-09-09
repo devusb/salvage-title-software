@@ -1,0 +1,11 @@
+{
+  "name": "salvage-title-software",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "reveal.js": "^5.2.1"
+  }
+}

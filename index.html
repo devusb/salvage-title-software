@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvage Title Software</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css" />
+    <style>
+      .reveal pre code {
+        font-size: 0.55em;
+        line-height: 1.4;
+      }
+      .reveal .placeholder {
+        border: 2px dashed #888;
+        color: #aaa;
+        font-size: 0.45em;
+        font-family: monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.5em;
+        margin: 0 auto;
+      }
+      .reveal .gaps {
+        display: flex;
+        gap: 1.2em;
+        text-align: left;
+        font-size: 0.5em;
+        margin-top: 0.4em;
+      }
+      .reveal .gaps > div {
+        flex: 1;
+      }
+      .reveal .gaps h4 {
+        font-size: 1em;
+        margin: 0 0 0.3em 0;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        opacity: 0.7;
+      }
+      .reveal .gaps ul {
+        margin: 0;
+        padding-left: 1em;
+      }
+      .reveal .gaps li {
+        margin-bottom: 0.15em;
+      }
+      .reveal .mwg {
+        text-align: left;
+        font-size: 0.55em;
+        margin-top: 0.3em;
+      }
+      .reveal .mwg p {
+        margin: 0.2em 0;
+      }
+      .reveal .mwg strong {
+        display: inline-block;
+        width: 4.2em;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        opacity: 0.7;
+        font-size: 0.85em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides/00-title.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/01-father-in-law.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/02-pivot.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/03-bin.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/04-language.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/05-container.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/06-skills.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/07-take-stock.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+        <section data-markdown="slides/08-close.md" data-separator="^\n---\n$" data-separator-vertical="^\n----\n$" data-separator-notes="^Note:"></section>
+      </div>
+    </div>
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        pdfSeparateFragments: false,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
