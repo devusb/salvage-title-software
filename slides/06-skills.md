@@ -35,7 +35,7 @@ Note: Pattern four. A SKILL.md in a directory, npx dash y in a JSON file. Claude
 </div>
 </div>
 
-Note: It runs as you, except you're now an agent holding your credentials. A malicious skill doesn't need a payload. It needs a sentence. And nothing in your stack sees this layer. SentinelOne is looking for a binary. The threat is a paragraph.
+Note: It runs as you, except you're now an agent holding your credentials. A malicious skill doesn't need a payload. It needs a sentence. And nothing in your stack sees this layer. Your EDR is looking for a binary. The threat is a paragraph.
 
 ---
 

@@ -28,7 +28,7 @@ Note: Pattern three, the one that's supposed to be the fix. A devcontainer point
 <div>
 <h4>Risk</h4>
 <ul>
-<li>Prod image: scanned. Dev image: pushed from a laptop</li>
+<li>Prod: signed, attested, scanned. Dev: pushed from a laptop</li>
 <li>Dev mounts <code>~/.aws</code></li>
 <li>Least scrutiny, most access</li>
 </ul>
@@ -44,7 +44,7 @@ BACKMATTER / RAW NOTES
 
 PROTECT: the inversion line (least scrutiny, most access).
 
-Calls back to 02-pivot.md's tool names.
+Calls back to the four terms on 02-pivot.md.
 
 GRAPHICS NEEDED:
   - Docker whale with the light.

@@ -41,7 +41,7 @@ own.
 |---|---|---|
 | `00-title.md` | 1 | Title, name, intro narration |
 | `01-father-in-law.md` | 2 | The photo, the check engine light |
-| `02-pivot.md` | 2 | How you ship to customers, how you ship to yourself |
+| `02-pivot.md` | 2 | How you ship to users, how you ship to yourself |
 | `03-bin.md` | 2 | Pattern 1: the `~/bin` script |
 | `04-language.md` | 2 | Pattern 2: language tooling |
 | `05-container.md` | 2 | Pattern 3: the container |
@@ -75,7 +75,7 @@ says what goes there. None exist yet.
 | Graphic | Used in | Notes |
 |---|---|---|
 | Father-in-law photo | `01`, `08` | Morgan has this. Full bleed, no text. |
-| Check engine light | `01`, and on every logo below | Amber, lit. Simple SVG. The one asset the whole deck reuses. |
+| Check engine light | `01` lit, `02` unlit, and on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
 | Terminal glyph + light | `02`, `03`, `06`, `08` | Generic terminal, not a specific shell. |
 | Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |
 | Docker whale + light | `02`, `05`, `08` | |
@@ -98,9 +98,6 @@ off, so the light layer must be renderable dark.
       commit? "The managed path exists" is the honest line either way.
 - [ ] **Codex** has skill/plugin install and update.
 - [ ] **`mise`** installs via `curl https://mise.run | sh`.
-- [ ] **Chainguard / Grype / Wiz / SentinelOne** — swap for whatever the
-      room actually uses if the venue is known. They appear in `02`, `05`,
-      and `06` together.
 - [ ] **Father-in-law knows he's on a slide.**
 
 ## If it runs long

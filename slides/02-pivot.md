@@ -1,10 +1,11 @@
-## How You Ship to Customers
+<div class="placeholder" style="width: 380px; height: 200px;">
+[GRAPHIC: check engine light icon, OFF]<br/>
+Same icon as 01, unlit.
+</div>
 
-<p style="font-size: 0.7em; margin-top: 0.8em;">Chainguard · Grype · Wiz</p>
+### Signed. Attested. Scanned. Pinned. <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
 
-<p style="font-size: 0.7em;">Signed. Scanned. Versioned.</p>
-
-Note: You ship software, and you ship it well. Hardened base images. A scanner that blocks the deploy. Something watching the cluster. Signatures, SBOMs, versions. That's how you ship to customers. You built that.
+Note: You ship software, and you ship it well. Signed with cosign. Provenance from the build. Scanned before it lands. Pinned by digest. That's a golden artifact. Every light off, and you can prove it.
 
 ---
 
@@ -22,10 +23,19 @@ Note: How do you ship to yourself? Your dev environment, the scripts you run eve
 BACKMATTER / RAW NOTES
 ============================================================
 
-Tool names are deliberate; 05 and 06 call them back. Swap
-for whatever the room uses if the venue is known.
+First slide mirrors 01's check engine slide exactly: same
+icon, same layout, light off instead of on. No title, the
+narration says "how you ship to users."
+
+Light on (him) -> light off (your release pipeline) -> four
+lights on (your dev tooling) -> four lights off (him, fixed,
+in 08).
+
+The four terms are called back on 05-container.md.
 
 GRAPHICS NEEDED:
+  - check engine light icon, unlit. Same asset as 01 with
+    the light layer dark.
   - four-logo row with lights. Master composite; each
     pattern slide uses one logo+light from it. Reprised in
     08 lit and dark.
