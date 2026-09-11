@@ -6,7 +6,6 @@
 </div>
 <div class="method" style="flex: 1;">
 <p>A markdown file the agent follows. Copied from someone's repo.</p>
-<p class="why">Brand new. Everyone's sharing. Good energy.</p>
 </div>
 </div>
 
