@@ -34,11 +34,11 @@ Note: Somebody built it by hand and pushed it to latest, so nobody knows which c
 
 <ul class="gap">
 <li>Prod: promoted. Dev: pushed from a laptop</li>
-<li>Mounts <code>~/.aws</code></li>
+<li>Mounts <code>~</code>. Credentials included</li>
 <li>Least scrutiny, most access</li>
 </ul>
 
-Note: Here's the indictment. Your production image can't reach that registry without passing a scanner. Your dev image was docker push from a laptop. And it's the one with your credentials mounted in it. The image you look at least can reach the most.
+Note: Here's the indictment. Your production image can't reach that registry without passing a scanner. Your dev image was docker push from a laptop. And it mounts your whole home directory, credentials included. The image you look at least can reach the most.
 
 <!--
 ============================================================
