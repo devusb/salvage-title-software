@@ -19,8 +19,7 @@ flox services stop
 
 `npm install` once first if `node_modules` isn't present.
 
-Press `S` for the speaker view (notes, clock, and a per-slide pacing timer
-against the 15-second budget). `Esc` for the overview.
+Press `Esc` for the overview.
 
 ## Practicing
 
@@ -28,10 +27,20 @@ against the 15-second budget). `Esc` for the overview.
 http://localhost:3000/?practice
 ```
 
-Auto-advances every 15 seconds and plays a short tick on each advance.
-`P` pauses and resumes (red outline while paused). Open the speaker view
-alongside for the clock. Without `?practice` nothing ever advances on its
-own.
+Auto-advances every 15 seconds with a short tick, and shows a counter in the
+corner: slide number, seconds left on this slide, total elapsed.
+
+- `M` marks the end of your narration for the current slide. Press it on your
+  last word. If you are still talking when the slide advances, press `M` when
+  you finish and it counts against the slide you overran.
+- `P` pauses and resumes (red outline while paused).
+- `R` shows the report early; it appears on its own after the last slide.
+
+The report is one line per slide: seconds spoken, margin against 15, and
+`tight` or `OVER`. Copy it and paste it back to get graded on pacing.
+
+Press `S` for the speaker view if you also want the notes on screen. Without
+`?practice` nothing ever advances on its own.
 
 ## Structure
 

@@ -94,8 +94,13 @@
       });
 
       if (practice) {
+        const budget = () => parseInt(Reveal.getCurrentSlide().dataset.timing || Reveal.getConfig().defaultTiming, 10);
         let timer = null;
         let paused = false;
+        let pausedAt = 0;
+        let slideStart = 0;
+        let runStart = 0;
+        const log = [];
         const audio = new (window.AudioContext || window.webkitAudioContext)();
         document.addEventListener("keydown", () => audio.resume(), { once: true });
         document.addEventListener("click", () => audio.resume(), { once: true });
@@ -111,16 +116,104 @@
           osc.stop(audio.currentTime + 0.12);
         }
 
-        function cue() {
-          clearTimeout(timer);
-          if (paused || Reveal.isLastSlide()) return;
-          const secs = parseInt(Reveal.getCurrentSlide().dataset.timing || Reveal.getConfig().defaultTiming, 10);
-          timer = setTimeout(() => { tick(); Reveal.next(); }, secs * 1000);
+        function label(slide) {
+          const h = slide.querySelector("h1, h2, h3");
+          if (h) return h.textContent.trim().slice(0, 28);
+          const p = slide.querySelector(".placeholder");
+          return p ? p.textContent.trim().replace(/\s+/g, " ").slice(0, 28) : "(untitled)";
         }
 
-        Reveal.on("ready", cue);
-        Reveal.on("slidechanged", cue);
+        const current = () => log[log.length - 1];
+
+        function enter() {
+          slideStart = performance.now();
+          if (!runStart) runStart = slideStart;
+          log.push({ i: Reveal.getIndices().h + 1, label: label(Reveal.getCurrentSlide()), budget: budget(), spoke: null, overran: false });
+          cue();
+        }
+
+        function cue() {
+          clearTimeout(timer);
+          if (paused) return;
+          const remaining = Math.max(0, budget() * 1000 - (performance.now() - slideStart));
+          if (Reveal.isLastSlide()) {
+            timer = setTimeout(report, remaining);
+            return;
+          }
+          timer = setTimeout(() => {
+            const c = current();
+            if (c && c.spoke === null) c.overran = true;
+            tick();
+            Reveal.next();
+          }, remaining);
+        }
+
+        function mark() {
+          const since = (performance.now() - slideStart) / 1000;
+          const c = current();
+          const prev = log[log.length - 2];
+          if (c && c.spoke === null && prev && prev.overran && prev.spoke === null && since < 4) {
+            prev.spoke = prev.budget + since;
+          } else if (c) {
+            c.spoke = since;
+          }
+        }
+
+        function report() {
+          clearTimeout(timer);
+          const rows = log.map((r) => {
+            const spoke = r.spoke === null ? (r.overran ? "ran past" : "no mark") : r.spoke.toFixed(1) + "s";
+            const margin = r.spoke === null ? "" : (r.budget - r.spoke >= 0 ? "+" : "") + (r.budget - r.spoke).toFixed(1);
+            const flag = r.spoke === null ? (r.overran ? "OVER" : "") : r.spoke > r.budget ? "OVER" : r.spoke > r.budget - 1.5 ? "tight" : "";
+            return [String(r.i).padStart(2), r.label.padEnd(28), spoke.padStart(9), margin.padStart(6), flag].join("  ");
+          });
+          const marked = log.filter((r) => r.spoke !== null);
+          const over = log.filter((r) => r.overran || (r.spoke !== null && r.spoke > r.budget)).length;
+          const avg = marked.length ? marked.reduce((a, r) => a + r.spoke, 0) / marked.length : 0;
+          const text = [
+            "practice run  " + new Date().toISOString().slice(0, 16),
+            "",
+            " #  slide" + " ".repeat(25) + "spoke  margin",
+            ...rows,
+            "",
+            log.length + " slides · " + marked.length + " marked · " + over + " over · avg " + avg.toFixed(1) + "s",
+          ].join("\n");
+          const pre = document.createElement("pre");
+          pre.style.cssText = "position:fixed;inset:5% 10%;overflow:auto;background:#111;color:#ddd;padding:1.5em;font:14px/1.4 monospace;z-index:60;border:1px solid #444;user-select:text";
+          pre.textContent = text + "\n\n(select all, copy, paste it back)";
+          document.body.appendChild(pre);
+          console.log(text);
+        }
+
+        const hud = document.createElement("div");
+        hud.style.cssText = "position:fixed;right:14px;bottom:10px;font:14px/1.35 monospace;color:#aaa;background:rgba(0,0,0,.55);padding:6px 10px;border-radius:4px;z-index:50;text-align:right;white-space:pre";
+        document.body.appendChild(hud);
+        setInterval(() => {
+          if (!log.length) return;
+          const now = paused ? pausedAt : performance.now();
+          const left = Math.max(0, budget() - (now - slideStart) / 1000);
+          const total = (now - runStart) / 1000;
+          const m = Math.floor(total / 60);
+          const s = String(Math.floor(total % 60)).padStart(2, "0");
+          const c = current();
+          hud.textContent =
+            Reveal.getIndices().h + 1 + "/" + Reveal.getTotalSlides() + "  " + left.toFixed(1) + "s left" +
+            "\n" + m + ":" + s + " elapsed" + (paused ? "  PAUSED" : "") + (c && c.spoke !== null ? "  marked" : "") +
+            "\nM mark · P pause · R report";
+        }, 100);
+
+        Reveal.on("ready", enter);
+        Reveal.on("slidechanged", enter);
+        Reveal.addKeyBinding({ keyCode: 77, key: "M", description: "Mark end of narration" }, mark);
+        Reveal.addKeyBinding({ keyCode: 82, key: "R", description: "Show practice report" }, report);
         Reveal.addKeyBinding({ keyCode: 80, key: "P", description: "Pause/resume practice timer" }, () => {
+          if (paused) {
+            const delta = performance.now() - pausedAt;
+            slideStart += delta;
+            runStart += delta;
+          } else {
+            pausedAt = performance.now();
+          }
           paused = !paused;
           document.body.style.outline = paused ? "6px solid #c33" : "";
           cue();
