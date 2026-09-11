@@ -28,7 +28,7 @@ Note: Pattern three, the one that's supposed to be the fix. A devcontainer point
 <div>
 <h4>Risk</h4>
 <ul>
-<li>Prod: signed, attested, scanned. Dev: pushed from a laptop</li>
+<li>Prod: cut, tagged, promoted. Dev: pushed from a laptop</li>
 <li>Dev mounts <code>~/.aws</code></li>
 <li>Least scrutiny, most access</li>
 </ul>

@@ -3,9 +3,9 @@
 Same icon as 01, unlit.
 </div>
 
-### Signed. Attested. Scanned. Pinned. <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
+### Cut. Tagged. Promoted. Shipped. <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
 
-Note: You ship software, and you ship it well. Signed with cosign. Provenance from the build. Scanned before it lands. Pinned by digest. That's a golden artifact. Every light off, and you can prove it.
+Note: You ship software, and you ship it well. You cut a release. You tag it. One immutable artifact gets promoted, dev, staging, prod, never rebuilt. There is a changelog. You can roll it back. Every light off.
 
 ---
 
@@ -32,6 +32,12 @@ lights on (your dev tooling) -> four lights off (him, fixed,
 in 08).
 
 The four terms are called back on 05-container.md.
+
+PROVISIONAL: Morgan does not like this line yet. Release
+engineer vocabulary was the ask; the security-team version
+(Signed. Attested. Scanned. Pinned.) was rejected as not the
+right register. Revisit once the graphics exist and the
+slide can be seen whole.
 
 GRAPHICS NEEDED:
   - check engine light icon, unlit. Same asset as 01 with
