@@ -35,6 +35,7 @@ corner: slide number, seconds left on this slide, total elapsed.
   you finish and it counts against the slide you overran.
 - `P` pauses and resumes (red outline while paused).
 - `R` shows the report early; it appears on its own after the last slide.
+- `0`, or the button in the corner, restarts the run from slide one.
 
 The report is one line per slide: seconds spoken, margin against 15, and
 `tight` or `OVER`. Copy it and paste it back to get graded on pacing.

@@ -179,6 +179,7 @@
             log.length + " slides · " + marked.length + " marked · " + over + " over · avg " + avg.toFixed(1) + "s",
           ].join("\n");
           const pre = document.createElement("pre");
+          pre.className = "practice-report";
           pre.style.cssText = "position:fixed;inset:5% 10%;overflow:auto;background:#111;color:#ddd;padding:1.5em;font:14px/1.4 monospace;z-index:60;border:1px solid #444;user-select:text";
           pre.textContent = text + "\n\n(select all, copy, paste it back)";
           document.body.appendChild(pre);
@@ -187,6 +188,12 @@
 
         const hud = document.createElement("div");
         hud.style.cssText = "position:fixed;right:14px;bottom:10px;font:14px/1.35 monospace;color:#aaa;background:rgba(0,0,0,.55);padding:6px 10px;border-radius:4px;z-index:50;text-align:right;white-space:pre";
+        const hudText = document.createElement("span");
+        const restartBtn = document.createElement("button");
+        restartBtn.textContent = "restart";
+        restartBtn.style.cssText = "display:block;margin:6px 0 0 auto;font:12px monospace;background:#333;color:#ccc;border:1px solid #555;border-radius:3px;padding:2px 8px;cursor:pointer";
+        restartBtn.onclick = () => { restartBtn.blur(); restart(); };
+        hud.append(hudText, restartBtn);
         document.body.appendChild(hud);
         setInterval(() => {
           if (!log.length) return;
@@ -196,16 +203,29 @@
           const m = Math.floor(total / 60);
           const s = String(Math.floor(total % 60)).padStart(2, "0");
           const c = current();
-          hud.textContent =
+          hudText.textContent =
             Reveal.getIndices().h + 1 + "/" + Reveal.getTotalSlides() + "  " + left.toFixed(1) + "s left" +
             "\n" + m + ":" + s + " elapsed" + (paused ? "  PAUSED" : "") + (c && c.spoke !== null ? "  marked" : "") +
-            "\nM mark · P pause · R report";
+            "\nM mark · P pause · R report · 0 restart";
         }, 100);
+
+        function restart() {
+          clearTimeout(timer);
+          document.querySelectorAll("pre.practice-report").forEach((e) => e.remove());
+          paused = false;
+          document.body.style.outline = "";
+          log.length = 0;
+          runStart = 0;
+          const atStart = Reveal.getIndices().h === 0 && Reveal.getIndices().v === 0;
+          Reveal.slide(0, 0);
+          if (atStart) enter();
+        }
 
         Reveal.on("ready", enter);
         Reveal.on("slidechanged", enter);
         Reveal.addKeyBinding({ keyCode: 77, key: "M", description: "Mark end of narration" }, mark);
         Reveal.addKeyBinding({ keyCode: 82, key: "R", description: "Show practice report" }, report);
+        Reveal.addKeyBinding({ keyCode: 48, key: "0", description: "Restart practice run" }, restart);
         Reveal.addKeyBinding({ keyCode: 80, key: "P", description: "Pause/resume practice timer" }, () => {
           if (paused) {
             const delta = performance.now() - pausedAt;
