@@ -5,12 +5,12 @@
 [GRAPHIC: sparkle or plug + light]
 </div>
 <div class="method" style="flex: 1;">
-<p><code>SKILL.md</code> → <code>~/.claude/skills/</code>. <code>npx -y</code> in a JSON file.</p>
+<p>A markdown file the agent follows. Copied from someone's repo.</p>
 <p class="why">Brand new. Everyone's sharing. Good energy.</p>
 </div>
 </div>
 
-Note: Pattern four: skills, MCP servers. A SKILL.md in a directory, npx dash y in a JSON file. Claude Code and Codex have plugin systems now, more than tilde-bin ever had. Why? It's new, it's valuable, everyone's sharing. That's how ecosystems get built.
+Note: Pattern four: skills. A skill is a markdown file your coding agent reads and follows, commands included. You get one by copying it from someone's repo into a folder the agent scans. It's brand new, everyone's sharing, and that's how ecosystems get built.
 
 ---
 
@@ -19,12 +19,12 @@ Note: Pattern four: skills, MCP servers. A SKILL.md in a directory, npx dash y i
 <p class="eyebrow">Jank</p>
 
 <ul class="gap">
-<li>A managed path exists. Unused</li>
+<li>Marketplaces exist. Unused</li>
 <li>HEAD. Latest. A copied file</li>
 <li>Review = reading markdown</li>
 </ul>
 
-Note: There's a managed path now. Most of what's on your disk didn't come through it. It's a clone at HEAD, npx at latest, a file you copied. And review means reading markdown for the one line that says fetch and run.
+Note: Claude Code and Codex have plugin marketplaces now. Most of what's on your disk didn't come through them. It's a clone at HEAD, npx at latest, a file you copied. Review means reading markdown for the one line that says fetch and run.
 
 ---
 
@@ -59,6 +59,6 @@ GRAPHICS NEEDED:
 VERIFY:
   - `npx -y @scope/server` with no version fetches latest.
   - Whether `/plugin install` records a marketplace commit.
-    "A managed path exists" is the honest line either way.
+    "Marketplaces exist. Unused" is the honest line either way.
   - Codex has skill/plugin install + update.
 -->
