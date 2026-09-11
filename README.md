@@ -43,7 +43,7 @@ own.
 | `01-father-in-law.md` | 2 | The photo, then the pivot to us |
 | `02-pivot.md` | 2 | The divide, then the roster |
 | `03-bin.md` | 2 | Pattern 1: the `~/bin` script |
-| `04-language.md` | 2 | Pattern 2: language tooling |
+| `04-language.md` | 2 | Pattern 2: language ecosystem tooling |
 | `05-container.md` | 2 | Pattern 3: the container |
 | `06-skills.md` | 3 | Pattern 4: skills and MCP, then the bookend |
 | `07-take-stock.md` | 2 | xz, VS Code |
