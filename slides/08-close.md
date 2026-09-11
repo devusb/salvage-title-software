@@ -5,7 +5,17 @@
 Same photo as 01, or a second one.
 </div>
 
-Note: Back to my father-in-law. The kids got older and moved away. And when we did, he took inventory. Every car he'd sent off with a light on, he went and fixed.
+Note: As the kids grew up and moved away, my father-in-law realized he wasn't going to be around to fix those cars anymore. So he took inventory, and made all the check engine lights go away.
+
+---
+
+<div class="placeholder" style="width: 640px; height: 200px;">
+[GRAPHIC: four logos, lights ON. Same as 02.]
+</div>
+
+### Similar deal here. <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
+
+Note: Kind of a similar deal here. Everything on this slide works. I can fix any of it. Which is exactly why I haven't.
 
 ---
 
@@ -13,13 +23,7 @@ Note: Back to my father-in-law. The kids got older and moved away. And when we d
 [GRAPHIC: four logos, lights OFF]
 </div>
 
-Note: Not because the lights got worse. Because the person who could fix them wasn't going to be down the street anymore.
-
----
-
-### Who's still down the street? <!-- .element: style="font-size: 1.1em" -->
-
-Note: The person who wrote the script. Who built the dev image. Who knows what's in tilde-dot-claude. For how long?
+Note: I'm going to go turn some of mine off.
 
 ---
 
@@ -34,20 +38,23 @@ Note: Thanks.
 BACKMATTER / RAW NOTES
 ============================================================
 
-17 is him, 18 is us, 19 is the room. The metaphor is never
-explained; "down the street" on 19 is a callback to the
-narration on 18.
+Lighthearted. No ask of the room, no ominous turn. He
+noticed he wouldn't be around, took inventory, lights went
+away; similar deal here; the speaker's own resolution, not
+the audience's.
 
-19's narration is short on purpose. Say it, then let the
-slide sit for the remaining seconds.
+18 lit -> 19 dark is the visual "made the lights go away."
+No title on 19 so the only change on screen is the lights.
 
-"Our version is now" (sandbox hygiene, take inventory) was
-cut as too explicit. "Take inventory" survives only as his
-action in 17's narration.
+19's narration is one sentence. Let the dark slide sit.
+
+Cut before this: "Our version is now" (too explicit) and
+"Who's still down the street?" (too ominous).
 
 Last slide sits through applause. Nothing to read.
 
 GRAPHICS NEEDED:
   - father-in-law photo reprise
+  - four-logo row, lights on (same as 02)
   - four-logo row, lights off
 -->

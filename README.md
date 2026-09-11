@@ -47,15 +47,16 @@ own.
 | `05-container.md` | 2 | Pattern 3: the container |
 | `06-skills.md` | 3 | Pattern 4: skills and MCP, then the bookend |
 | `07-take-stock.md` | 2 | xz, VS Code |
-| `08-close.md` | 4 | Him, us with the lights off, the question, thanks |
+| `08-close.md` | 4 | Him, us lit, us dark, thanks |
 
 Every pattern gets two slides: logo with the check engine light plus how
 it's done and why, then **Jank** | **Risk** at three short bullets each.
 The why is always a real reason. Jank is what's broken. Risk is what's
 exposed.
 
-The close is him (photo), us (four logos, lights off), then one question
-turned on the room. The metaphor is never explained.
+The close is him (photo), us with the lights on, us with the lights off,
+thanks. Lighthearted; the metaphor is never explained and nothing is asked
+of the room.
 
 Pattern 1 and pattern 4 are the same pattern; `06-skills.md` ends on a
 bookend slide, "it's the `~/bin` script again."
