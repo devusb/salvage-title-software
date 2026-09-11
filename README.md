@@ -125,7 +125,7 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
 - No first person in slide text, except the title on `02`. Commentary
   is voiceover.
 - Speaker notes are the actual narration, in prose.
-- Styling is inline per element. `index.html` carries the shared
+- Styling is inline per element. `index.html` carries heading sizes and the shared
   `.placeholder`, `.method`, and `.gaps` rules and nothing else.
 - No fragments. Every slide is static; a concept that needs a reveal gets
   another slide.
