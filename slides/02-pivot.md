@@ -17,7 +17,7 @@ terminal · Python · Docker · sparkle/plug
 
 ### Ours <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
 
-Note: I'd posit we ship our own tooling the way he ships the family's cars. The light's on, we know it, we can fix it, so it never gets urgent. I have found myself using anti-patterns. Four of them.
+Note: I recognized the same pattern in myself, in how I've managed developer tooling and internal packages. The light's on. I know it's on. I can fix it, so it never gets urgent. Here are four I've used.
 
 <!--
 ============================================================
@@ -28,7 +28,10 @@ Two slides, no columns. Production: one light, off. Ours:
 four logos, all lit. Same layout as each other so the
 contrast is the only thing that changes.
 
-"Ours" is the only first person on any slide. The whole
+"Ours" is the only first person on any slide, and its
+narration is where the confession lands: "I recognized the
+same pattern in myself." Production stays "we"; Ours is
+"I". That contrast is the pivot. The whole
 talk is a confession and this is where it has to be
 unmistakable.
 

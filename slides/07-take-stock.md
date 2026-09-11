@@ -16,6 +16,13 @@ Note: These should have been the moment. xz: two years earning trust to backdoor
 BACKMATTER / RAW NOTES
 ============================================================
 
+MAYBE DELETE. Morgan is not sure this adds much, and the
+framing of the talk is confessional, not scareware. If it
+goes, the slot needs a replacement to stay at 20: either a
+first-person "the one that bit me" story, or the lit
+"Similar deal here" frame back in the close. Decide after a
+few practice runs.
+
 The quiet slide. Two logos, one question.
 
 VERIFY:
