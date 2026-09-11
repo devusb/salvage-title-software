@@ -6,7 +6,6 @@
 </div>
 <div class="method" style="flex: 1;">
 <p><code>pip</code> · <code>venv</code> · <code>npm</code> · <code>nvm</code> · <code>cargo</code> · <code>go install</code></p>
-<p class="why">It's what the language hands you.</p>
 </div>
 </div>
 

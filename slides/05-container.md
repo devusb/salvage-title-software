@@ -6,7 +6,6 @@
 </div>
 <div class="method" style="flex: 1;">
 <p><code>devcontainer.json</code> → <code>registry.internal/devenv:latest</code>. Built once.</p>
-<p class="why">The good version. Reproducible.</p>
 </div>
 </div>
 

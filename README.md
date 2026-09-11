@@ -60,9 +60,9 @@ Press `S` for the speaker view if you also want the notes on screen. Without
 | `08-close.md` | 2 | Him (kids moved away), us dark + contact |
 
 Every pattern gets three slides: the logo with the check engine light plus
-how it's done and why, then **Jank**, then **Risk**, each three bullets of
-two to six words. The why is always a real reason. Jank is what's broken.
-Risk is what's exposed.
+one line on how it's done, then **Jank**, then **Risk**, each three bullets of
+two to six words. The why lives in the narration and is always a real reason.
+Jank is what's broken. Risk is what's exposed.
 
 The close is him (photo), then us with the lights off and the contact line.
 Lighthearted; the metaphor is never explained and nothing is asked of the

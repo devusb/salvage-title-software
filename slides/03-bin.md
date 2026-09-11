@@ -6,7 +6,6 @@
 </div>
 <div class="method" style="flex: 1;">
 <p>Slack → <code>~/bin</code> → PATH. For years.</p>
-<p class="why">It works. Anyone can fix it.</p>
 </div>
 </div>
 
