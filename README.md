@@ -101,7 +101,12 @@ off, so the light layer must be renderable dark.
 - [ ] **Claude Code `/plugin install`** — does it record a marketplace
       commit? "The managed path exists" is the honest line either way.
 - [ ] **Codex** has skill/plugin install and update.
-- [ ] **`mise`** installs via `curl https://mise.run | sh`.
+- [x] **Language tooling claims** (`04`): `@latest`, npm lifecycle scripts,
+      terraform state version, pip sdist vs wheel. Sources in the slide's
+      backmatter. Install-hook example is Shai-Hulud or ua-parser-js, not
+      event-stream.
+- [x] **`mise`** installs via `curl https://mise.run | sh`. pyenv and nvm are
+      the same shape. asdf is not (Go binary since 0.16); do not name it.
 - [ ] **Father-in-law knows he's on a slide.**
 
 ## If it runs long

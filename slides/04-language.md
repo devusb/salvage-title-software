@@ -48,6 +48,24 @@ GRAPHICS NEEDED:
   - Python logo forward, npm and Go smaller behind, light
     on the group.
 
-VERIFY:
-  - mise install one-liner is `curl https://mise.run | sh`
+VERIFIED (2026-09-11):
+  - go install pkg@latest ignores the local go.mod/go.sum
+    entirely and resolves at install time. go.dev/ref/mod.
+  - npm runs preinstall/install/postinstall by default,
+    including for npm install -g. docs.npmjs.com/cli/v10/
+    using-npm/scripts.
+  - mise:  curl https://mise.run | sh
+    pyenv: curl https://pyenv.run | bash
+    nvm:   curl -o- .../install.sh | bash
+    Do not name asdf; it is a Go binary since 0.16.
+  - Terraform refuses state written by a newer version, and
+    plan alone upgrades the snapshot. Your clean plan is
+    what broke theirs. hashicorp/terraform #24271, #22649.
+  - pip: sdists run the build backend (arbitrary code),
+    wheels do not. Say "install hooks" not "pip runs code".
+
+IF A NAME IS NEEDED for install-hook malware: Shai-Hulud
+(Sept 2025, postinstall, 180+ packages, V2 in Nov hit 700+)
+or ua-parser-js (Oct 2021, preinstall). NOT event-stream:
+its payload ran at require() time, not on install.
 -->
