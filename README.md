@@ -40,8 +40,8 @@ own.
 | File | Slides | Section |
 |---|---|---|
 | `00-title.md` | 1 | Title, name, intro narration |
-| `01-father-in-law.md` | 2 | The photo, the check engine light |
-| `02-pivot.md` | 2 | How you ship to users, how you ship to yourself |
+| `01-father-in-law.md` | 2 | The photo, then the pivot to us |
+| `02-pivot.md` | 2 | The divide, then the roster |
 | `03-bin.md` | 2 | Pattern 1: the `~/bin` script |
 | `04-language.md` | 2 | Pattern 2: language tooling |
 | `05-container.md` | 2 | Pattern 3: the container |
@@ -75,7 +75,7 @@ says what goes there. None exist yet.
 | Graphic | Used in | Notes |
 |---|---|---|
 | Father-in-law photo | `01`, `08` | Morgan has this. Full bleed, no text. |
-| Check engine light | `01` lit, `02` unlit, and on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
+| Check engine light | `01` lit, `02` both, and on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
 | Terminal glyph + light | `02`, `03`, `06`, `08` | Generic terminal, not a specific shell. |
 | Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |
 | Docker whale + light | `02`, `05`, `08` | |
@@ -112,7 +112,8 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
 
 - Slide titles are flat descriptive labels, not jokes. Bits go in the
   speaker's mouth, not on the slide.
-- No first person in slide text. Commentary is voiceover.
+- No first person in slide text, except the roster title on `02`. Commentary
+  is voiceover.
 - Speaker notes are the actual narration, in prose.
 - Styling is inline per element. `index.html` carries the shared
   `.placeholder`, `.method`, and `.gaps` rules and nothing else.

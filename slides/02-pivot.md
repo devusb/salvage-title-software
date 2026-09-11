@@ -1,47 +1,58 @@
-<div class="placeholder" style="width: 380px; height: 200px;">
-[GRAPHIC: check engine light icon, OFF]<br/>
-Same icon as 01, unlit.
+<div style="display: flex; gap: 2.5em; justify-content: center; align-items: flex-start; margin-top: 0.4em;">
+<div style="text-align: center; flex: 1;">
+<div class="placeholder" style="width: 260px; height: 160px;">
+[GRAPHIC: check engine light, OFF]
+</div>
+<p style="font-size: 0.6em; margin: 0.6em 0 0.2em 0;">Production</p>
+<p style="font-size: 0.5em; opacity: 0.75; margin: 0;">Cut. Tagged. Promoted. Shipped.</p>
+</div>
+<div style="text-align: center; flex: 1;">
+<div class="placeholder" style="width: 260px; height: 160px;">
+[GRAPHIC: check engine light, ON]
+</div>
+<p style="font-size: 0.6em; margin: 0.6em 0 0.2em 0;">Internal tooling</p>
+</div>
 </div>
 
-### Cut. Tagged. Promoted. Shipped. <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
-
-Note: You ship software, and you ship it well. You cut a release. You tag it. One immutable artifact gets promoted, dev, staging, prod, never rebuilt. There is a changelog. You can roll it back. Every light off.
+Note: We have elaborate release processes for the artifacts we ship to users. Cut, tagged, promoted, never rebuilt. For internal tooling and dev environments, I have found myself using a lot of anti-patterns. This talk is those anti-patterns, next to how we ship production software.
 
 ---
 
-## How You Ship to Yourself
+## Four Anti-Patterns I've Shipped
 
 <div class="placeholder" style="width: 640px; height: 200px; margin-top: 0.6em;">
 [GRAPHIC: four logos in a row, each with the light on]<br/>
 terminal · Python · Docker · sparkle/plug
 </div>
 
-Note: How do you ship to yourself? Your dev environment, the scripts you run every day. Four patterns. For each: how it's done, why, because there's always a real reason, and the gaps. What's broken, and what's exposed.
+Note: Four of them. For each: how it's done, why, because there's always a real reason, and the gaps. What's broken, and what's exposed.
 
 <!--
 ============================================================
 BACKMATTER / RAW NOTES
 ============================================================
 
-First slide mirrors 01's check engine slide exactly: same
-icon, same layout, light off instead of on. No title, the
-narration says "how you ship to users."
+First slide is the divide: production on the left with the
+light off, internal tooling on the right with the light on
+and nothing under it. The imbalance is the point; the next
+slide fills in the right side.
 
-Light on (him) -> light off (your release pipeline) -> four
-lights on (your dev tooling) -> four lights off (him, fixed,
-in 08).
+Second slide's title uses first person on purpose. The
+whole talk is a confession and the roster is where that has
+to be unmistakable. Only exception to the no-first-person
+convention in the deck.
+
+PROVISIONAL: "Cut. Tagged. Promoted. Shipped." Morgan does
+not like this line yet. Release engineer vocabulary was the
+ask; the security-team version (Signed. Attested. Scanned.
+Pinned.) was rejected as the wrong register. Revisit once
+the graphics exist. In the two-column layout it is a
+caption, not a headline, which may be enough.
 
 The four terms are called back on 05-container.md.
 
-PROVISIONAL: Morgan does not like this line yet. Release
-engineer vocabulary was the ask; the security-team version
-(Signed. Attested. Scanned. Pinned.) was rejected as not the
-right register. Revisit once the graphics exist and the
-slide can be seen whole.
-
 GRAPHICS NEEDED:
-  - check engine light icon, unlit. Same asset as 01 with
-    the light layer dark.
+  - check engine light icon, unlit and lit, side by side.
   - four-logo row with lights. Master composite; each
     pattern slide uses one logo+light from it. Reprised in
     08 lit and dark.
