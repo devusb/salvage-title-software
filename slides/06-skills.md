@@ -18,12 +18,12 @@ Note: Pattern four: skills. A skill is a markdown file your coding agent reads a
 <p class="eyebrow">Jank</p>
 
 <ul class="gap">
-<li>Marketplaces exist. Unused</li>
+<li>Marketplaces are git repos</li>
 <li>HEAD. Latest. A copied file</li>
 <li>Review = reading markdown</li>
 </ul>
 
-Note: Claude Code and Codex have plugin marketplaces now. Most of what's on your disk didn't come through them. It's a clone at HEAD, npx at latest, a file you copied. Review means reading markdown for the one line that says fetch and run.
+Note: Claude Code and Codex have marketplaces now, and a marketplace is a git repo. Anyone can publish, nobody reviews it, and what you get is instructions your agent will run. Review is reading markdown for the line that says fetch and run.
 
 ---
 
@@ -58,6 +58,8 @@ GRAPHICS NEEDED:
 VERIFY:
   - `npx -y @scope/server` with no version fetches latest.
   - Whether `/plugin install` records a marketplace commit.
-    "Marketplaces exist. Unused" is the honest line either way.
+    "Marketplaces are git repos" holds either way.
+  - Claude Code marketplace = a git repo with
+    .claude-plugin/marketplace.json. Confirm against the docs.
   - Codex has skill/plugin install + update.
 -->

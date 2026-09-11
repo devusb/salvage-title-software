@@ -110,7 +110,7 @@ light layer must be renderable dark.
       notification patch. One sentence.
 - [ ] **`npx -y @scope/server`** with no version fetches latest.
 - [ ] **Claude Code `/plugin install`** — does it record a marketplace
-      commit? "Marketplaces exist. Unused" is the honest line either way.
+      commit? "Marketplaces are git repos" holds either way.
 - [ ] **Codex** has skill/plugin install and update.
 - [x] **Language tooling claims** (`04`): `@latest`, npm lifecycle scripts,
       terraform state version, pip sdist vs wheel. Sources in the slide's
