@@ -1,6 +1,7 @@
 # Salvage Title Software
 
-**How we ship to ourselves** — lightning talk, 5 minutes.
+**How we ship to ourselves** — Ignite-format lightning talk. 20 slides,
+15 seconds each, auto-advanced. 5:00 flat.
 
 ## Running
 
@@ -19,8 +20,7 @@ flox services stop
 `npm install` once first if `node_modules` isn't present.
 
 Press `S` for the speaker view (notes, clock, and a per-slide pacing timer
-that goes green / yellow / red against each slide's budget). `Esc` for the
-overview.
+against the 15-second budget). `Esc` for the overview.
 
 ## Practicing
 
@@ -28,36 +28,44 @@ overview.
 http://localhost:3000/?practice
 ```
 
-Auto-advances every slide on its budget and plays a short tick on each
-advance. `P` pauses and resumes (red outline while paused). Open the
-speaker view alongside for the clock. Without `?practice` nothing ever
-advances on its own.
+Auto-advances every 15 seconds and plays a short tick on each advance.
+`P` pauses and resumes (red outline while paused). Open the speaker view
+alongside for the clock. Without `?practice` nothing ever advances on its
+own.
 
 ## Structure
 
-20 slides, all static. No fragments.
+20 slides, all static, 15 seconds each.
 
-| File | Section | Budget |
+| File | Slides | Section |
 |---|---|---|
-| `00-title.md` | Title, speaker intro | 0:15 |
-| `01-father-in-law.md` | The photo, the check engine light | 0:32 |
-| `02-pivot.md` | How you ship to customers, how you ship to yourself | 0:20 |
-| `03-bin.md` | Pattern 1: the `~/bin` script (method, gaps) | 0:37 |
-| `04-language.md` | Pattern 2: language tooling (method, gaps) | 0:37 |
-| `05-container.md` | Pattern 3: the container (method, gaps) | 0:37 |
-| `06-skills.md` | Pattern 4: skills and MCP (method, gaps, bookend) | 0:41 |
-| `07-take-stock.md` | xz, VS Code, the question | 0:20 |
-| `08-close.md` | Lights on, lights off, our version, thanks | 0:37 |
+| `00-title.md` | 1 | Title, name, intro narration |
+| `01-father-in-law.md` | 2 | The photo, the check engine light |
+| `02-pivot.md` | 2 | How you ship to customers, how you ship to yourself |
+| `03-bin.md` | 2 | Pattern 1: the `~/bin` script |
+| `04-language.md` | 2 | Pattern 2: language tooling |
+| `05-container.md` | 2 | Pattern 3: the container |
+| `06-skills.md` | 3 | Pattern 4: skills and MCP, then the bookend |
+| `07-take-stock.md` | 2 | xz, VS Code |
+| `08-close.md` | 4 | Lights on, lights off, our version, thanks |
 
-Planned 4:36 against a 5:00 slot. Roughly 14 seconds a slide. Budgets are
-the `data-timing` on each slide; the table is derived from them.
+Every pattern gets two slides: logo with the check engine light plus how
+it's done and why, then **Jank** | **Risk** at three short bullets each.
+The why is always a real reason. Jank is what's broken. Risk is what's
+exposed.
 
-Every pattern gets two slides: logo with the check engine light plus
-**Method** and **Why**, then **Jank** | **Risk** at three bullets each. The Why is always a real
-reason. The Jank is what's broken. The Risk is what's exposed.
+Pattern 1 and pattern 4 are the same pattern; `06-skills.md` ends on a
+bookend slide, "it's the `~/bin` script again."
 
-Pattern 1 and pattern 4 are the same pattern; `06-skills.md` ends on a bookend slide,
-"it's the `~/bin` script again."
+## Word budget
+
+Fifteen seconds is about 40 spoken words and about 3 seconds of reading.
+
+- On screen: a title and at most ~15 words. Gaps slides are six bullets of
+  two to six words.
+- Narration: at most ~40 words per slide. The slide leaves without you.
+- Anything cut from a slide that still matters goes in the narration, and
+  anything cut from the narration is gone.
 
 ## Graphics to make
 
@@ -75,8 +83,8 @@ says what goes there. None exist yet.
 | xz wordmark + light | `07` | |
 | VS Code logo + light | `07` | |
 
-For `08-close.md` the four-logo composite is needed twice, lights on and
-lights off, so the light layer must be renderable dark.
+The four-logo composite is needed twice in `08`, lights on and lights
+off, so the light layer must be renderable dark.
 
 ## To verify
 
@@ -85,31 +93,21 @@ lights off, so the light layer must be renderable dark.
       `07-take-stock.md` is written. Nothing goes in the mouth without it.
 - [ ] **xz.** CVE-2024-3094, March 2024, liblzma, sshd via the systemd
       notification patch. One sentence.
-- [ ] **`npx -y @scope/server`** with no version fetches latest. Check how
-      npx caches so "every cold start" is precise.
+- [ ] **`npx -y @scope/server`** with no version fetches latest.
 - [ ] **Claude Code `/plugin install`** — does it record a marketplace
-      commit? If so, "the default path doesn't pin" is the honest line and
-      is already what the slide says.
-- [ ] **Codex** has skill/plugin install and update, so "Claude Code and
-      Codex" is accurate.
+      commit? "The managed path exists" is the honest line either way.
+- [ ] **Codex** has skill/plugin install and update.
 - [ ] **`mise`** installs via `curl https://mise.run | sh`.
 - [ ] **Chainguard / Grype / Wiz / SentinelOne** — swap for whatever the
       room actually uses if the venue is known. They appear in `02`, `05`,
       and `06` together.
 - [ ] **Father-in-law knows he's on a slide.**
 
-## Cuts, if it runs long
+## If it runs long
 
-Decided in advance, in order:
-
-1. `07-take-stock.md` — fold the xz and VS Code sentences into the top
-   of `08-close.md`, drop the slide
-2. `04-language.md` — Jank column becomes one spoken sentence
-3. `06-skills.md` — drop the bookend slide, say the line over the gaps slide
-4. `08-close.md` — drop the photo reprise, end on "take inventory"
-
-Protect the photo open, the container inversion line, the `~/bin`
-bookend, and the lights-on / lights-off pair.
+There's nothing to cut; the format is fixed. If a slide's narration runs
+past 15 seconds in practice, trim the narration, not the slide. The
+narration in each `Note:` is already at the budget; treat it as a ceiling.
 
 ## Conventions
 
@@ -120,9 +118,10 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
 - No first person in slide text. Commentary is voiceover.
 - Speaker notes are the actual narration, in prose.
 - Styling is inline per element. `index.html` carries the shared
-  `.placeholder`, `.gaps`, and `.mwg` rules and nothing else.
-- No fragments. Every slide is static; a concept that needs a reveal gets another slide.
+  `.placeholder`, `.method`, and `.gaps` rules and nothing else.
+- No fragments. Every slide is static; a concept that needs a reveal gets
+  another slide.
 - Each slide file ends in a backmatter comment block with scope notes,
-  cut candidates, graphics needed, and things to verify.
+  graphics needed, and things to verify.
 - Goonco and any other former employer stay in the narration, not on
   the slide.

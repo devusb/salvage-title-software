@@ -110,7 +110,7 @@
         function cue() {
           clearTimeout(timer);
           if (paused || Reveal.isLastSlide()) return;
-          const secs = parseInt(Reveal.getCurrentSlide().dataset.timing || 15, 10);
+          const secs = parseInt(Reveal.getCurrentSlide().dataset.timing || Reveal.getConfig().defaultTiming, 10);
           timer = setTimeout(() => { tick(); Reveal.next(); }, secs * 1000);
         }
 
