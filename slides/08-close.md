@@ -21,15 +21,9 @@ Note: Kind of a similar deal here. Everything on this slide works. I can fix any
 [GRAPHIC: four logos, lights OFF]
 </div>
 
-Note: I'm going to go turn some of mine off.
+github.com/devusb <!-- .element: style="font-size: 0.45em; opacity: 0.7; margin-top: 1em" -->
 
----
-
-# Salvage Title Software <!-- .element: style="font-size: 0.85em" -->
-
-Morgan Helton · github.com/devusb <!-- .element: style="font-size: 0.5em; opacity: 0.8" -->
-
-Note: Thanks.
+Note: I'm going to go turn some of mine off. Thanks.
 
 <!--
 ============================================================
@@ -49,7 +43,8 @@ No title on 19 so the only change on screen is the lights.
 Cut before this: "Our version is now" (too explicit) and
 "Who's still down the street?" (too ominous).
 
-Last slide sits through applause. Nothing to read.
+Last slide is the dark logos with the contact line. Sits
+through applause.
 
 GRAPHICS NEEDED:
   - father-in-law photo reprise
