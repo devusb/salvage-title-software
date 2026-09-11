@@ -50,7 +50,7 @@ Press `S` for the speaker view if you also want the notes on screen. Without
 | File | Slides | Section |
 |---|---|---|
 | `00-title.md` | 1 | Title, name, intro narration |
-| `01-father-in-law.md` | 2 | The photo, the family light |
+| `01-father-in-law.md` | 2 | The photo, the light |
 | `02-pivot.md` | 2 | Production (light off), ours (four lit) |
 | `03-bin.md` | 3 | Pattern 1: the `~/bin` script (method, jank, risk) |
 | `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |

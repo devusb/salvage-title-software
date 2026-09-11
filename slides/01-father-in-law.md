@@ -11,8 +11,6 @@ Note: This is my father-in-law, Sergey. He buys salvage-title cars at insurance 
 [GRAPHIC: check engine light icon, amber, lit]
 </div>
 
-### Family <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
-
 Note: And on the family's cars, the check engine light is usually still on. Not because he doesn't care. Because if anything goes wrong, he can fix it. So it never gets urgent.
 
 <!--
@@ -23,7 +21,7 @@ BACKMATTER / RAW NOTES
 Two beats, fifteen seconds each: who he is, then the light.
 Splitting them is what made the open fit.
 
-Family (light on) -> Production (light off) -> Ours (four
+Light on (no label) -> Production (light off) -> Ours (four
 lights on). Same layout on all three: icon over one word.
 
 GRAPHICS NEEDED:
