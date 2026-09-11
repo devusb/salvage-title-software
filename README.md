@@ -50,23 +50,23 @@ Press `S` for the speaker view if you also want the notes on screen. Without
 | File | Slides | Section |
 |---|---|---|
 | `00-title.md` | 1 | Title, name, intro narration |
-| `01-father-in-law.md` | 1 | The photo |
+| `01-father-in-law.md` | 2 | The photo, the family light |
 | `02-pivot.md` | 2 | Production (light off), ours (four lit) |
 | `03-bin.md` | 3 | Pattern 1: the `~/bin` script (method, jank, risk) |
 | `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |
 | `05-container.md` | 3 | Pattern 3: the container (method, jank, risk) |
 | `06-skills.md` | 3 | Pattern 4: skills and MCP (method, jank, risk + bookend) |
 | `07-take-stock.md` | 1 | xz and VS Code |
-| `08-close.md` | 3 | Him (kids moved away), us lit, us dark + contact |
+| `08-close.md` | 2 | Him (kids moved away), us dark + contact |
 
 Every pattern gets three slides: the logo with the check engine light plus
 how it's done and why, then **Jank**, then **Risk**, each three bullets of
 two to six words. The why is always a real reason. Jank is what's broken.
 Risk is what's exposed.
 
-The close is him (photo), us with the lights on, us with the lights off,
-thanks. Lighthearted; the metaphor is never explained and nothing is asked
-of the room.
+The close is him (photo), then us with the lights off and the contact line.
+Lighthearted; the metaphor is never explained and nothing is asked of the
+room.
 
 Pattern 1 and pattern 4 are the same pattern; the last bullet of the skills
 risk slide is "it's the `~/bin` script again."
@@ -90,7 +90,7 @@ says what goes there. None exist yet.
 | Graphic | Used in | Notes |
 |---|---|---|
 | Father-in-law photo | `01`, `08` | Morgan has this. Full bleed, no text. Same photo both times, or a second one for `08`. |
-| Check engine light | `02` unlit, and lit on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
+| Check engine light | `01` lit, `02` unlit, and lit on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
 | Terminal glyph + light | `02`, `03`, `08` | Generic terminal, not a specific shell. |
 | Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |
 | Docker whale + light | `02`, `05`, `08` | |
@@ -98,8 +98,8 @@ says what goes there. None exist yet.
 | xz wordmark + light | `07` | |
 | VS Code logo + light | `07` | |
 
-The four-logo composite is needed twice in `08`, lights on and lights
-off, so the light layer must be renderable dark.
+The four-logo composite is needed lit on `02` and dark on `08`, so the
+light layer must be renderable dark.
 
 ## To verify
 
@@ -136,7 +136,7 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
   is voiceover.
 - Speaker notes are the actual narration, in prose.
 - Styling is inline per element. `index.html` carries heading sizes and the shared
-  `.placeholder`, `.method`, and `.gaps` rules and nothing else.
+  `.placeholder`, `.method`, `.eyebrow`, and `ul.gap` rules and nothing else.
 - No fragments. Every slide is static; a concept that needs a reveal gets
   another slide.
 - Each slide file ends in a backmatter comment block with scope notes,
