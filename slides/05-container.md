@@ -16,24 +16,27 @@ Note: Pattern three, the one that's supposed to be the fix. A devcontainer point
 
 ## The Container
 
-<div class="gaps">
-<div>
-<h4>Jank</h4>
-<ul>
+<p class="eyebrow">Jank</p>
+
+<ul class="gap">
 <li>Built by hand. Which commit?</li>
 <li><code>:latest</code> moved</li>
 <li>Dockerfile gone</li>
 </ul>
-</div>
-<div>
-<h4>Risk</h4>
-<ul>
-<li>Prod: cut, tagged, promoted. Dev: pushed from a laptop</li>
-<li>Dev mounts <code>~/.aws</code></li>
+
+Note: Somebody built it by hand, on their laptop, and pushed it. From what commit? Latest isn't yesterday's latest. The Dockerfile drifted, or it's gone. Nobody can rebuild it.
+
+---
+
+## The Container
+
+<p class="eyebrow">Risk</p>
+
+<ul class="gap">
+<li>Prod: promoted. Dev: pushed from a laptop</li>
+<li>Mounts <code>~/.aws</code></li>
 <li>Least scrutiny, most access</li>
 </ul>
-</div>
-</div>
 
 Note: Here's the indictment. Your production image can't reach that registry without passing a scanner. Your dev image was docker push from a laptop. And it's the one with your credentials mounted in it. The image you look at least can reach the most.
 
@@ -44,7 +47,7 @@ BACKMATTER / RAW NOTES
 
 PROTECT: the inversion line (least scrutiny, most access).
 
-Calls back to the four terms on 02-pivot.md.
+"Prod: promoted" calls back to the caption on 02.
 
 GRAPHICS NEEDED:
   - Docker whale with the light.

@@ -16,57 +16,49 @@ Note: Pattern four. A SKILL.md in a directory, npx dash y in a JSON file. Claude
 
 ## Skills and MCP
 
-<div class="gaps">
-<div>
-<h4>Jank</h4>
-<ul>
-<li>Managed path exists. Yours didn't use it</li>
+<p class="eyebrow">Jank</p>
+
+<ul class="gap">
+<li>A managed path exists. Unused</li>
 <li>HEAD. Latest. A copied file</li>
 <li>Review = reading markdown</li>
 </ul>
-</div>
-<div>
-<h4>Risk</h4>
-<ul>
-<li>Runs as you. "You" is an agent</li>
-<li>No payload needed. A sentence</li>
-<li>Nothing in your stack sees it</li>
-</ul>
-</div>
-</div>
 
-Note: It runs as you, except you're now an agent holding your credentials. A malicious skill doesn't need a payload. It needs a sentence. And nothing in your stack sees this layer. Your EDR is looking for a binary. The threat is a paragraph.
+Note: There's a managed path now. Most of what's on your disk didn't come through it. It's a clone at HEAD, npx at latest, a file you copied. And review means reading markdown for the one line that says fetch and run.
 
 ---
 
-<div style="display: flex; gap: 3em; justify-content: center; align-items: center; margin-bottom: 0.6em;">
-<div class="placeholder" style="width: 200px; height: 200px;">
-[GRAPHIC: terminal + light]
-</div>
-<div class="placeholder" style="width: 200px; height: 200px;">
-[GRAPHIC: sparkle/plug + light]
-</div>
-</div>
+## Skills and MCP
 
-### It's the `~/bin` script again.
+<p class="eyebrow">Risk</p>
 
-Note: It's the tilde-bin script again. Prose you found on the internet, copied into a directory the tool searches, run as you.
+<ul class="gap">
+<li>Runs as you. "You" is an agent</li>
+<li>No payload. A sentence</li>
+<li><strong>It's the <code>~/bin</code> script again</strong></li>
+</ul>
+
+Note: It runs as you, except you're now an agent holding your credentials. A malicious skill doesn't need a payload. It needs a sentence. It's the tilde-bin script again: prose from the internet, in a directory the tool searches, run as you.
 
 <!--
 ============================================================
 BACKMATTER / RAW NOTES
 ============================================================
 
-Bookend narration is short on purpose. Let the slide sit.
+The bookend is the last bullet of the risk slide, bold.
+Land it and stop; the next slide is the quiet one.
+
+"Nothing in your stack sees this layer / your EDR is
+looking for a binary" was cut for length. Say it if a slide
+runs short.
 
 GRAPHICS NEEDED:
   - sparkle (agent) or plug (MCP) glyph with the light.
     Generic, not a vendor logo.
-  - bookend reuses the terminal and sparkle composites.
 
 VERIFY:
   - `npx -y @scope/server` with no version fetches latest.
   - Whether `/plugin install` records a marketplace commit.
-    "Managed path exists" is the honest line either way.
+    "A managed path exists" is the honest line either way.
   - Codex has skill/plugin install + update.
 -->

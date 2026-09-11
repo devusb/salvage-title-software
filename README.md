@@ -40,33 +40,34 @@ own.
 | File | Slides | Section |
 |---|---|---|
 | `00-title.md` | 1 | Title, name, intro narration |
-| `01-father-in-law.md` | 2 | The photo, then the pivot to us |
-| `02-pivot.md` | 2 | The divide, then the roster |
-| `03-bin.md` | 2 | Pattern 1: the `~/bin` script |
-| `04-language.md` | 2 | Pattern 2: language ecosystem tooling |
-| `05-container.md` | 2 | Pattern 3: the container |
-| `06-skills.md` | 3 | Pattern 4: skills and MCP, then the bookend |
-| `07-take-stock.md` | 2 | xz, VS Code |
+| `01-father-in-law.md` | 1 | The photo |
+| `02-pivot.md` | 1 | The divide: production dark, four anti-patterns lit |
+| `03-bin.md` | 3 | Pattern 1: the `~/bin` script (method, jank, risk) |
+| `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |
+| `05-container.md` | 3 | Pattern 3: the container (method, jank, risk) |
+| `06-skills.md` | 3 | Pattern 4: skills and MCP (method, jank, risk + bookend) |
+| `07-take-stock.md` | 1 | xz and VS Code |
 | `08-close.md` | 4 | Him, us lit, us dark, thanks |
 
-Every pattern gets two slides: logo with the check engine light plus how
-it's done and why, then **Jank** | **Risk** at three short bullets each.
-The why is always a real reason. Jank is what's broken. Risk is what's
-exposed.
+Every pattern gets three slides: the logo with the check engine light plus
+how it's done and why, then **Jank**, then **Risk**, each three bullets of
+two to six words. The why is always a real reason. Jank is what's broken.
+Risk is what's exposed.
 
 The close is him (photo), us with the lights on, us with the lights off,
 thanks. Lighthearted; the metaphor is never explained and nothing is asked
 of the room.
 
-Pattern 1 and pattern 4 are the same pattern; `06-skills.md` ends on a
-bookend slide, "it's the `~/bin` script again."
+Pattern 1 and pattern 4 are the same pattern; the last bullet of the skills
+risk slide is "it's the `~/bin` script again."
 
 ## Word budget
 
 Fifteen seconds is about 40 spoken words and about 3 seconds of reading.
 
-- On screen: a title and at most ~15 words. Gaps slides are six bullets of
-  two to six words.
+- On screen: a title and at most ~10 words. Jank and risk slides are three
+  bullets of two to six words. Ignite guidance is one idea per slide and no
+  more than about ten words; the audience cannot read and listen at once.
 - Narration: at most ~40 words per slide. The slide leaves without you.
 - Anything cut from a slide that still matters goes in the narration, and
   anything cut from the narration is gone.
@@ -79,8 +80,8 @@ says what goes there. None exist yet.
 | Graphic | Used in | Notes |
 |---|---|---|
 | Father-in-law photo | `01`, `08` | Morgan has this. Full bleed, no text. Same photo both times, or a second one for `08`. |
-| Check engine light | `01` lit, `02` both, and on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
-| Terminal glyph + light | `02`, `03`, `06`, `08` | Generic terminal, not a specific shell. |
+| Check engine light | `02` unlit, and lit on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
+| Terminal glyph + light | `02`, `03`, `08` | Generic terminal, not a specific shell. |
 | Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |
 | Docker whale + light | `02`, `05`, `08` | |
 | Sparkle or plug + light | `02`, `06`, `08` | Generic agent/MCP glyph, not a vendor logo. |
@@ -121,7 +122,7 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
 
 - Slide titles are flat descriptive labels, not jokes. Bits go in the
   speaker's mouth, not on the slide.
-- No first person in slide text, except the roster title on `02`. Commentary
+- No first person in slide text, except the title on `02`. Commentary
   is voiceover.
 - Speaker notes are the actual narration, in prose.
 - Styling is inline per element. `index.html` carries the shared

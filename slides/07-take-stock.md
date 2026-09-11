@@ -1,25 +1,22 @@
-<div class="placeholder" style="width: 320px; height: 240px;">
+<div style="display: flex; gap: 2.5em; justify-content: center; align-items: center; margin-top: 0.4em;">
+<div class="placeholder" style="width: 260px; height: 200px;">
 [GRAPHIC: xz wordmark + light]
 </div>
-
-Note: These should have been the moment. xz: two years of earning trust to put a backdoor in a compression library that sshd links. Everything broken so far, you noticed. Jank turns the light on. xz wasn't broken. It worked perfectly, for someone else.
-
----
-
-<div class="placeholder" style="width: 320px; height: 240px;">
+<div class="placeholder" style="width: 260px; height: 200px;">
 [GRAPHIC: VS Code logo + light]
 </div>
+</div>
 
-### How many of you changed anything after these? <!-- .element: style="font-size: 0.7em; margin-top: 0.6em" -->
+### How many of you changed anything after these? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
 
-Note: [VERIFY: one sentence on the VS Code extension compromise, with source.] No light for that one either. So, honestly: how many of you changed how you install internal tools after these? Right.
+Note: These should have been the moment. xz: two years earning trust to backdoor a library that sshd links. [VERIFY: one sentence on the VS Code extension compromise, with source.] Jank turns the light on. These weren't broken. They worked perfectly, for someone else. How many of you changed anything?
 
 <!--
 ============================================================
 BACKMATTER / RAW NOTES
 ============================================================
 
-Two quiet slides. One logo each, nothing else.
+The quiet slide. Two logos, one question.
 
 VERIFY:
   - xz: CVE-2024-3094, March 2024, liblzma, sshd via the

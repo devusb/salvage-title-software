@@ -1,58 +1,49 @@
-<div style="display: flex; gap: 2.5em; justify-content: center; align-items: flex-start; margin-top: 0.4em;">
-<div style="text-align: center; flex: 1;">
-<div class="placeholder" style="width: 260px; height: 160px;">
-[GRAPHIC: check engine light, OFF]
-</div>
-<p style="font-size: 0.6em; margin: 0.6em 0 0.2em 0;">Production</p>
-<p style="font-size: 0.5em; opacity: 0.75; margin: 0;">Cut. Tagged. Promoted. Shipped.</p>
-</div>
-<div style="text-align: center; flex: 1;">
-<div class="placeholder" style="width: 260px; height: 160px;">
-[GRAPHIC: check engine light, ON]
-</div>
-<p style="font-size: 0.6em; margin: 0.6em 0 0.2em 0;">Internal tooling</p>
-</div>
-</div>
-
-Note: We have elaborate release processes for the artifacts we ship to users. Cut, tagged, promoted, never rebuilt. For internal tooling and dev environments, I have found myself using a lot of anti-patterns. This talk is those anti-patterns, next to how we ship production software.
-
----
-
 ## Four Anti-Patterns I've Shipped
 
-<div class="placeholder" style="width: 640px; height: 200px; margin-top: 0.6em;">
-[GRAPHIC: four logos in a row, each with the light on]<br/>
+<div style="display: flex; gap: 2em; justify-content: center; align-items: flex-start; margin-top: 0.4em;">
+<div style="text-align: center; flex: 1;">
+<div class="placeholder" style="width: 220px; height: 150px;">
+[GRAPHIC: check engine light, OFF]
+</div>
+<p style="font-size: 0.55em; margin: 0.5em 0 0.1em 0;">Production</p>
+<p style="font-size: 0.45em; opacity: 0.7; margin: 0;">Cut. Tagged. Promoted. Shipped.</p>
+</div>
+<div style="text-align: center; flex: 2;">
+<div class="placeholder" style="width: 480px; height: 150px;">
+[GRAPHIC: four logos in a row, each with the light ON]<br/>
 terminal · Python · Docker · sparkle/plug
 </div>
+<p style="font-size: 0.55em; margin: 0.5em 0 0 0;">Internal tooling</p>
+</div>
+</div>
 
-Note: Four of them. For each: how it's done, why, because there's always a real reason, and the gaps. What's broken, and what's exposed.
+Note: I'd posit we ship internal tooling the same way. We have elaborate release processes for what we ship to users. For our own tooling, I have found myself using anti-patterns. Four of them, next to how we ship production.
 
 <!--
 ============================================================
 BACKMATTER / RAW NOTES
 ============================================================
 
-First slide is the divide: production on the left with the
-light off, internal tooling on the right with the light on
-and nothing under it. The imbalance is the point; the next
-slide fills in the right side.
+The divide and the roster on one slide. Production: one
+light, off. Internal tooling: four logos, all lit. The
+imbalance is the point.
 
-Second slide's title uses first person on purpose. The
-whole talk is a confession and the roster is where that has
-to be unmistakable. Only exception to the no-first-person
-convention in the deck.
+Title is first person on purpose. The whole talk is a
+confession and this is where it has to be unmistakable.
+Only exception to the no-first-person convention.
+
+Narration opens with the "same light, same reason" pivot
+that used to be its own slide.
 
 PROVISIONAL: "Cut. Tagged. Promoted. Shipped." Morgan does
 not like this line yet. Release engineer vocabulary was the
 ask; the security-team version (Signed. Attested. Scanned.
-Pinned.) was rejected as the wrong register. Revisit once
-the graphics exist. In the two-column layout it is a
-caption, not a headline, which may be enough.
-
-The four terms are called back on 05-container.md.
+Pinned.) was rejected as the wrong register. It is a small
+caption here, which may be enough. Called back on the
+container risk slide.
 
 GRAPHICS NEEDED:
-  - check engine light icon, unlit and lit, side by side.
+  - check engine light icon, unlit.
   - four-logo row with lights. Master composite; each
     pattern slide uses one logo+light from it. Reprised in
     08 lit and dark.

@@ -16,43 +16,46 @@ Note: Pattern two: language ecosystem tooling. pip, virtualenvs, npm, nvm, cargo
 
 ## Language Ecosystem Tooling
 
-<div class="gaps">
-<div>
-<h4>Jank</h4>
-<ul>
-<li>Covers the language. Not the machine</li>
-<li>Plus fifty apt packages, twenty from brew, and a README</li>
-<li>A package manager for the package manager</li>
+<p class="eyebrow">Jank</p>
+
+<ul class="gap">
+<li>Covers the language, not the machine</li>
+<li>Plus apt, brew, a README</li>
+<li>Package manager for the package manager</li>
 </ul>
-</div>
-<div>
-<h4>Risk</h4>
-<ul>
+
+Note: It covers the language, not the machine. You still need libpq, a compiler, twenty things from brew, so setup is a README: first, install these. Every laptop's a different version, so: a version manager for the package manager, via curl pipe sh.
+
+---
+
+## Language Ecosystem Tooling
+
+<p class="eyebrow">Risk</p>
+
+<ul class="gap">
 <li><code>@latest</code></li>
 <li>Install hooks run code</li>
 <li>Dependabot watches prod, not you</li>
 </ul>
-</div>
-</div>
 
-Note: It covers the language, not the machine. You still need libpq, a compiler, twenty things from brew, so setup is a README: first, install these. Every laptop's a different version, so: a version manager for the package manager, via curl pipe sh.
+Note: At-latest: whoever owns the package tomorrow is on your machine tomorrow. Install hooks run code. Shai-Hulud was a postinstall script that stole npm tokens and republished itself. And Dependabot is watching the product repo. Nothing is watching your laptop.
 
 <!--
 ============================================================
 BACKMATTER / RAW NOTES
 ============================================================
 
-The thesis of this slide is "not all-encompassing." The
+The thesis of the jank slide is "not all-encompassing." The
 ecosystem tool manages the language and nothing beneath it,
 so the real setup is an amalgam: venv plus apt plus brew
 plus a README. That is the Flox-shaped hole. It stays
-unnamed; the intro slide says Flox and that is enough.
+unnamed; the title slide says Flox and that is enough.
+
+Jank slide is the heaviest in the deck at 17 words. If it
+has to lose one, the third bullet goes to narration only.
 
 Goonco stays in the mouth. Python leads; no Rust beyond the
-cargo mention in the examples line.
-
-Risk column is on screen only on this slide. Narration is
-all jank; 06-skills.md carries the risk beat.
+cargo mention.
 
 Terraform "which version" beat survives as "every laptop's
 a different version." Sharper true version if there is ever
@@ -73,11 +76,9 @@ VERIFIED (2026-09-11):
     #24271, #22649.
   - pip: sdists run the build backend (arbitrary code),
     wheels do not. Say "install hooks" not "pip runs code".
-
-IF A NAME IS NEEDED for install-hook malware: Shai-Hulud
-(Sept 2025, postinstall, 180+ packages, V2 in Nov hit 700+)
-or ua-parser-js (Oct 2021, preinstall). NOT event-stream:
-its payload ran at require() time, not on install.
+  - Shai-Hulud: Sept 2025, postinstall, 180+ packages, V2 in
+    Nov hit 700+. ua-parser-js: Oct 2021, preinstall. NOT
+    event-stream: its payload ran at require() time.
 
 GRAPHICS NEEDED:
   - Python logo forward, npm and Go smaller behind, light
