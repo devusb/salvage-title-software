@@ -47,7 +47,7 @@ own.
 | `05-container.md` | 2 | Pattern 3: the container |
 | `06-skills.md` | 3 | Pattern 4: skills and MCP, then the bookend |
 | `07-take-stock.md` | 2 | xz, VS Code |
-| `08-close.md` | 4 | Lights on, lights off, our version, thanks |
+| `08-close.md` | 4 | Lights on, lights off, our version, thanks — **unsettled** |
 
 Every pattern gets two slides: logo with the check engine light plus how
 it's done and why, then **Jank** | **Risk** at three short bullets each.

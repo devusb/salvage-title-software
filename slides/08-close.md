@@ -39,6 +39,12 @@ Note: Thanks.
 BACKMATTER / RAW NOTES
 ============================================================
 
+UNSETTLED: Morgan is not sure this beat earns its slides.
+Decide once the graphics exist. Known problem: slide 17 is
+titled for him but shows our four logos. Candidate fix: his
+photo on 17 (he took inventory), our logos dark on 18, end
+on "take inventory" or on the photo, not both.
+
 Lights-on / lights-off: no title on the second so the only
 change on screen is the lights.
 
