@@ -3,7 +3,7 @@
 Ideally with a car he rebuilt. Full-bleed, no text.
 </div>
 
-Note: This is my father-in-law. He buys salvage-title cars at insurance auction, fixes them up, sells them. Takes real pride in it. He fixes the family's cars too. And on those, the check engine light is usually still on. Not because he doesn't care. Because if anything goes wrong, he can just fix it.
+Note: This is my father-in-law. He buys salvage-title cars at insurance auction and fixes them up to sell. He does the family's cars too. And on those, the check engine light's usually still on. Not because he doesn't care. Because if anything goes wrong, he can fix it.
 
 ---
 
