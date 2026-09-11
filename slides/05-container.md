@@ -19,12 +19,12 @@ Note: Pattern three, the one that's supposed to be the fix. A devcontainer point
 <p class="eyebrow">Jank</p>
 
 <ul class="gap">
-<li>Built by hand. Which commit?</li>
-<li><code>:latest</code> moved</li>
+<li>Built by hand, pushed to <code>:latest</code></li>
+<li>On macOS, a Linux VM</li>
 <li>Dockerfile gone</li>
 </ul>
 
-Note: Somebody built it by hand, on their laptop, and pushed it. From what commit? Latest isn't yesterday's latest. The Dockerfile drifted, or it's gone. Nobody can rebuild it.
+Note: Somebody built it by hand and pushed it to latest, so nobody knows which commit it is. On a Mac it runs in a Linux VM, so every build and every file sync pays for that. And the Dockerfile drifted, or it's gone.
 
 ---
 
