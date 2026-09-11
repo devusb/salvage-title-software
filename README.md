@@ -41,7 +41,7 @@ own.
 |---|---|---|
 | `00-title.md` | 1 | Title, name, intro narration |
 | `01-father-in-law.md` | 1 | The photo |
-| `02-pivot.md` | 1 | The divide: production dark, mine lit |
+| `02-pivot.md` | 1 | The divide: production dark, ours lit |
 | `03-bin.md` | 3 | Pattern 1: the `~/bin` script (method, jank, risk) |
 | `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |
 | `05-container.md` | 3 | Pattern 3: the container (method, jank, risk) |
@@ -122,7 +122,7 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
 
 - Slide titles are flat descriptive labels, not jokes. Bits go in the
   speaker's mouth, not on the slide.
-- No first person in slide text, except the label "Mine" on `02`. Commentary
+- No first person in slide text, except the label "Ours" on `02`. Commentary
   is voiceover.
 - Speaker notes are the actual narration, in prose.
 - Styling is inline per element. `index.html` carries heading sizes and the shared
