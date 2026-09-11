@@ -20,7 +20,7 @@ Note: Pattern three, the one that's supposed to be the fix. A devcontainer point
 
 <ul class="gap">
 <li>Built by hand, pushed to <code>:latest</code></li>
-<li>On macOS, a Linux VM</li>
+<li>On macOS, runs inside a Linux VM</li>
 <li>Dockerfile gone</li>
 </ul>
 
