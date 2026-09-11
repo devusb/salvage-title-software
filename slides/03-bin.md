@@ -1,4 +1,4 @@
-## The `~/bin` Script
+## `~/bin`
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="placeholder" style="width: 200px; height: 200px; flex: none;">
@@ -14,7 +14,7 @@ Note: This one's mine, I did it for years. Someone posts a shell script in Slack
 
 ---
 
-## The `~/bin` Script
+## `~/bin`
 
 <p class="eyebrow">Jank</p>
 
@@ -28,7 +28,7 @@ Note: It assumes whatever the author had installed. Then sed on a Mac isn't sed 
 
 ---
 
-## The `~/bin` Script
+## `~/bin`
 
 <p class="eyebrow">Risk</p>
 

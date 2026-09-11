@@ -1,4 +1,4 @@
-## Skills and MCP
+## Skills
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="placeholder" style="width: 200px; height: 200px; flex: none;">
@@ -10,11 +10,11 @@
 </div>
 </div>
 
-Note: Pattern four. A SKILL.md in a directory, npx dash y in a JSON file. Claude Code and Codex have plugin systems now, more than tilde-bin ever had. Why? It's new, it's valuable, everyone's sharing. That's how ecosystems get built.
+Note: Pattern four: skills, MCP servers. A SKILL.md in a directory, npx dash y in a JSON file. Claude Code and Codex have plugin systems now, more than tilde-bin ever had. Why? It's new, it's valuable, everyone's sharing. That's how ecosystems get built.
 
 ---
 
-## Skills and MCP
+## Skills
 
 <p class="eyebrow">Jank</p>
 
@@ -28,7 +28,7 @@ Note: There's a managed path now. Most of what's on your disk didn't come throug
 
 ---
 
-## Skills and MCP
+## Skills
 
 <p class="eyebrow">Risk</p>
 

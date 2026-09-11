@@ -1,4 +1,4 @@
-## Language Ecosystem Tooling
+## Ecosystem tooling
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="placeholder" style="width: 200px; height: 200px; flex: none;">
@@ -14,7 +14,7 @@ Note: Pattern two: language ecosystem tooling. pip, virtualenvs, npm, nvm, cargo
 
 ---
 
-## Language Ecosystem Tooling
+## Ecosystem tooling
 
 <p class="eyebrow">Jank</p>
 
@@ -28,7 +28,7 @@ Note: It covers the language, not the machine. You still need libpq, a compiler,
 
 ---
 
-## Language Ecosystem Tooling
+## Ecosystem tooling
 
 <p class="eyebrow">Risk</p>
 

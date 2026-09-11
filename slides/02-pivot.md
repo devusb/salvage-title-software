@@ -1,5 +1,3 @@
-## Four Anti-Patterns I've Shipped
-
 <div style="display: flex; gap: 2em; justify-content: center; align-items: flex-start; margin-top: 0.4em;">
 <div style="text-align: center; flex: 1;">
 <div class="placeholder" style="width: 220px; height: 150px;">
@@ -13,7 +11,7 @@
 [GRAPHIC: four logos in a row, each with the light ON]<br/>
 terminal · Python · Docker · sparkle/plug
 </div>
-<p style="font-size: 0.55em; margin: 0.5em 0 0 0;">Internal tooling</p>
+<p style="font-size: 0.55em; margin: 0.5em 0 0 0;">Mine</p>
 </div>
 </div>
 
@@ -28,7 +26,8 @@ The divide and the roster on one slide. Production: one
 light, off. Internal tooling: four logos, all lit. The
 imbalance is the point.
 
-Title is first person on purpose. The whole talk is a
+No title. The lit column is labeled "Mine": first person on
+purpose. The whole talk is a
 confession and this is where it has to be unmistakable.
 Only exception to the no-first-person convention.
 

@@ -7,7 +7,7 @@
 </div>
 </div>
 
-### How many of you changed anything after these? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
+### Did anything change? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
 
 Note: These should have been the moment. xz: two years earning trust to backdoor a library that sshd links. [VERIFY: one sentence on the VS Code extension compromise, with source.] Jank turns the light on. These weren't broken. They worked perfectly, for someone else. How many of you changed anything?
 

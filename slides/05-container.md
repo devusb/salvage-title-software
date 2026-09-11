@@ -1,4 +1,4 @@
-## The Container
+## Containers
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="placeholder" style="width: 200px; height: 200px; flex: none;">
@@ -14,7 +14,7 @@ Note: Pattern three, the one that's supposed to be the fix. A devcontainer point
 
 ---
 
-## The Container
+## Containers
 
 <p class="eyebrow">Jank</p>
 
@@ -28,7 +28,7 @@ Note: Somebody built it by hand, on their laptop, and pushed it. From what commi
 
 ---
 
-## The Container
+## Containers
 
 <p class="eyebrow">Risk</p>
 

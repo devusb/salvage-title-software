@@ -1,5 +1,3 @@
-## The Kids Moved Away
-
 <div class="placeholder" style="width: 640px; height: 380px; margin-top: 0.4em;">
 [GRAPHIC: father-in-law photo, reprise]<br/>
 Same photo as 01, or a second one.
