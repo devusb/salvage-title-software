@@ -1,3 +1,4 @@
+<!-- .slide: data-timing="5" -->
 # Salvage Title Software <!-- .element: style="font-size: 0.85em" -->
 
 ### How we ship to ourselves <!-- .element: style="font-size: 0.75em" -->
@@ -8,6 +9,7 @@ Note: Title card. Let people read it. Don't explain the title; the father-in-law
 
 ---
 
+<!-- .slide: data-timing="10" -->
 ## Morgan Helton
 
 Software Engineer at Flox <!-- .element: style="font-size: 0.7em" -->

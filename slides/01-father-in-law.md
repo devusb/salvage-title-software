@@ -1,3 +1,4 @@
+<!-- .slide: data-timing="20" -->
 <div class="placeholder" style="width: 720px; height: 460px;">
 [GRAPHIC: father-in-law photo]<br/>
 Ideally with a car, ideally one he rebuilt.<br/>
@@ -8,17 +9,18 @@ Note: This is my father-in-law. He buys salvage cars. Wrecked, totaled, written 
 
 ---
 
+<!-- .slide: data-timing="12" -->
 ## The Check Engine Light
 
-<div class="placeholder" style="width: 420px; height: 240px;">
+<div class="placeholder" style="width: 380px; height: 200px;">
 [GRAPHIC: check engine light icon]<br/>
-Amber, lit. This asset is reused on every pattern slide.
+Amber, lit. Reused on every pattern slide.
 </div>
 
 <ul style="font-size: 0.65em;">
-<li class="fragment">It's not that he doesn't care</li>
-<li class="fragment">He can fix anything that breaks</li>
-<li class="fragment">So the urgency never lands</li>
+<li>It's not that he doesn't care</li>
+<li>He can fix anything that breaks</li>
+<li>So the urgency never lands</li>
 </ul>
 
 Note: And it's not that he doesn't care. It's the opposite. He knows he can fix anything on that car. He's rebuilt the whole thing. So when the light comes on, it's not a warning, it's a status indicator he's already accounted for. He'll get to it. The car drives. The urgency never lands. Hold that thought.
@@ -28,14 +30,14 @@ Note: And it's not that he doesn't care. It's the opposite. He knows he can fix 
 BACKMATTER / RAW NOTES
 ============================================================
 
-TIMING: ~0:40 for both slides. The photo gets three seconds
-of silence before the first word.
+TIMING: photo 0:25, light 0:15. The photo gets three
+seconds of silence before the first word.
 
 GRAPHICS NEEDED:
   - father-in-law photo (Morgan has this)
   - check engine light icon, amber, lit. Simple SVG. Gets
     composited onto every logo in 03-06 and is the thing
-    that fades out in 08.
+    that goes dark in 08.
 
 COURTESY: make sure he knows he's on a slide.
 -->

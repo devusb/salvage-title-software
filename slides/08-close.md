@@ -1,42 +1,41 @@
+<!-- .slide: data-timing="10" -->
 ## The Kids Moved Away
 
-<div style="display: flex; gap: 1.5em; justify-content: center; align-items: flex-start; margin-top: 0.5em;">
-<div style="text-align: center;">
-<div class="placeholder" style="width: 150px; height: 150px;">[GRAPHIC: terminal logo]</div>
-<div class="fragment fade-out placeholder" style="width: 150px; height: 40px; margin-top: 0.3em;">[light on]</div>
-</div>
-<div style="text-align: center;">
-<div class="placeholder" style="width: 150px; height: 150px;">[GRAPHIC: Python logo]</div>
-<div class="fragment fade-out placeholder" style="width: 150px; height: 40px; margin-top: 0.3em;">[light on]</div>
-</div>
-<div style="text-align: center;">
-<div class="placeholder" style="width: 150px; height: 150px;">[GRAPHIC: Docker logo]</div>
-<div class="fragment fade-out placeholder" style="width: 150px; height: 40px; margin-top: 0.3em;">[light on]</div>
-</div>
-<div style="text-align: center;">
-<div class="placeholder" style="width: 150px; height: 150px;">[GRAPHIC: sparkle/plug]</div>
-<div class="fragment fade-out placeholder" style="width: 150px; height: 40px; margin-top: 0.3em;">[light on]</div>
-</div>
+<div class="placeholder" style="width: 640px; height: 200px; margin-top: 0.6em;">
+[GRAPHIC: four logos in a row, lights ON]<br/>
+Same composite as 02-pivot.md.
 </div>
 
-Note: Back to my father-in-law. The kids got older. We moved away. And when we did, he took inventory. Every car he'd sent off with a light on, he went and fixed. Not because the lights got worse. Because the person who could fix them wasn't going to be down the street anymore. Click through: one, two, three, four.
+Note: Back to my father-in-law. The kids got older. We moved away. And when we did, he took inventory. Every car he'd sent off with a light on, he went and fixed.
 
 ---
 
+<!-- .slide: data-timing="7" -->
+<div class="placeholder" style="width: 640px; height: 200px;">
+[GRAPHIC: four logos in a row, lights OFF]<br/>
+Same composite, light layer dark.
+</div>
+
+Note: Not because the lights got worse. Because the person who could fix them wasn't going to be down the street anymore.
+
+---
+
+<!-- .slide: data-timing="15" -->
 ## Our Version Is Now
 
 <ul style="font-size: 0.65em;">
-<li class="fragment">What runs on your laptop is growing</li>
-<li class="fragment">Your control over it is shrinking</li>
-<li class="fragment">Do you have good sandbox hygiene?</li>
+<li>What runs on your laptop is growing</li>
+<li>Your control over it is shrinking</li>
+<li>Do you have good sandbox hygiene?</li>
 </ul>
 
-<p class="fragment" style="font-size: 0.75em; margin-top: 0.8em;">Maybe it's time to take inventory.</p>
+<p style="font-size: 0.75em; margin-top: 0.8em;">Maybe it's time to take inventory.</p>
 
 Note: Our version is now. What runs on your laptop is growing. Agents, skills, servers you didn't type the command for. And your control over it is shrinking. Do you have good sandbox hygiene? I don't. I'm the guy with tilde-bin. So, maybe it's time to take inventory. While the people who can fix it are still in the building.
 
 ---
 
+<!-- .slide: data-timing="5" -->
 <div class="placeholder" style="width: 720px; height: 420px;">
 [GRAPHIC: father-in-law photo, reprise]<br/>
 Same photo as 01, or a second one.
@@ -51,27 +50,24 @@ Note: Thanks.
 BACKMATTER / RAW NOTES
 ============================================================
 
-TIMING: ~0:45 across the three slides.
+TIMING: 0:12 + 0:08 + 0:15 + 0:05.
 
-The lights-out slide is the payoff for the whole visual
-motif. Each light is its own `fragment fade-out` so they go
-dark one at a time on click. Once the real graphics exist,
-the light layer needs to be a separate element from the
-logo so this keeps working. Four clicks, four dark
-dashboards, then the story is told and the next slide is
-the question.
+Lights-on / lights-off are two static frames, no title on
+the second so the only change on screen is the lights. This
+is the payoff for the whole visual motif; the graphics need
+a light layer that can be rendered dark.
 
 "I don't" stays in the mouth. Slide text asks the question,
 narration answers it.
 
 OPTIONAL, cut first: "the car drives itself now, and the
-light's still on." Apt for agents, probably one metaphor
-past the budget.
+light's still on."
 
 "Not a free-for-all, but a lane" fits as one spoken line
 before "maybe it's time" if there's room.
 
 GRAPHICS NEEDED:
-  - four logos, separate from four light layers
+  - four-logo row, lights on (same as 02)
+  - four-logo row, lights off
   - father-in-law photo reprise
 -->

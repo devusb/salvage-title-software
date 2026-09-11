@@ -25,19 +25,30 @@
         padding: 0.5em;
         margin: 0 auto;
       }
+      .reveal .method {
+        text-align: left;
+        font-size: 0.65em;
+      }
+      .reveal .method p {
+        margin: 0.4em 0;
+      }
+      .reveal .method .why {
+        opacity: 0.75;
+        font-style: italic;
+      }
       .reveal .gaps {
         display: flex;
-        gap: 1.2em;
+        gap: 1.5em;
         text-align: left;
-        font-size: 0.5em;
-        margin-top: 0.4em;
+        font-size: 0.6em;
+        margin-top: 0.6em;
       }
       .reveal .gaps > div {
         flex: 1;
       }
       .reveal .gaps h4 {
         font-size: 1em;
-        margin: 0 0 0.3em 0;
+        margin: 0 0 0.4em 0;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         opacity: 0.7;
@@ -47,23 +58,7 @@
         padding-left: 1em;
       }
       .reveal .gaps li {
-        margin-bottom: 0.15em;
-      }
-      .reveal .mwg {
-        text-align: left;
-        font-size: 0.55em;
-        margin-top: 0.3em;
-      }
-      .reveal .mwg p {
-        margin: 0.2em 0;
-      }
-      .reveal .mwg strong {
-        display: inline-block;
-        width: 4.2em;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        opacity: 0.7;
-        font-size: 0.85em;
+        margin-bottom: 0.35em;
       }
     </style>
   </head>
@@ -86,11 +81,47 @@
     <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
     <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
     <script>
+      const practice = new URLSearchParams(location.search).has("practice");
+
       Reveal.initialize({
         hash: true,
-        pdfSeparateFragments: false,
+        defaultTiming: 15,
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       });
+
+      if (practice) {
+        let timer = null;
+        let paused = false;
+        const audio = new (window.AudioContext || window.webkitAudioContext)();
+        document.addEventListener("keydown", () => audio.resume(), { once: true });
+        document.addEventListener("click", () => audio.resume(), { once: true });
+
+        function tick() {
+          const osc = audio.createOscillator();
+          const gain = audio.createGain();
+          osc.frequency.value = 880;
+          gain.gain.setValueAtTime(0.08, audio.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.0001, audio.currentTime + 0.12);
+          osc.connect(gain).connect(audio.destination);
+          osc.start();
+          osc.stop(audio.currentTime + 0.12);
+        }
+
+        function cue() {
+          clearTimeout(timer);
+          if (paused || Reveal.isLastSlide()) return;
+          const secs = parseInt(Reveal.getCurrentSlide().dataset.timing || 15, 10);
+          timer = setTimeout(() => { tick(); Reveal.next(); }, secs * 1000);
+        }
+
+        Reveal.on("ready", cue);
+        Reveal.on("slidechanged", cue);
+        Reveal.addKeyBinding({ keyCode: 80, key: "P", description: "Pause/resume practice timer" }, () => {
+          paused = !paused;
+          document.body.style.outline = paused ? "6px solid #c33" : "";
+          cue();
+        });
+      }
     </script>
   </body>
 </html>
