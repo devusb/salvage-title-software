@@ -47,12 +47,15 @@ own.
 | `05-container.md` | 2 | Pattern 3: the container |
 | `06-skills.md` | 3 | Pattern 4: skills and MCP, then the bookend |
 | `07-take-stock.md` | 2 | xz, VS Code |
-| `08-close.md` | 4 | Lights on, lights off, our version, thanks — **unsettled** |
+| `08-close.md` | 4 | Him, us with the lights off, the question, thanks |
 
 Every pattern gets two slides: logo with the check engine light plus how
 it's done and why, then **Jank** | **Risk** at three short bullets each.
 The why is always a real reason. Jank is what's broken. Risk is what's
 exposed.
+
+The close is him (photo), us (four logos, lights off), then one question
+turned on the room. The metaphor is never explained.
 
 Pattern 1 and pattern 4 are the same pattern; `06-skills.md` ends on a
 bookend slide, "it's the `~/bin` script again."
@@ -74,7 +77,7 @@ says what goes there. None exist yet.
 
 | Graphic | Used in | Notes |
 |---|---|---|
-| Father-in-law photo | `01`, `08` | Morgan has this. Full bleed, no text. |
+| Father-in-law photo | `01`, `08` | Morgan has this. Full bleed, no text. Same photo both times, or a second one for `08`. |
 | Check engine light | `01` lit, `02` both, and on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
 | Terminal glyph + light | `02`, `03`, `06`, `08` | Generic terminal, not a specific shell. |
 | Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |

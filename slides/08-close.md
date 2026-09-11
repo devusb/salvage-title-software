@@ -1,7 +1,8 @@
 ## The Kids Moved Away
 
-<div class="placeholder" style="width: 640px; height: 200px; margin-top: 0.6em;">
-[GRAPHIC: four logos, lights ON. Same as 02.]
+<div class="placeholder" style="width: 640px; height: 380px; margin-top: 0.4em;">
+[GRAPHIC: father-in-law photo, reprise]<br/>
+Same photo as 01, or a second one.
 </div>
 
 Note: Back to my father-in-law. The kids got older and moved away. And when we did, he took inventory. Every car he'd sent off with a light on, he went and fixed.
@@ -16,21 +17,15 @@ Note: Not because the lights got worse. Because the person who could fix them wa
 
 ---
 
-## Our Version Is Now
+### Who's still down the street? <!-- .element: style="font-size: 1.1em" -->
 
-<p style="font-size: 0.7em; margin-top: 0.8em;">More runs on your laptop. Less of it is yours.</p>
-
-<p style="font-size: 0.7em;">Take inventory.</p>
-
-Note: Our version is now. What runs on your laptop is growing. Your control over it is shrinking. Do you have good sandbox hygiene? I don't, I'm the guy with tilde-bin. Maybe it's time to take inventory, while the people who can fix it are still here.
+Note: The person who wrote the script. Who built the dev image. Who knows what's in tilde-dot-claude. For how long?
 
 ---
 
-<div class="placeholder" style="width: 720px; height: 420px;">
-[GRAPHIC: father-in-law photo, reprise]
-</div>
+# Salvage Title Software <!-- .element: style="font-size: 0.85em" -->
 
-github.com/devusb <!-- .element: style="font-size: 0.45em; opacity: 0.7" -->
+Morgan Helton · github.com/devusb <!-- .element: style="font-size: 0.5em; opacity: 0.8" -->
 
 Note: Thanks.
 
@@ -39,21 +34,20 @@ Note: Thanks.
 BACKMATTER / RAW NOTES
 ============================================================
 
-UNSETTLED: Morgan is not sure this beat earns its slides.
-Decide once the graphics exist. Known problem: slide 17 is
-titled for him but shows our four logos. Candidate fix: his
-photo on 17 (he took inventory), our logos dark on 18, end
-on "take inventory" or on the photo, not both.
+17 is him, 18 is us, 19 is the room. The metaphor is never
+explained; "down the street" on 19 is a callback to the
+narration on 18.
 
-Lights-on / lights-off: no title on the second so the only
-change on screen is the lights.
+19's narration is short on purpose. Say it, then let the
+slide sit for the remaining seconds.
 
-"I don't" stays in the mouth.
+"Our version is now" (sandbox hygiene, take inventory) was
+cut as too explicit. "Take inventory" survives only as his
+action in 17's narration.
 
 Last slide sits through applause. Nothing to read.
 
 GRAPHICS NEEDED:
-  - four-logo row, lights on (same as 02)
-  - four-logo row, lights off
   - father-in-law photo reprise
+  - four-logo row, lights off
 -->
