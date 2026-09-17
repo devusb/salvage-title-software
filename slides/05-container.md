@@ -2,12 +2,17 @@
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
-<div class="method" style="flex: 1;">
-<p>The dev environment as an image. Built once, pulled forever.</p>
-</div>
+<pre style="flex: 1; width: auto; margin: 0; box-shadow: none;"><code class="language-dockerfile" style="font-size: 0.5em; line-height: 1.45; padding: 0.8em 1em;">FROM ubuntu:latest
+RUN apt-get update &amp;&amp; apt-get install -y \
+      build-essential git curl jq \
+      python3-pip nodejs npm
+RUN curl -fsSL https://sh.rustup.rs | sh -s -- -y
+RUN pip install -r requirements.txt
+RUN npm install -g @acme/devtools
+RUN curl -fsSL https://mise.run | sh</code></pre>
 </div>
 
-Note: Pattern three, the one that's supposed to be the fix. A devcontainer pointing at an image in your registry. Somebody built it. And this is genuinely good. Reproducible, one-click onboarding. It fixes both of the last two slides.
+Note: Pattern three, the one that's supposed to be the fix. Here's the Dockerfile. From ubuntu latest, apt-get everything, curl pipe sh, pip, npm. The last two slides, baked into one image. And this is genuinely good. Reproducible, one-click onboarding.
 
 ---
 
