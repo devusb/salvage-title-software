@@ -37,12 +37,12 @@ Note: Each tool covers its language and stops at the edge. Every one is fine. It
 <p class="eyebrow">Risk</p>
 
 <ul class="gap">
-<li>Lockfiles cover deps, not the tools</li>
-<li>Install hooks run code</li>
-<li>Dependabot watches the repo, not your laptop</li>
+<li>Lockfiles cover deps, not tools</li>
+<li>Install hooks run code: Shai-Hulud</li>
+<li>Dependabot watches the repo, not your tools</li>
 </ul>
 
-Note: The lockfiles cover the dependencies. They don't cover uv, nvm, brew, or direnv, which arrive at whatever version and never get scanned. Install hooks still run code; Shai-Hulud was a postinstall script. And Dependabot watches the repo. Nothing watches the toolchain on your laptop.
+Note: The lockfiles cover the dependencies, not uv, nvm, brew, or direnv, which arrive at whatever version. Install hooks still run code; Shai-Hulud was an npm postinstall that stole tokens and republished itself. Dependabot watches the repo. Nothing watches what you installed locally.
 
 <!--
 ============================================================
