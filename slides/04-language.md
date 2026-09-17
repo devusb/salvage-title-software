@@ -37,12 +37,12 @@ Note: Each tool covers its language and stops at the edge. Every one is fine. It
 <p class="eyebrow">Risk</p>
 
 <ul class="gap">
-<li><code>@latest</code></li>
+<li>Lockfiles cover deps, not the tools</li>
 <li>Install hooks run code</li>
-<li>Dependabot watches prod, not you</li>
+<li>Dependabot watches the repo, not your laptop</li>
 </ul>
 
-Note: At-latest: whoever owns the package tomorrow is on your machine tomorrow. Install hooks run code. Shai-Hulud was a postinstall script that stole npm tokens and republished itself. And Dependabot is watching the product repo. Nothing is watching your laptop.
+Note: The lockfiles cover the dependencies. They don't cover uv, nvm, brew, or direnv, which arrive at whatever version and never get scanned. Install hooks still run code; Shai-Hulud was a postinstall script. And Dependabot watches the repo. Nothing watches the toolchain on your laptop.
 
 <!--
 ============================================================
@@ -72,7 +72,7 @@ a different version." Sharper true version if there is ever
 room: your clean plan upgraded the state and broke theirs.
 
 VERIFIED (2026-09-11):
-  - go install pkg@latest ignores the local go.mod/go.sum
+  - (no longer on the slide) go install pkg@latest ignores go.mod/go.sum
     entirely and resolves at install time. go.dev/ref/mod.
   - npm runs preinstall/install/postinstall by default,
     including for npm install -g. docs.npmjs.com/cli/v10/
