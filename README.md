@@ -79,7 +79,7 @@ Reveal is set to 1280x720 so the render is 16:9 like the venue deck.
 | `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |
 | `05-container.md` | 3 | Pattern 3: the container (method, jank, risk) |
 | `06-skills.md` | 3 | Pattern 4: skills and MCP (method, jank, risk + bookend) |
-| `07-take-stock.md` | 1 | xz and IDE extensions — **maybe delete** |
+| `07-take-stock.md` | 1 | xz and IDE extensions |
 | `08-close.md` | 2 | Him (kids moved away), us dark + contact |
 
 Every pattern gets three slides: the logo with the check engine light plus
@@ -125,9 +125,9 @@ small `cel-on.svg` or `cel-off.svg` over its corner; `.logos` is the row of four
 
 ## To verify
 
-- [ ] **VS Code extension compromise.** The abstract says it "breached
-      GitHub itself." Need the source before the sentence in
-      `07-take-stock.md` is written. Nothing goes in the mouth without it.
+- [x] **IDE extension compromise.** Nx Console VS Code extension backdoored
+      for 18 minutes on 2026-05-18; one GitHub employee installed it; ~3,800
+      internal repos taken. Sources in `07` backmatter.
 - [ ] **xz.** CVE-2024-3094, March 2024, liblzma, sshd via the systemd
       notification patch. One sentence.
 - [ ] **`npx -y @scope/server`** with no version fetches latest.
