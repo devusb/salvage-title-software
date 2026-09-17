@@ -4,9 +4,7 @@ Note: This is my father-in-law, Sergejs. He buys salvage-title cars at insurance
 
 ---
 
-<div class="placeholder" style="width: 380px; height: 200px;">
-[GRAPHIC: check engine light icon, amber, lit]
-</div>
+<img src="slides/cel-on.svg" style="height: 240px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
 Note: And on the family's cars, the check engine light is usually still on. Not because he doesn't care. Because if anything goes wrong, he can fix it. So it never gets urgent.
 
@@ -23,9 +21,8 @@ lights on). Same layout on all three: icon over one word.
 
 GRAPHICS NEEDED:
   - (photo done: sergey-grinding.jpg)
-  - check engine light icon, amber, lit. Simple SVG with
-    the light as its own layer. Reused unlit on 02, on
-    every logo in 03-07, and dark in 08.
+  - (done: cel-on.svg, cel-off.svg; the light is its own file,
+    so composites are a logo img plus a small cel img)
 
 COURTESY: make sure Sergejs knows he's on a slide.
 -->

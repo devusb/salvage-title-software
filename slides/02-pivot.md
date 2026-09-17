@@ -1,6 +1,4 @@
-<div class="placeholder" style="width: 380px; height: 200px;">
-[GRAPHIC: check engine light icon, OFF]
-</div>
+<img src="slides/cel-off.svg" style="height: 240px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
 ### Production <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
 
@@ -42,7 +40,7 @@ Pinned.) was rejected as the wrong register. Called back on
 the container risk slide.
 
 GRAPHICS NEEDED:
-  - check engine light icon, unlit.
+  - (done: cel-off.svg)
   - four-logo row with lights. Master composite; each
     pattern slide uses one logo+light from it. Reprised in
     08 lit and dark.

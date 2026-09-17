@@ -85,12 +85,12 @@ Fifteen seconds is about 40 spoken words and about 3 seconds of reading.
 ## Graphics to make
 
 Every slot is marked in the slides with a dashed `.placeholder` box that
-says what goes there. The two photos exist; nothing else does yet.
+says what goes there. The photos and the light exist; the logos do not yet.
 
 | Graphic | Used in | Notes |
 |---|---|---|
 | Father-in-law photo | `01`, `08` | Done: `sergey-grinding.jpg` (open), `sergey-fender.jpg` (close). |
-| Check engine light | `01` lit, `02` unlit, and lit on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
+| Check engine light | `01` lit, `02` unlit, and lit on every logo below | Done: `cel-on.svg`, `cel-off.svg`. Composites are a logo image plus a small `cel-on.svg` positioned over it, not baked files. |
 | Terminal glyph + light | `02`, `03`, `08` | Generic terminal, not a specific shell. |
 | Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |
 | Docker whale + light | `02`, `05`, `08` | |
