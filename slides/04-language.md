@@ -4,16 +4,17 @@
 <div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
-<pre><code class="language-bash">brew install libpq openssl                 # system libs
-curl -LsSf https://astral.sh/uv/install.sh | sh
-uv python install 3.12
-uv sync
-npm install -g @acme/cli                   # node
-go install github.com/acme/tool@latest     # go</code></pre>
+<pre><code class="language-bash">brew install libpq openssl                # system libs
+uv python install 3.12 &amp;&amp; uv sync         # python
+source .venv/bin/activate
+nvm install 20 &amp;&amp; nvm use 20              # node
+npm ci
+go mod download                           # go
+direnv allow                              # glue</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. uv, npm, cargo, go install, whatever your language hands you. It manages the language. A repo is rarely one language, so you usually have two or three of these, each with its own install story.
+Note: Pattern two: language ecosystem tooling. uv, nvm, npm, go mod. A repo is rarely one language, so a working shell is a ritual per language: pick the version, activate, fetch the deps. Then something to glue it together.
 
 ---
 
@@ -23,11 +24,11 @@ Note: Pattern two: language ecosystem tooling. uv, npm, cargo, go install, whate
 
 <ul class="gap">
 <li>Covers the language, not the machine</li>
-<li>Plus apt, brew, a README</li>
-<li>One per language in the repo</li>
+<li>One activation ritual per language</li>
+<li>Glued together by a README</li>
 </ul>
 
-Note: It covers the language, not the machine. uv is great, and libpq and openssl still come from brew, so setup is a README that starts with first, install these. And the package manager itself arrives by curl pipe sh.
+Note: Each tool covers its language and stops at the edge. Every one is fine. It's the seams: three activation models in one shell, system libraries from brew, a README or direnv holding it together. Nothing owns the whole environment.
 
 ---
 
@@ -48,7 +49,11 @@ Note: At-latest: whoever owns the package tomorrow is on your machine tomorrow. 
 BACKMATTER / RAW NOTES
 ============================================================
 
-The thesis of the jank slide is "not all-encompassing." The
+The thesis of this pattern is the seams between language
+tools: each covers its language, and the repo has three of
+them plus system libs, so onboarding is a ritual per
+language glued by a README or direnv. That is the mixed-
+environment problem Flox solves; it stays unnamed. The
 ecosystem tool manages the language and nothing beneath it,
 so the real setup is an amalgam: venv plus apt plus brew
 plus a README. That is the Flox-shaped hole. It stays

@@ -117,8 +117,8 @@ small `cel-on.svg` or `cel-off.svg` over its corner; `.logos` is the row of four
       terraform state version, pip sdist vs wheel. Sources in the slide's
       backmatter. Install-hook example is Shai-Hulud or ua-parser-js, not
       event-stream.
-- [ ] **`uv`** installs via `curl -LsSf https://astral.sh/uv/install.sh | sh`; it is
-      on the slide, so screenshot astral.sh the week of the talk.
+- [ ] **`uv`** installs via `curl -LsSf https://astral.sh/uv/install.sh | sh` (in the
+      backmatter only now; no longer on a slide).
 - [x] **`mise`** installs via `curl https://mise.run | sh`. pyenv and nvm are
       the same shape. asdf is not (Go binary since 0.16); do not name it.
 - [ ] **Sergejs knows he's on a slide.**
