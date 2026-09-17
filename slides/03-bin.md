@@ -18,12 +18,12 @@ Note: This one's mine, I did it for years. Someone posts a shell script in Slack
 <p class="eyebrow">Jank</p>
 
 <ul class="gap">
-<li>Author's tools assumed</li>
-<li>BSD vs GNU</li>
+<li>Bring your own dependencies</li>
+<li>No version, no owner</li>
 <li>Twelve lines. Forty of instructions</li>
 </ul>
 
-Note: It assumes whatever the author had installed. Then sed on a Mac isn't sed on Linux. So the script is twelve lines, and the Slack message explaining how to run it is forty.
+Note: Bring your own dependencies. Whatever it needs, jq, aws, a particular Python, you go find, and the Mac sed isn't the Linux sed. No version, no owner. The script is twelve lines. The message explaining how to run it is forty.
 
 ---
 
