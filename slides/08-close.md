@@ -4,9 +4,7 @@ Note: As the kids grew up and moved away, Sergejs realized he wasn't going to be
 
 ---
 
-<div class="placeholder" style="width: 640px; height: 200px;">
-[GRAPHIC: four logos, lights OFF]
-</div>
+<div class="logos"><div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-off.svg" /></div></div>
 
 github.com/devusb <!-- .element: style="font-size: 0.45em; opacity: 0.7; margin-top: 1em" -->
 
@@ -31,7 +29,6 @@ Cut before this: "Our version is now" (too explicit) and
 Last slide is the dark logos with the contact line. Sits
 through applause.
 
-GRAPHICS NEEDED:
-  - (photo done: sergey-fender.jpg)
-  - four-logo row, lights off
+GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
+cel-off.svg positioned over the mark by .logo CSS.
 -->

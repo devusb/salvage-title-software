@@ -21,6 +21,61 @@
       .reveal h3 {
         text-transform: none;
       }
+      .reveal .logo {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        flex: none;
+      }
+      .reveal .logo img {
+        border: none;
+        box-shadow: none;
+        background: none;
+        margin: 0;
+      }
+      .reveal .logo .mark {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .reveal .logo .cel {
+        position: absolute;
+        width: 84px;
+        right: -22px;
+        bottom: -14px;
+      }
+      .reveal .logo.cluster .mark {
+        position: absolute;
+        width: 72%;
+        height: 72%;
+        left: 14%;
+        top: 24%;
+      }
+      .reveal .logo.cluster .minor {
+        position: absolute;
+        width: 32%;
+        height: 32%;
+        top: 0;
+      }
+      .reveal .logo.cluster .minor.a { left: -4%; }
+      .reveal .logo.cluster .minor.b { right: -4%; }
+      .reveal .logos {
+        display: flex;
+        gap: 2.4em;
+        justify-content: center;
+        align-items: center;
+        margin: 0.6em 0 1.2em 0;
+      }
+      .reveal .logos .logo {
+        width: 150px;
+        height: 150px;
+      }
+      .reveal .logos .logo .cel {
+        width: 64px;
+        right: -16px;
+        bottom: -10px;
+      }
       .reveal pre code {
         font-size: 0.55em;
         line-height: 1.4;

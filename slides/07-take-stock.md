@@ -1,10 +1,6 @@
 <div style="display: flex; gap: 2.5em; justify-content: center; align-items: center; margin-top: 0.4em;">
-<div class="placeholder" style="width: 260px; height: 200px;">
-[GRAPHIC: xz wordmark + light]
-</div>
-<div class="placeholder" style="width: 260px; height: 200px;">
-[GRAPHIC: VS Code logo + light]
-</div>
+<div class="logo"><img class="mark" src="slides/logos/xz.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
+<div class="logo"><img class="mark" src="slides/logos/vscode.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 </div>
 
 ### Did anything change? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
@@ -32,7 +28,6 @@ VERIFY:
     itself" per the abstract. Need Morgan's source before
     the sentence is written.
 
-GRAPHICS NEEDED:
-  - xz wordmark + light
-  - VS Code logo + light
+GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
+cel-off.svg positioned over the mark by .logo CSS.
 -->

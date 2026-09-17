@@ -19,10 +19,8 @@ Splitting them is what made the open fit.
 Light on (no label) -> Production (light off) -> Ours (four
 lights on). Same layout on all three: icon over one word.
 
-GRAPHICS NEEDED:
-  - (photo done: sergey-grinding.jpg)
-  - (done: cel-on.svg, cel-off.svg; the light is its own file,
-    so composites are a logo img plus a small cel img)
+GRAPHICS: done. sergey-grinding.jpg is the photo; the light is
+cel-on.svg.
 
 COURTESY: make sure Sergejs knows he's on a slide.
 -->

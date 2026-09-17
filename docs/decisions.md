@@ -27,3 +27,17 @@ backmatter.
 - Logo composites will be a logo image with a small `cel-on.svg` positioned
   over one corner in HTML, so there is one light asset and no per-logo
   composite files.
+
+## Logos
+
+- Brand marks (Python, npm, Go, Docker) come from Simple Icons 15.22.0
+  (CC0-1.0) via the jsDelivr npm mirror, with `fill="#e6e6e6"` added so they
+  read on the black theme. VS Code is no longer in Simple Icons, so it and
+  xz are plain text SVGs; that slide is a maybe-delete anyway.
+- Terminal and the skills sparkle are hand-drawn so they stay generic rather
+  than pointing at a shell or a vendor.
+- The light is composited in HTML (`.logo` wrapper, `.cel` positioned over
+  the bottom-right corner), not baked into per-logo files. One light asset,
+  and the row on the last slide goes dark by swapping the file name.
+- The ecosystem slot is a `.logo.cluster`: Python large, npm and Go small in
+  the top corners, one light for the group.

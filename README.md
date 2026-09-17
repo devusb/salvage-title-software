@@ -85,22 +85,22 @@ Fifteen seconds is about 40 spoken words and about 3 seconds of reading.
 
 ## Graphics to make
 
-Every slot is marked in the slides with a dashed `.placeholder` box that
-says what goes there. The photos and the light exist; the logos do not yet.
+Nothing is a placeholder any more.
+All slots are filled. Sources and files:
 
 | Graphic | Used in | Notes |
 |---|---|---|
 | Father-in-law photo | `01`, `08` | Done: `sergey-grinding.jpg` (open), `sergey-fender.jpg` (close). |
 | Check engine light | `01` lit, `02` unlit, and lit on every logo below | Done: `cel-on.svg`, `cel-off.svg`. Composites are a logo image plus a small `cel-on.svg` positioned over it, not baked files. |
-| Terminal glyph + light | `02`, `03`, `08` | Generic terminal, not a specific shell. |
-| Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |
-| Docker whale + light | `02`, `05`, `08` | |
-| Sparkle or plug + light | `02`, `06`, `08` | Generic agent/MCP glyph, not a vendor logo. |
-| xz wordmark + light | `07` | |
-| VS Code logo + light | `07` | |
+| Terminal glyph | `02`, `03`, `08` | Drawn: `logos/terminal.svg`. |
+| Python, npm, Go | `02`, `04`, `08` | Simple Icons (CC0), recolored `#e6e6e6`: `logos/python.svg`, `npm.svg`, `go.svg`. Python large, the other two small above it (`.logo.cluster`). |
+| Docker whale | `02`, `05`, `08` | Simple Icons: `logos/docker.svg`. |
+| Sparkle | `02`, `06`, `08` | Drawn: `logos/sparkle.svg`. Generic, not a vendor mark. |
+| xz wordmark | `07` | Text SVG: `logos/xz.svg`. |
+| VS Code wordmark | `07` | Text SVG: `logos/vscode.svg`. Simple Icons no longer carries the mark. |
 
-The four-logo composite is needed lit on `02` and dark on `08`, so the
-light layer must be renderable dark.
+The light is never baked into a logo. A `.logo` wrapper holds the mark and a
+small `cel-on.svg` or `cel-off.svg` over its corner; `.logos` is the row of four.
 
 ## To verify
 

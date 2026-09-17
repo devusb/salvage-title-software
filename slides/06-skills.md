@@ -1,9 +1,7 @@
 ## Skills
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
-<div class="placeholder" style="width: 200px; height: 200px; flex: none;">
-[GRAPHIC: sparkle or plug + light]
-</div>
+<div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="method" style="flex: 1;">
 <p>A markdown file the agent follows. Copied from someone's repo.</p>
 </div>
@@ -51,9 +49,8 @@ Land it and stop; the next slide is the quiet one.
 looking for a binary" was cut for length. Say it if a slide
 runs short.
 
-GRAPHICS NEEDED:
-  - sparkle (agent) or plug (MCP) glyph with the light.
-    Generic, not a vendor logo.
+GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
+cel-off.svg positioned over the mark by .logo CSS.
 
 VERIFY:
   - `npx -y @scope/server` with no version fetches latest.

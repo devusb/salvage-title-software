@@ -8,10 +8,7 @@ Note: We have elaborate release processes for what we ship to users. Cut a relea
 
 ---
 
-<div class="placeholder" style="width: 640px; height: 200px;">
-[GRAPHIC: four logos in a row, each with the light ON]<br/>
-terminal · Python · Docker · sparkle/plug
-</div>
+<div class="logos"><div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-on.svg" /></div></div>
 
 ### Ours <!-- .element: style="font-size: 0.8em; margin-top: 0.6em" -->
 
@@ -39,9 +36,6 @@ ask; the security-team version (Signed. Attested. Scanned.
 Pinned.) was rejected as the wrong register. Called back on
 the container risk slide.
 
-GRAPHICS NEEDED:
-  - (done: cel-off.svg)
-  - four-logo row with lights. Master composite; each
-    pattern slide uses one logo+light from it. Reprised in
-    08 lit and dark.
+GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
+cel-off.svg positioned over the mark by .logo CSS.
 -->

@@ -1,9 +1,7 @@
 ## Ecosystem tooling
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
-<div class="placeholder" style="width: 200px; height: 200px; flex: none;">
-[GRAPHIC: Python forward, npm + Go behind, light]
-</div>
+<div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="method" style="flex: 1;">
 <p><code>pip</code> · <code>venv</code> · <code>npm</code> · <code>nvm</code> · <code>cargo</code> · <code>go install</code></p>
 </div>
@@ -79,7 +77,6 @@ VERIFIED (2026-09-11):
     Nov hit 700+. ua-parser-js: Oct 2021, preinstall. NOT
     event-stream: its payload ran at require() time.
 
-GRAPHICS NEEDED:
-  - Python logo forward, npm and Go smaller behind, light
-    on the group.
+GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
+cel-off.svg positioned over the mark by .logo CSS.
 -->

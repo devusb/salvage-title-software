@@ -1,9 +1,7 @@
 ## Containers
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
-<div class="placeholder" style="width: 200px; height: 200px; flex: none;">
-[GRAPHIC: Docker whale + light]
-</div>
+<div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="method" style="flex: 1;">
 <p><code>devcontainer.json</code> → <code>registry.internal/devenv:latest</code>. Built once.</p>
 </div>
@@ -48,6 +46,6 @@ PROTECT: the inversion line (least scrutiny, most access).
 
 "Prod: promoted" calls back to the caption on 02.
 
-GRAPHICS NEEDED:
-  - Docker whale with the light.
+GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
+cel-off.svg positioned over the mark by .logo CSS.
 -->

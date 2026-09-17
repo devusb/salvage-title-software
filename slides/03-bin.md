@@ -1,9 +1,7 @@
 ## `~/bin`
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
-<div class="placeholder" style="width: 200px; height: 200px; flex: none;">
-[GRAPHIC: terminal + light]
-</div>
+<div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="method" style="flex: 1;">
 <p>Slack → <code>~/bin</code> → PATH. For years.</p>
 </div>
@@ -47,7 +45,6 @@ BACKMATTER / RAW NOTES
 Pattern 1 of 4. The skills risk slide ends on "it's the
 ~/bin script again."
 
-GRAPHICS NEEDED:
-  - terminal glyph with the check engine light. Generic,
-    not a specific shell's logo.
+GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
+cel-off.svg positioned over the mark by .logo CSS.
 -->
