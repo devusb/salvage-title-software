@@ -24,7 +24,7 @@ Note: Pattern four: skills. A skill is a markdown file your coding agent reads a
 
 <ul class="gap">
 <li>Marketplaces are git repos</li>
-<li>HEAD. Latest. A copied file</li>
+<li>Nothing is pinned</li>
 <li>Review = reading markdown</li>
 </ul>
 
