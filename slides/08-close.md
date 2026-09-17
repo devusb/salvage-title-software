@@ -1,6 +1,6 @@
 <img src="slides/sergey-fender.jpg" style="max-height: 620px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
-Note: As the kids grew up and moved away, Sergey realized he wasn't going to be around to fix those cars anymore. So he took inventory, and made all the check engine lights go away.
+Note: As the kids grew up and moved away, Sergejs realized he wasn't going to be around to fix those cars anymore. So he took inventory, and made all the check engine lights go away.
 
 ---
 

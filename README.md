@@ -118,7 +118,7 @@ light layer must be renderable dark.
       event-stream.
 - [x] **`mise`** installs via `curl https://mise.run | sh`. pyenv and nvm are
       the same shape. asdf is not (Go binary since 0.16); do not name it.
-- [ ] **Sergey knows he's on a slide.**
+- [ ] **Sergejs knows he's on a slide.**
 
 ## If it runs long
 

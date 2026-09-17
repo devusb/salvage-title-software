@@ -1,6 +1,6 @@
 <img src="slides/sergey-grinding.jpg" style="max-height: 620px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
-Note: This is my father-in-law, Sergey. He buys salvage-title cars at insurance auction, fixes them up, and sells them. Takes real pride in it. They're good cars when he's done. He does the family's cars too.
+Note: This is my father-in-law, Sergejs. He buys salvage-title cars at insurance auction, fixes them up, and sells them. Takes real pride in it. They're good cars when he's done. He does the family's cars too.
 
 ---
 
@@ -27,5 +27,5 @@ GRAPHICS NEEDED:
     the light as its own layer. Reused unlit on 02, on
     every logo in 03-07, and dark in 08.
 
-COURTESY: make sure Sergey knows he's on a slide.
+COURTESY: make sure Sergejs knows he's on a slide.
 -->
