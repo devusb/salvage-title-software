@@ -3,7 +3,7 @@
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="method" style="flex: 1;">
-<p><code>devcontainer.json</code> → <code>registry.internal/devenv:latest</code>. Built once.</p>
+<p>The dev environment as an image. Built once, pulled forever.</p>
 </div>
 </div>
 
