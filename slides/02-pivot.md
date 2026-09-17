@@ -2,9 +2,9 @@
 
 ### Production <!-- .element: style="font-size: 1.1em; margin-top: 0.6em" -->
 
-Cut. Tagged. Promoted. Shipped. <!-- .element: style="font-size: 0.65em; opacity: 0.7" -->
+Built in CI. Reviewed. Tested. Versioned. <!-- .element: style="font-size: 0.65em; opacity: 0.7" -->
 
-Note: We have elaborate release processes for what we ship to users. Cut a release, tag it, promote one immutable artifact through dev, staging, prod. Never rebuilt. Every light off.
+Note: We take care with what we ship to users. It is built in CI, not on a laptop. Somebody reviewed it. Tests gate it. It has a version, and it can be rolled back. Every light off.
 
 ---
 
@@ -30,11 +30,10 @@ same pattern in myself." Production stays "we"; Ours is
 talk is a confession and this is where it has to be
 unmistakable.
 
-PROVISIONAL: "Cut. Tagged. Promoted. Shipped." Morgan does
-not like this line yet. Release engineer vocabulary was the
-ask; the security-team version (Signed. Attested. Scanned.
-Pinned.) was rejected as the wrong register. Called back on
-the container risk slide.
+CAPTION: "Built in CI. Reviewed. Tested. Versioned." The care
+taken with a prod artifact, in plain words. Earlier versions
+(security terms, release-process verbs) were rejected as the
+wrong register. Called back on the container risk slide.
 
 GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
 cel-off.svg positioned over the mark by .logo CSS.

@@ -58,3 +58,12 @@ backmatter.
   4:3 design filled less than half the 16:9 frame.
 - The off state of the light was brightened (`#343434` fill, `#666`
   stroke) after the first render showed it nearly invisible.
+
+## Production caption
+
+- The line under the unlit light is "Built in CI. Reviewed. Tested.
+  Versioned." Plain words for the care taken with a production artifact.
+  Two earlier sets were rejected: security vocabulary (signed, attested,
+  scanned, pinned) as the wrong register, and release-process verbs (cut,
+  tagged, promoted, shipped) as marketing words that did not all apply.
+  "Owned" was considered and dropped.
