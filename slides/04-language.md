@@ -2,8 +2,15 @@
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
-<div class="method" style="flex: 1;">
-<p><code>pip</code> · <code>venv</code> · <code>npm</code> · <code>nvm</code> · <code>cargo</code> · <code>go install</code></p>
+<div class="code">
+<p class="path">README.md &nbsp;·&nbsp; Getting started</p>
+<pre><code class="language-bash">brew install libpq openssl postgresql@15
+pyenv install 3.11 &amp;&amp; pyenv local 3.11
+python -m venv .venv &amp;&amp; source .venv/bin/activate
+pip install -r requirements.txt
+npm install -g @acme/cli
+./scripts/setup.sh
+./scripts/seed.sh        # in this order</code></pre>
 </div>
 </div>
 

@@ -2,8 +2,15 @@
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
-<div class="method" style="flex: 1;">
-<p>Slack → <code>~/bin</code> → PATH. For years.</p>
+<div class="code">
+<p class="path">~/bin/deploy &nbsp;·&nbsp; pasted in #eng-tools</p>
+<pre><code class="language-bash">#!/bin/bash
+set -e
+export AWS_PROFILE=prod
+TAG=$(git rev-parse --short HEAD)
+sed -i '' "s/__TAG__/$TAG/" k8s/deploy.yaml
+kubectl --context prod apply -f k8s/deploy.yaml
+aws s3 cp k8s/deploy.yaml s3://acme-tools/last.yaml</code></pre>
 </div>
 </div>
 

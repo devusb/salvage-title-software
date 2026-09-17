@@ -61,7 +61,8 @@ Press `S` for the speaker view if you also want the notes on screen. Without
 | `08-close.md` | 2 | Him (kids moved away), us dark + contact |
 
 Every pattern gets three slides: the logo with the check engine light plus
-one line on how it's done, then **Jank**, then **Risk**, each three bullets of
+a short code block showing the artifact (script, README, Dockerfile, SKILL.md)
+with a caption saying where it lives, then **Jank**, then **Risk**, each three bullets of
 two to six words. The why lives in the narration and is always a real reason.
 Jank is what's broken. Risk is what's exposed.
 
@@ -137,7 +138,7 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
   is voiceover.
 - Speaker notes are the actual narration, in prose.
 - Styling is inline per element. `index.html` carries heading sizes and the shared
-  `.placeholder`, `.method`, `.eyebrow`, and `ul.gap` rules and nothing else.
+  `.logo`, `.code`, `.path`, `.eyebrow`, and `ul.gap` rules and nothing else.
 - No fragments. Every slide is static; a concept that needs a reveal gets
   another slide.
 - Each slide file ends in a backmatter comment block with scope notes,
