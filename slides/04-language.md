@@ -38,11 +38,11 @@ Note: Each tool covers its language and stops at the edge. Every one is fine. It
 
 <ul class="gap">
 <li>Lockfiles cover deps, not tools</li>
-<li><code>openssl</code> is whatever brew had that day</li>
+<li>System libs at whatever version</li>
 <li>Scanners cover the repo, not your laptop</li>
 </ul>
 
-Note: The lockfiles cover the dependencies, not uv, nvm, brew, or direnv. Your openssl is whatever brew had the day you ran it, and your Python links against it. Your scanner watches the repo. Nothing watches the tools you installed.
+Note: The lockfiles cover the dependencies, not uv, nvm, brew, or direnv. The system libraries underneath are whatever version brew had that day, and the language links against them. Your scanner watches the repo. Nothing watches the tools you installed.
 
 <!--
 ============================================================
