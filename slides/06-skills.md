@@ -24,11 +24,11 @@ Note: Pattern four: skills. A skill is a markdown file your coding agent reads a
 
 <ul class="gap">
 <li>Marketplaces are git repos</li>
-<li>Nothing is pinned</li>
+<li>Unpinned by default</li>
 <li>Review = reading markdown</li>
 </ul>
 
-Note: Claude Code and Codex have marketplaces now, and a marketplace is a git repo. Anyone can publish, nobody reviews it, and what you get is instructions your agent will run. Review is reading markdown for the line that says fetch and run.
+Note: Claude Code: skills are a folder, marketplaces are git repos, and a plugin is pinned only if its author set a SHA. Codex: skill-installer downloads from a repo and records nothing. The default most people use is unpinned. Review is reading markdown.
 
 ---
 
@@ -59,11 +59,28 @@ runs short.
 GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
 cel-off.svg positioned over the mark by .logo CSS.
 
-VERIFY:
-  - `npx -y @scope/server` with no version fetches latest.
-  - Whether `/plugin install` records a marketplace commit.
-    "Marketplaces are git repos" holds either way.
-  - Claude Code marketplace = a git repo with
-    .claude-plugin/marketplace.json. Confirm against the docs.
-  - Codex has skill/plugin install + update.
+VERIFIED (2026-09-17):
+  Claude Code (code.claude.com/docs/en/plugin-marketplaces,
+  plugins-reference):
+  - A skill is a folder under ~/.claude/skills or
+    .claude/skills, loaded in place. No version.
+  - A marketplace is a git repo (.claude-plugin/
+    marketplace.json). Authors MAY pin a plugin with ref,
+    a 40-char sha, or a version; unpinned git sources track
+    the default branch. The community catalog pins every
+    approved plugin to a commit SHA.
+  - plugin.json version gates updates: users get a new copy
+    only when the author bumps it.
+  Codex (learn.chatgpt.com/docs/build-skills):
+  - Skills live in .agents/skills or ~/.agents/skills.
+    $skill-installer downloads from repos. Docs mention no
+    lockfile or commit tracking.
+  Vercel npx skills (github.com/vercel-labs/skills):
+  - No lockfile. Pin only by putting a ref in the URL.
+
+  So: "nothing is pinned" is false; "unpinned by default"
+  is what the docs support.
+
+STILL TO VERIFY:
+  - npx -y @scope/server with no version fetches latest.
 -->

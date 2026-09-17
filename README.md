@@ -111,9 +111,10 @@ small `cel-on.svg` or `cel-off.svg` over its corner; `.logos` is the row of four
 - [ ] **xz.** CVE-2024-3094, March 2024, liblzma, sshd via the systemd
       notification patch. One sentence.
 - [ ] **`npx -y @scope/server`** with no version fetches latest.
-- [ ] **Claude Code `/plugin install`** — does it record a marketplace
-      commit? "Marketplaces are git repos" holds either way.
-- [ ] **Codex** has skill/plugin install and update.
+- [x] **Claude Code plugin pinning** — authors can pin `ref`/`sha`/`version`;
+      unpinned sources track the default branch. Slide says "unpinned by
+      default", not "nothing is pinned". Sources in `06` backmatter.
+- [x] **Codex** — `$skill-installer` pulls from repos; docs record no version.
 - [x] **Language tooling claims** (`04`): `@latest`, npm lifecycle scripts,
       terraform state version, pip sdist vs wheel. Sources in the slide's
       backmatter. Install-hook example is Shai-Hulud or ua-parser-js, not
