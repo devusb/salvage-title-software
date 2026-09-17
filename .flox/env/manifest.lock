@@ -3,6 +3,9 @@
   "manifest": {
     "schema-version": "1.17.0",
     "install": {
+      "imagemagick": {
+        "pkg-path": "imagemagick"
+      },
       "nodejs": {
         "pkg-path": "nodejs"
       },
@@ -18,6 +21,101 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/i25g5vd4aqhzxk7889d4pap9zxkkymaw-imagemagick-7.1.2-29.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "imagemagick-7.1.2-29",
+      "pname": "imagemagick",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T04:58:20.145890Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.2-29",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/av4vc4vq7x5is9r76l7wld9xwcmcryab-imagemagick-7.1.2-29-dev",
+        "doc": "/nix/store/7h0621qn9k3bq0b3zlni09qhgys8f7ir-imagemagick-7.1.2-29-doc",
+        "out": "/nix/store/v18pbkzg2jsv6c329lc0gk980hjyfmki-imagemagick-7.1.2-29"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/1j92z7whk3ra7x9sq4qa6qk499nsmim6-imagemagick-7.1.2-29.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "imagemagick-7.1.2-29",
+      "pname": "imagemagick",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T05:30:55.262053Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.2-29",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/sr1iad40rbkbaipv4362mgijrj63vd8r-imagemagick-7.1.2-29-dev",
+        "doc": "/nix/store/3vdw59vhcnkv67mlrzmx6x0rckhj5qpa-imagemagick-7.1.2-29-doc",
+        "out": "/nix/store/syzj9cllhq7nhixb4dn707psc2avpn1g-imagemagick-7.1.2-29"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "imagemagick",
+      "broken": false,
+      "derivation": "/nix/store/mqq6dikyj4r6q0hnf1vmms60c0xlyp4h-imagemagick-7.1.2-29.drv",
+      "description": "Software suite to create, edit, compose, or convert bitmap images",
+      "install_id": "imagemagick",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "imagemagick-7.1.2-29",
+      "pname": "imagemagick",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T06:08:02.909330Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "7.1.2-29",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/w9b2wk875bnzmr10v5yflccfizrff7iy-imagemagick-7.1.2-29-dev",
+        "doc": "/nix/store/8l8324nl8l7az72xgvckyp1hs1lgj3m2-imagemagick-7.1.2-29-doc",
+        "out": "/nix/store/1fj0wg21ba24hv612yg4kqwzxbnyappm-imagemagick-7.1.2-29"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "nodejs",
       "broken": false,
@@ -99,6 +197,7 @@
       "unfree": false,
       "version": "24.19.0",
       "outputs_to_install": [
+        "out",
         "out",
         "out"
       ],

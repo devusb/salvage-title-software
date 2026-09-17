@@ -85,11 +85,11 @@ Fifteen seconds is about 40 spoken words and about 3 seconds of reading.
 ## Graphics to make
 
 Every slot is marked in the slides with a dashed `.placeholder` box that
-says what goes there. None exist yet.
+says what goes there. The two photos exist; nothing else does yet.
 
 | Graphic | Used in | Notes |
 |---|---|---|
-| Father-in-law photo | `01`, `08` | Morgan has this. Full bleed, no text. Same photo both times, or a second one for `08`. |
+| Father-in-law photo | `01`, `08` | Done: `sergey-grinding.jpg` (open), `sergey-fender.jpg` (close). |
 | Check engine light | `01` lit, `02` unlit, and lit on every logo below | Amber. Simple SVG with the light as its own layer. The one asset the whole deck reuses. |
 | Terminal glyph + light | `02`, `03`, `08` | Generic terminal, not a specific shell. |
 | Python (+ npm, Go behind) + light | `02`, `04`, `08` | Python forward, the other two smaller. |
@@ -118,7 +118,7 @@ light layer must be renderable dark.
       event-stream.
 - [x] **`mise`** installs via `curl https://mise.run | sh`. pyenv and nvm are
       the same shape. asdf is not (Go binary since 0.16); do not name it.
-- [ ] **Father-in-law knows he's on a slide.**
+- [ ] **Sergey knows he's on a slide.**
 
 ## If it runs long
 

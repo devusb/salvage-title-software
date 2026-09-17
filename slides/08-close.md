@@ -1,7 +1,4 @@
-<div class="placeholder" style="width: 640px; height: 380px; margin-top: 0.4em;">
-[GRAPHIC: father-in-law photo, reprise]<br/>
-Same photo as 01, or a second one.
-</div>
+<img src="slides/sergey-fender.jpg" style="max-height: 620px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
 Note: As the kids grew up and moved away, Sergey realized he wasn't going to be around to fix those cars anymore. So he took inventory, and made all the check engine lights go away.
 
@@ -35,6 +32,6 @@ Last slide is the dark logos with the contact line. Sits
 through applause.
 
 GRAPHICS NEEDED:
-  - father-in-law photo reprise
+  - (photo done: sergey-fender.jpg)
   - four-logo row, lights off
 -->
