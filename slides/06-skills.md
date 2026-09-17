@@ -38,11 +38,11 @@ Note: Claude Code: skills are a folder, marketplaces are git repos, and a plugin
 
 <ul class="gap">
 <li>Runs as you. "You" is an agent</li>
-<li>No payload. A sentence</li>
+<li>Prompt injection, not malware</li>
 <li><strong>It's the <code>~/bin</code> script again</strong></li>
 </ul>
 
-Note: It runs as you, except you're now an agent holding your credentials. A malicious skill doesn't need a payload. It needs a sentence. It's the tilde-bin script again: prose from the internet, in a directory the tool searches, run as you.
+Note: It runs as you, except you're now an agent with your credentials. The risk is prompt injection, not malware: a skill is text, and text can say fetch this and run it. Your EDR is looking for a binary. It's the tilde-bin script again.
 
 <!--
 ============================================================
@@ -52,8 +52,8 @@ BACKMATTER / RAW NOTES
 The bookend is the last bullet of the risk slide, bold.
 Land it and stop; the next slide is the quiet one.
 
-"Nothing in your stack sees this layer / your EDR is
-looking for a binary" was cut for length. Say it if a slide
+"Nothing in your stack sees this layer" was cut for length;
+the EDR line is back in the narration. Say the rest if a slide
 runs short.
 
 GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
