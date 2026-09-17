@@ -44,6 +44,28 @@ The report is one line per slide: seconds spoken, margin against 15, and
 Press `S` for the speaker view if you also want the notes on screen. Without
 `?practice` nothing ever advances on its own.
 
+## Exporting
+
+devopsdays wants exactly 20 slides as PPT or static images; they combine all
+ignites into one PowerPoint and auto-advance it. The deck exports as one
+full-bleed 1920x1080 image per slide with the narration in the speaker
+notes, so nothing depends on fonts and the notes reach the confidence monitor.
+
+```bash
+flox services start
+cd out && decktape reveal http://localhost:3000/ salvage-title-software.pdf \
+  --size 1920x1080 --screenshots --screenshots-directory png \
+  --screenshots-size 1920x1080 && cd ..
+./mkpptx out/png out/salvage-title-software.pptx
+```
+
+Outputs in `out/` (ignored by git): the PDF, `png/` with one image per slide,
+and the PPTX. Run decktape from inside `out/`; it builds the screenshot path
+from the PDF path. `mkpptx` reads each slide's `Note:` text from `slides/*.md`
+in order and refuses to run if the image and note counts differ.
+
+Reveal is set to 1280x720 so the render is 16:9 like the venue deck.
+
 ## Structure
 
 20 slides, all static, 15 seconds each.
@@ -131,7 +153,8 @@ narration in each `Note:` is already at the budget; treat it as a ceiling.
 
 ## Conventions
 
-Matches `nixos-handheld-talk` and `nix-k8s-talk`:
+Matches `nixos-handheld-talk` and `nix-k8s-talk`, plus `mkpptx` alongside
+the handheld deck's `mkgif`:
 
 - Slide titles are flat descriptive labels, not jokes. Bits go in the
   speaker's mouth, not on the slide.

@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+"""Build a PPTX from decktape screenshots, one full-bleed image per slide,
+with each slide's Note: text as PowerPoint speaker notes.
+
+usage: mkpptx <png-dir> <out.pptx>
+"""
+import re
+import sys
+from pathlib import Path
+
+from pptx import Presentation
+from pptx.util import Inches
+
+SEP = re.compile(r"^\n---\n$", re.M)
+NOTE = re.compile(r"^Note:\s*(.*?)(?=\n\n|\n<!--|\Z)", re.S | re.M)
+
+
+def notes():
+    out = []
+    for f in sorted(Path("slides").glob("*.md")):
+        for chunk in SEP.split(f.read_text()):
+            m = NOTE.search(chunk)
+            out.append(m.group(1).strip() if m else "")
+    return out
+
+
+def slide_index(p):
+    return int(re.search(r"_(\d+)_", p.name).group(1))
+
+
+png_dir, out = Path(sys.argv[1]), sys.argv[2]
+pngs = sorted(png_dir.glob("*.png"), key=slide_index)
+texts = notes()
+if len(pngs) != len(texts):
+    sys.exit(f"{len(pngs)} images but {len(texts)} slides of notes")
+
+prs = Presentation()
+prs.slide_width = Inches(13.333)
+prs.slide_height = Inches(7.5)
+blank = prs.slide_layouts[6]
+for png, text in zip(pngs, texts):
+    s = prs.slides.add_slide(blank)
+    s.shapes.add_picture(str(png), 0, 0, prs.slide_width, prs.slide_height)
+    s.notes_slide.notes_text_frame.text = text
+prs.save(out)
+print(f"{len(pngs)} slides -> {out}")

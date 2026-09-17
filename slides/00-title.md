@@ -1,8 +1,8 @@
 # Salvage Title Software <!-- .element: style="font-size: 0.85em" -->
 
-### How we ship to ourselves <!-- .element: style="font-size: 0.75em" -->
+### How we ship to ourselves <!-- .element: style="font-size: 0.9em" -->
 
-Morgan Helton · Flox · github.com/devusb <!-- .element: style="font-size: 0.5em; opacity: 0.8" -->
+Morgan Helton · Flox · github.com/devusb <!-- .element: style="font-size: 0.6em; opacity: 0.8" -->
 
 Note: I'm Morgan, I'm an engineer at Flox. Twenty slides, fifteen seconds each, so this moves. I want to tell you about my father-in-law.
 

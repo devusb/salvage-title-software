@@ -1,4 +1,4 @@
-<img src="slides/sergey-fender.jpg" style="max-height: 620px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<img src="slides/sergey-fender.jpg" style="max-height: 660px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
 Note: As the kids grew up and moved away, Sergejs realized he wasn't going to be around to fix those cars anymore. So he took inventory, and made all the check engine lights go away.
 
@@ -6,7 +6,7 @@ Note: As the kids grew up and moved away, Sergejs realized he wasn't going to be
 
 <div class="logos"><div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-off.svg" /></div></div>
 
-github.com/devusb <!-- .element: style="font-size: 0.45em; opacity: 0.7; margin-top: 1em" -->
+github.com/devusb <!-- .element: style="font-size: 0.55em; opacity: 0.7; margin-top: 1em" -->
 
 Note: Similar deal here. Everything I showed you works, and I can fix any of it, which is exactly why I haven't. I'm going to go turn some of mine off. Thanks.
 

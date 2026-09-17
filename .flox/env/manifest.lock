@@ -3,11 +3,21 @@
   "manifest": {
     "schema-version": "1.17.0",
     "install": {
+      "decktape": {
+        "pkg-path": "decktape",
+        "systems": [
+          "aarch64-linux",
+          "x86_64-linux"
+        ]
+      },
       "imagemagick": {
         "pkg-path": "imagemagick"
       },
       "nodejs": {
         "pkg-path": "nodejs"
+      },
+      "python-pptx": {
+        "pkg-path": "python313Packages.python-pptx"
       },
       "serve": {
         "pkg-path": "serve"
@@ -21,6 +31,64 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "decktape",
+      "broken": false,
+      "derivation": "/nix/store/nwz0jb18xyli0fqh6mb9jj3fpi6zf7xm-decktape-3.16.1.drv",
+      "description": "High-quality PDF exporter for HTML presentation frameworks",
+      "install_id": "decktape",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "decktape-3.16.1",
+      "pname": "decktape",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T05:30:34.101478Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.16.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/345mql50s3pchllpvbw1whrg7pkyrbyn-decktape-3.16.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "decktape",
+      "broken": false,
+      "derivation": "/nix/store/rlhk0zynaf2iqgcyyyic6jak7c4r2kpb-decktape-3.16.1.drv",
+      "description": "High-quality PDF exporter for HTML presentation frameworks",
+      "install_id": "decktape",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "decktape-3.16.1",
+      "pname": "decktape",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T06:07:40.974957Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.16.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cwkrgbmpjqp64x5r7yf4yhfzxll1156n-decktape-3.16.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "imagemagick",
       "broken": false,
@@ -203,6 +271,96 @@
       ],
       "outputs": {
         "out": "/nix/store/lfaydgacdyngci7p60s8wwvgdm74fjkx-nodejs-24.19.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.python-pptx",
+      "broken": false,
+      "derivation": "/nix/store/89vakmkx4wpnjhhlkzn2gh7f0knk658j-python3.13-python-pptx-1.0.2.drv",
+      "description": "Create Open XML PowerPoint documents in Python",
+      "install_id": "python-pptx",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "python3.13-python-pptx-1.0.2",
+      "pname": "python-pptx",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T04:59:00.924364Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/c5n5bnhzxxqlspvkx9sv9jmsk8wfb5wm-python3.13-python-pptx-1.0.2-dist",
+        "out": "/nix/store/0cikg911g1lfj6lpblnyarjfv9m04lyb-python3.13-python-pptx-1.0.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.python-pptx",
+      "broken": false,
+      "derivation": "/nix/store/p6q5fx6nl2agz23zhdx5r1ww84j2130n-python3.13-python-pptx-1.0.2.drv",
+      "description": "Create Open XML PowerPoint documents in Python",
+      "install_id": "python-pptx",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "python3.13-python-pptx-1.0.2",
+      "pname": "python-pptx",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T05:31:55.458534Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/n91ax7vwvcycbnpqikx1yj4443fhm69x-python3.13-python-pptx-1.0.2-dist",
+        "out": "/nix/store/pwlkmmi1067il5gpc0np671dp7g9c6a0-python3.13-python-pptx-1.0.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.python-pptx",
+      "broken": false,
+      "derivation": "/nix/store/bm4di7gnbi9npp8w1l311s043659fqm0-python3.13-python-pptx-1.0.2.drv",
+      "description": "Create Open XML PowerPoint documents in Python",
+      "install_id": "python-pptx",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d6524aaca2ff07876657ae2b323f24be4874944b",
+      "name": "python3.13-python-pptx-1.0.2",
+      "pname": "python-pptx",
+      "rev": "d6524aaca2ff07876657ae2b323f24be4874944b",
+      "rev_count": 1069856,
+      "rev_date": "2026-09-08T15:35:43Z",
+      "scrape_date": "2026-09-09T06:09:06.463089Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/hxsqyk39cgbwcc95yczj29fa4nyx1bhy-python3.13-python-pptx-1.0.2-dist",
+        "out": "/nix/store/4vkm8w2jqg1b3kfrd02qy7npv04lfjkq-python3.13-python-pptx-1.0.2"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

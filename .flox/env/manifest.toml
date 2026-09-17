@@ -4,6 +4,9 @@ schema-version = "1.17.0"
 nodejs.pkg-path = "nodejs"
 serve.pkg-path = "serve"
 imagemagick.pkg-path = "imagemagick"
+decktape.pkg-path = "decktape"
+decktape.systems = ["aarch64-linux", "x86_64-linux"]
+python-pptx.pkg-path = "python313Packages.python-pptx"
 
 [services]
 slides.command = "npx serve ."

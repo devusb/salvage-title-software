@@ -43,3 +43,18 @@ backmatter.
   and the row on the last slide goes dark by swapping the file name.
 - The ecosystem slot is a `.logo.cluster`: Python large, npm and Go small in
   the top corners, one light for the group.
+
+## Export
+
+- devopsdays accepts PPT or static images and combines ignites into one
+  PowerPoint. The deck exports as one full-bleed 1920x1080 PNG per slide
+  inside a 16:9 PPTX, with each slide's narration as PowerPoint speaker
+  notes. Images avoid font substitution; notes are how the narration gets
+  onto the venue's confidence monitor.
+- decktape renders the PNGs and a PDF; `mkpptx` (python-pptx) assembles the
+  PPTX. Both come from nixpkgs through the flox environment.
+- Reveal moved from its 960x700 default to 1280x720 so the render matches
+  the venue's aspect ratio. Sizes were then scaled up about 30% because the
+  4:3 design filled less than half the 16:9 frame.
+- The off state of the light was brightened (`#343434` fill, `#666`
+  stroke) after the first render showed it nearly invisible.

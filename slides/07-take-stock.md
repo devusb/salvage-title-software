@@ -1,15 +1,15 @@
 <div style="display: flex; gap: 4em; justify-content: center; align-items: flex-start; margin-top: 0.6em;">
 <div style="text-align: center;">
-<img src="slides/cel-on.svg" style="height: 150px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
-<p style="font-size: 0.75em; margin: 0.5em 0 0 0;"><code>xz</code></p>
+<img src="slides/cel-on.svg" style="height: 200px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<p style="font-size: 0.95em; margin: 0.5em 0 0 0;"><code>xz</code></p>
 </div>
 <div style="text-align: center;">
-<img src="slides/cel-on.svg" style="height: 150px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
-<p style="font-size: 0.75em; margin: 0.5em 0 0 0;">IDE extensions</p>
+<img src="slides/cel-on.svg" style="height: 200px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<p style="font-size: 0.95em; margin: 0.5em 0 0 0;">IDE extensions</p>
 </div>
 </div>
 
-### Did anything change? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
+### Did anything change? <!-- .element: style="font-size: 0.9em; margin-top: 0.8em" -->
 
 Note: xz: two years earning trust to backdoor a library that sshd links. [VERIFY: one sentence on the IDE extension compromise, with source.] Neither was broken. They worked perfectly, for someone else. Did anything change? Do you have good sandbox hygiene? I don't.
 

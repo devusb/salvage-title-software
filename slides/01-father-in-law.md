@@ -1,10 +1,10 @@
-<img src="slides/sergey-grinding.jpg" style="max-height: 620px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<img src="slides/sergey-grinding.jpg" style="max-height: 660px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
 Note: This is my father-in-law, Sergejs. He buys salvage-title cars at insurance auction, fixes them up, and sells them. Takes real pride in it. They're good cars when he's done. He does the family's cars too.
 
 ---
 
-<img src="slides/cel-on.svg" style="height: 240px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<img src="slides/cel-on.svg" style="height: 300px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
 
 Note: And on the family's cars, the check engine light is usually still on. Not because he doesn't care. Because if anything goes wrong, he can fix it. So it never gets urgent.
 
