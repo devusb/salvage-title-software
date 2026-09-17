@@ -5,7 +5,7 @@
 
 ### Did anything change? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
 
-Note: These should have been the moment. xz: two years earning trust to backdoor a library that sshd links. [VERIFY: one sentence on the VS Code extension compromise, with source.] Jank turns the light on. These weren't broken. They worked perfectly, for someone else. How many of you changed anything?
+Note: xz: two years earning trust to backdoor a library that sshd links. [VERIFY: one sentence on the IDE extension compromise, with source.] Neither was broken. They worked perfectly, for someone else. Did anything change? Do you have good sandbox hygiene? I don't.
 
 <!--
 ============================================================
