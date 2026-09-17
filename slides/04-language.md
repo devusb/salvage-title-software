@@ -77,6 +77,10 @@ VERIFIED (2026-09-11):
   - npm runs preinstall/install/postinstall by default,
     including for npm install -g. docs.npmjs.com/cli/v10/
     using-npm/scripts.
+  - uv creates .venv by default; docs.astral.sh/uv/pip/
+    environments shows `source .venv/bin/activate` as the
+    activation command. `uv run` is the no-activate
+    alternative; the slide shows activate on purpose.
   - uv:    curl -LsSf https://astral.sh/uv/install.sh | sh
     (screenshot astral.sh the week of the talk)
   - mise:  curl https://mise.run | sh
