@@ -57,7 +57,7 @@ Press `S` for the speaker view if you also want the notes on screen. Without
 | `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |
 | `05-container.md` | 3 | Pattern 3: the container (method, jank, risk) |
 | `06-skills.md` | 3 | Pattern 4: skills and MCP (method, jank, risk + bookend) |
-| `07-take-stock.md` | 1 | xz and VS Code — **maybe delete** |
+| `07-take-stock.md` | 1 | xz and IDE extensions — **maybe delete** |
 | `08-close.md` | 2 | Him (kids moved away), us dark + contact |
 
 Every pattern gets three slides: the logo with the check engine light plus
@@ -98,7 +98,7 @@ All slots are filled. Sources and files:
 | Docker whale | `02`, `05`, `08` | Simple Icons: `logos/docker.svg`. |
 | Sparkle | `02`, `06`, `08` | Drawn: `logos/sparkle.svg`. Generic, not a vendor mark. |
 | xz wordmark | `07` | Text SVG: `logos/xz.svg`. |
-| VS Code wordmark | `07` | Text SVG: `logos/vscode.svg`. Simple Icons no longer carries the mark. |
+| IDE extensions wordmark | `07` | Text SVG: `logos/extensions.svg`. General term for the VS Code extension compromise. |
 
 The light is never baked into a logo. A `.logo` wrapper holds the mark and a
 small `cel-on.svg` or `cel-off.svg` over its corner; `.logos` is the row of four.

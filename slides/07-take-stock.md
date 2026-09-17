@@ -1,6 +1,6 @@
 <div style="display: flex; gap: 2.5em; justify-content: center; align-items: center; margin-top: 0.4em;">
-<div class="logo"><img class="mark" src="slides/logos/xz.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
-<div class="logo"><img class="mark" src="slides/logos/vscode.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
+<div class="logo wide"><img class="mark" src="slides/logos/xz.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
+<div class="logo wide"><img class="mark" src="slides/logos/extensions.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 </div>
 
 ### Did anything change? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
