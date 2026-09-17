@@ -1,6 +1,12 @@
-<div style="display: flex; gap: 2.5em; justify-content: center; align-items: center; margin-top: 0.4em;">
-<div class="logo wide"><img class="mark" src="slides/logos/xz.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
-<div class="logo wide"><img class="mark" src="slides/logos/extensions.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
+<div style="display: flex; gap: 4em; justify-content: center; align-items: flex-start; margin-top: 0.6em;">
+<div style="text-align: center;">
+<img src="slides/cel-on.svg" style="height: 150px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<p style="font-size: 0.75em; margin: 0.5em 0 0 0;"><code>xz</code></p>
+</div>
+<div style="text-align: center;">
+<img src="slides/cel-on.svg" style="height: 150px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<p style="font-size: 0.75em; margin: 0.5em 0 0 0;">IDE extensions</p>
+</div>
 </div>
 
 ### Did anything change? <!-- .element: style="font-size: 0.7em; margin-top: 0.8em" -->
@@ -28,6 +34,6 @@ VERIFY:
     itself" per the abstract. Need Morgan's source before
     the sentence is written.
 
-GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
-cel-off.svg positioned over the mark by .logo CSS.
+GRAPHICS: done. Two lights over plain text, same layout as
+the Production and Ours slides. No wordmark files.
 -->

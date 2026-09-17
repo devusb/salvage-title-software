@@ -97,8 +97,6 @@ All slots are filled. Sources and files:
 | Python, npm, Go | `02`, `04`, `08` | Simple Icons (CC0), recolored `#e6e6e6`: `logos/python.svg`, `npm.svg`, `go.svg`. Python large, the other two small above it (`.logo.cluster`). |
 | Docker whale | `02`, `05`, `08` | Simple Icons: `logos/docker.svg`. |
 | Sparkle | `02`, `06`, `08` | Drawn: `logos/sparkle.svg`. Generic, not a vendor mark. |
-| xz wordmark | `07` | Text SVG: `logos/xz.svg`. |
-| IDE extensions wordmark | `07` | Text SVG: `logos/extensions.svg`. General term for the VS Code extension compromise. |
 
 The light is never baked into a logo. A `.logo` wrapper holds the mark and a
 small `cel-on.svg` or `cel-off.svg` over its corner; `.logos` is the row of four.

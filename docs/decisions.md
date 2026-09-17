@@ -33,8 +33,9 @@ backmatter.
 - Brand marks (Python, npm, Go, Docker) come from Simple Icons 15.22.0
   (CC0-1.0) via the jsDelivr npm mirror, with `fill="#e6e6e6"` added so they
   read on the black theme. VS Code is no longer in Simple Icons, and "VS Code" alone
-  named a product rather than the thing that happened, so it and xz
-  are plain text SVGs reading "xz" and "IDE extensions".
+  named a product rather than the thing that happened. That slide now
+  uses the light over plain text ("xz", "IDE extensions") and has no
+  wordmark files.
 - Terminal and the skills sparkle are hand-drawn so they stay generic rather
   than pointing at a shell or a vendor.
 - The light is composited in HTML (`.logo` wrapper, `.cel` positioned over
