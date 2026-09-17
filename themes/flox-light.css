@@ -1,0 +1,731 @@
+/* ─────────────────────────────────────────────────────────────
+   Flox — NixCon 2026 reveal.js theme
+   Derived from the "Bring Nix to Work" deck template.
+
+   Light "paper" base with gradient "stage" slides for the title
+   and section breaks. Brand rules: Geist + Geist Mono, off-black
+   #1b1b1b (never #000), accent gradient 91deg #8247ff → #f47bff,
+   radii 12/16/24px, no emoji.
+
+   Drop-in replacement for theme.css — every class the deck already
+   uses (.huge .accent .quiet .bars .stack …) is supported here,
+   remapped to the light palette. Switch in mkslides.yml:
+       slides:
+         theme: theme-nixcon.css
+   ───────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
+
+:root {
+  /* surfaces */
+  --ink: #1b1b1b;
+  --paper: #fbf9fd;
+  --surface: #f3eefb;
+  --surface-2: #ece2fa;
+  --border: #e1d5f4;
+  --muted: #6c6478;
+  --stage-ink: #0d0b12;
+
+  /* brand */
+  --purple: #8247ff;
+  --pink: #f47bff;
+  --violet-deep: #5a19bf;
+  --violet-mid: #7c2ae0;
+  --lilac: #a841f2;
+  --magenta: #d25de9;
+
+  /* semantic — negative-direction data only */
+  --harm: #e84d3d;
+  --harm-deep: #4a1c1c;
+
+  --grad-accent: linear-gradient(91deg, #8247ff, #f47bff);
+  --grad-stage: linear-gradient(305deg, #5a19bf 0%, #7c2ae0 32%, #a841f2 62%, #d25de9 100%);
+
+  --shadow-card: 0 1px 2px rgba(27, 27, 27, .04), 0 10px 24px rgba(90, 25, 191, .08);
+  --shadow-btn:
+    0 1px 0 rgba(255, 255, 255, .35) inset,
+    0 0 0 1px rgba(130, 71, 255, .35),
+    0 2px 4px rgba(130, 71, 255, .28),
+    0 8px 16px rgba(130, 71, 255, .22),
+    0 18px 30px rgba(244, 123, 255, .18),
+    0 28px 46px rgba(130, 71, 255, .14);
+
+  --font-display: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* ── base ──────────────────────────────────────────────────── */
+
+.reveal,
+.reveal-viewport,
+html, body {
+  background-color: var(--paper) !important;
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  background-color: transparent;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 30px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 40px 80px;
+  box-sizing: border-box;
+}
+
+/* ── stage slides ──────────────────────────────────────────────
+   Opt in with reveal's slide-attribute comment, anywhere in the
+   slide's Markdown:
+       <!-- .slide: class="stage" -->
+   Use for the title, section breaks, and the closing slide.
+   ──────────────────────────────────────────────────────────── */
+
+.reveal .slides section.stage {
+  color: #fff;
+}
+.reveal-viewport:has(.slides section.present.stage),
+.reveal:has(.slides section.present.stage) {
+  background: var(--grad-stage) !important;
+}
+.reveal .slides section.stage h1,
+.reveal .slides section.stage h2,
+.reveal .slides section.stage h3,
+.reveal .slides section.stage strong {
+  color: #fff !important;
+}
+.reveal .slides section.stage .quiet {
+  color: rgba(255, 255, 255, .78);
+}
+.reveal .slides section.stage .lede {
+  color: rgba(255, 255, 255, .86);
+}
+/* gradient-on-gradient doesn't read — flip the accent to a pale tint */
+.reveal .slides section.stage .accent,
+.reveal .slides section.stage .highlight {
+  background: none;
+  -webkit-text-fill-color: initial;
+  color: #ffe2ff;
+  text-shadow: none;
+}
+.reveal .slides section.stage a {
+  color: #ffe2ff;
+}
+.reveal .slides section.stage code {
+  background: rgba(255, 255, 255, .14);
+  color: #fff;
+}
+
+/* ── type ──────────────────────────────────────────────────── */
+
+.reveal h1,
+.reveal h2 {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.04;
+  text-transform: none;
+  text-wrap: balance;
+}
+.reveal h1 {
+  font-size: 76px;
+  letter-spacing: -0.045em;
+}
+.reveal h2 {
+  font-size: 46px;
+  letter-spacing: -0.03em;
+}
+/* h3 stays ink, not violet: the accent span is the only coloured
+   thing in a headline (brand rule — one word per headline in the
+   gradient). A violet h3 next to a gradient accent reads as two
+   competing purples. */
+.reveal h3 {
+  font-size: 32px;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+
+/* strong stays ink — never let bold read as the accent */
+.reveal strong,
+.reveal h1 strong,
+.reveal h2 strong,
+.reveal h3 strong,
+.reveal blockquote strong,
+.reveal section strong {
+  color: var(--ink) !important;
+  font-weight: 800;
+}
+
+.reveal .huge {
+  font-size: 92px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  display: inline-block;
+}
+
+/* The signature move: one word per headline in the gradient. */
+.reveal .accent,
+.reveal .highlight {
+  background: var(--grad-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 24px rgba(130, 71, 255, .22);
+}
+
+/* muted captions / sources */
+.reveal .quiet {
+  color: var(--muted);
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+/* eyebrow label above a headline */
+.reveal .kicker {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin: 0 0 18px;
+}
+
+/* supporting paragraph under a headline */
+.reveal .lede {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Flox × NixOS lockup — white artwork, so it belongs on stage slides.
+   On a paper slide it gets knocked down to ink like the footer mark. */
+.reveal .lockup {
+  height: 52px;
+  width: auto;
+  margin: 0 auto 40px;
+  display: block;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.reveal .slides section:not(.stage) .lockup {
+  filter: invert(1) brightness(.35);
+}
+
+/* pill used on section-break slides */
+.reveal .step-badge {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: rgba(255, 255, 255, .72);
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 999px;
+  padding: 6px 16px;
+  display: inline-block;
+  margin-bottom: 26px;
+  letter-spacing: .04em;
+}
+
+/* ── links ─────────────────────────────────────────────────── */
+
+.reveal a {
+  color: var(--violet-mid);
+  text-decoration: none;
+}
+.reveal a:hover {
+  color: var(--magenta);
+}
+.reveal .source-link,
+.reveal .source-link:visited {
+  color: var(--muted) !important;
+  text-decoration: underline;
+  text-decoration-color: #b9aecd;
+  text-decoration-style: dotted;
+}
+.reveal .source-link:hover {
+  color: var(--purple) !important;
+  text-decoration-color: var(--purple);
+  text-decoration-style: solid;
+}
+.reveal .slides section.stage .source-link,
+.reveal .slides section.stage .source-link:visited {
+  color: rgba(255, 255, 255, .72) !important;
+  text-decoration-color: rgba(255, 255, 255, .4);
+}
+
+/* ── code ──────────────────────────────────────────────────── */
+
+.reveal code,
+.reveal pre,
+.reveal kbd {
+  font-family: var(--font-mono);
+  letter-spacing: -0.2px;
+}
+/* Code blocks keep the dark terminal treatment — it reads as a
+   real shell against the paper, and matches the template. */
+.reveal pre {
+  background-color: var(--stage-ink);
+  border: none;
+  border-radius: 16px;
+  text-align: left;
+  margin: 24px auto;
+  max-width: 92%;
+  box-shadow: 0 20px 50px rgba(90, 25, 191, .18);
+  width: auto;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.reveal pre code {
+  color: #e8e2f2;
+  background-color: transparent;
+  padding: 24px 26px;
+  max-height: none;
+  white-space: pre;
+}
+.reveal code {
+  color: var(--violet-deep);
+  background-color: var(--surface);
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+
+/* explicit terminal component */
+.reveal .terminal {
+  background: var(--stage-ink);
+  border-radius: 16px;
+  padding: 28px 30px;
+  box-shadow: 0 20px 50px rgba(90, 25, 191, .18);
+  font-family: var(--font-mono);
+  font-size: 20px;
+  line-height: 2;
+  color: #e8e2f2;
+  margin: 20px auto;
+  text-align: left;
+  max-width: 92%;
+}
+.reveal .terminal .prompt  { color: #c39bff; }
+.reveal .terminal .comment { color: #8a8195; }
+.reveal .terminal .ok      { color: #7fe0a8; }
+
+/* ── blockquote ────────────────────────────────────────────── */
+
+.reveal blockquote {
+  border-left: 4px solid transparent;
+  border-image: var(--grad-accent) 1;
+  padding-left: 24px;
+  font-style: italic;
+  background: transparent;
+  box-shadow: none;
+  width: auto;
+  margin: 24px auto;
+  text-align: left;
+  max-width: 90%;
+}
+
+/* ── tables ────────────────────────────────────────────────── */
+
+.reveal table {
+  color: var(--ink);
+  margin: 24px auto;
+  border-collapse: collapse;
+}
+.reveal table th,
+.reveal table td {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  text-align: left;
+}
+.reveal table th {
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* left-aligned mapping table (nix concept → flox equivalent) */
+.reveal .map-table {
+  width: 100%;
+  text-align: left;
+}
+.reveal .map-table td { font-size: 20px; vertical-align: top; }
+.reveal .map-table td:first-child {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--violet-mid);
+  width: 38%;
+}
+.reveal .map-table tr:last-child td { border-bottom: none; }
+
+/* ── bar charts ────────────────────────────────────────────── */
+
+.reveal .bars {
+  margin: 32px auto;
+  max-width: 92%;
+}
+.reveal .bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 16px;
+}
+.reveal .bar-label {
+  width: 320px;
+  text-align: right;
+  color: var(--muted);
+  flex-shrink: 0;
+  font-size: 22px;
+}
+.reveal .bar-track {
+  flex: 1;
+  height: 44px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.reveal .bar-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--violet-mid), var(--lilac));
+  border-radius: 11px;
+}
+.reveal .bar-peak .bar-fill {
+  background: var(--grad-accent);
+  box-shadow: 0 0 24px rgba(244, 123, 255, .35);
+}
+.reveal .bar-value {
+  min-width: 100px;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+/* negative-direction data — distinct from the brand violet so the
+   room reads "this is bad" without ambiguity */
+.reveal .bar-harm .bar-fill {
+  background: linear-gradient(90deg, var(--harm-deep), var(--harm)) !important;
+  box-shadow: 0 0 24px rgba(232, 77, 61, .22);
+}
+.reveal .bar-harm .bar-value { color: var(--harm); }
+
+.reveal .bar-fill.w-31  { width: 31.4% !important; }
+.reveal .bar-fill.w-34  { width: 34.2% !important; }
+.reveal .bar-fill.w-42  { width: 42%   !important; }
+.reveal .bar-fill.w-43  { width: 43.2% !important; }
+.reveal .bar-fill.w-49  { width: 49%   !important; }
+.reveal .bar-fill.w-60  { width: 59.8% !important; }
+.reveal .bar-fill.w-77  { width: 77.2% !important; }
+.reveal .bar-fill.w-82  { width: 82%   !important; }
+.reveal .bar-fill.w-97  { width: 97%   !important; }
+.reveal .bar-fill.w-100 { width: 100%  !important; }
+
+/* ── stacked-layer diagram ─────────────────────────────────── */
+
+.reveal .stack {
+  margin: 24px auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.reveal .stack-layer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-family: var(--font-mono);
+  font-size: 24px;
+  letter-spacing: -0.01em;
+}
+.reveal .stack-layer.ai {
+  background: linear-gradient(90deg, rgba(130, 71, 255, .14), rgba(244, 123, 255, .06));
+  border-left: 5px solid var(--purple);
+  color: var(--ink);
+}
+.reveal .stack-layer.substrate {
+  background: var(--surface);
+  border-left: 5px solid var(--border);
+  color: var(--muted);
+}
+.reveal .stack-name { font-weight: 700; }
+.reveal .stack-note {
+  font-size: 19px;
+  color: var(--muted);
+}
+.reveal .stack-layer.ai .stack-note { color: var(--violet-mid); }
+.reveal .stack-divider {
+  margin: 12px auto 4px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 15px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-family: var(--font-display);
+}
+.reveal .stack-divider::before,
+.reveal .stack-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── template components ───────────────────────────────────── */
+
+/* numbered agenda */
+.reveal .agenda-list {
+  list-style: none;
+  margin: 8px auto 0;
+  padding: 0;
+  text-align: left;
+  max-width: 90%;
+}
+.reveal .agenda-list li {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.reveal .agenda-list li:first-child { border-top: 1px solid var(--border); }
+.reveal .agenda-list .num {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--purple);
+}
+
+/* card row */
+.reveal .card-row {
+  display: flex;
+  gap: 28px;
+  margin-top: 8px;
+  text-align: left;
+}
+.reveal .pain-card {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.reveal .pain-card h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.reveal .pain-card p {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.reveal .pain-card .mark { width: 34px; height: 34px; }
+
+/* two columns */
+.reveal .two-col {
+  display: flex;
+  gap: 56px;
+  margin-top: 8px;
+  text-align: left;
+}
+.reveal .two-col .col { flex: 1; }
+.reveal .two-col .col-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+  display: block;
+}
+.reveal .two-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.reveal .two-col li {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-left: 22px;
+  position: relative;
+}
+.reveal .two-col li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--grad-accent);
+}
+
+/* step flow */
+.reveal .flow {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  text-align: left;
+}
+.reveal .flow-box {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 22px;
+  box-shadow: var(--shadow-card);
+}
+.reveal .flow-box .step-no {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--purple);
+  letter-spacing: .08em;
+}
+.reveal .flow-box h4 {
+  margin: 10px 0 8px;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.reveal .flow-box p {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.reveal .flow-arrow {
+  flex: 0 0 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lilac);
+}
+
+/* primary button / call to action */
+.reveal .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--grad-accent);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 14px 26px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-btn);
+  text-decoration: none;
+  margin-top: 24px;
+  letter-spacing: -0.01em;
+}
+
+/* ── persistent brand footer ───────────────────────────────────
+   Drawn on the deck container so it sits still while slides move.
+   The mark ships as white artwork, so it is knocked down to ink
+   on paper slides and left white on stage slides.
+   ──────────────────────────────────────────────────────────── */
+
+.reveal::before {
+  content: "";
+  position: absolute;
+  left: 34px;
+  bottom: 26px;
+  width: 13px;
+  height: 16px;
+  background: url(assets/flox-mark.png) center / contain no-repeat;
+  filter: invert(1) brightness(.35);
+  opacity: .55;
+  z-index: 30;
+  pointer-events: none;
+}
+.reveal::after {
+  content: "flox.dev";
+  position: absolute;
+  left: 55px;
+  bottom: 24px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  opacity: .55;
+  z-index: 30;
+  pointer-events: none;
+}
+.reveal:has(.slides section.present.stage)::before {
+  filter: none;
+  opacity: .8;
+}
+.reveal:has(.slides section.present.stage)::after {
+  color: #fff;
+  opacity: .8;
+}
+
+/* explicit in-slide brandmark, if a slide wants its own */
+.reveal .brandmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: .55;
+}
+.reveal .brandmark img { width: 16px; height: 20px; display: block; }
+.reveal .brandmark span {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+/* ── reveal chrome ─────────────────────────────────────────── */
+
+.reveal .progress {
+  color: var(--purple);
+  height: 4px;
+}
+.reveal .progress span {
+  background: var(--grad-accent);
+  border-radius: 0 3px 3px 0;
+}
+.reveal .controls { color: var(--purple); }
+.reveal:has(.slides section.present.stage) .controls { color: #fff; }
+
+.reveal .slide-number {
+  background-color: transparent;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+.reveal:has(.slides section.present.stage) .slide-number {
+  color: rgba(255, 255, 255, .7);
+}
+
+/* speaker notes live in the speaker window only */
+.reveal aside.notes { display: none; }

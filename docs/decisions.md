@@ -67,3 +67,13 @@ backmatter.
   scanned, pinned) as the wrong register, and release-process verbs (cut,
   tagged, promoted, shipped) as marketing words that did not all apply.
   "Owned" was considered and dropped.
+
+## Theme
+
+- The deck uses the Flox dark reveal theme from
+  `~/code/marketing/presentations/nixcon-2026-ron/slides/theme.css`, copied
+  to `themes/flox-dark.css` and loaded over reveal's black theme. Geist,
+  `#0c0c0c` background, violet accent on h3. The light "paper" variant is
+  in `themes/flox-light.css` and reachable with `?theme=flox-light`;
+  `?theme=none` gives the plain reveal black theme. Logos are inverted by
+  CSS under the light theme only.

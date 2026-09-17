@@ -161,7 +161,8 @@ the handheld deck's `mkgif`:
 - No first person in slide text, except the label "Ours" on `02`. Commentary
   is voiceover.
 - Speaker notes are the actual narration, in prose.
-- Styling is inline per element. `index.html` carries heading sizes and the shared
+- Theme is `themes/flox-dark.css` (the Flox marketing deck theme) over reveal's
+  black theme. Styling is inline per element. `index.html` carries heading sizes and the shared
   `.logo`, `.code`, `.path`, `.eyebrow`, and `ul.gap` rules and nothing else.
 - No fragments. Every slide is static; a concept that needs a reveal gets
   another slide.

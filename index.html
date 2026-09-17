@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
     <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css" />
     <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css" />
+    <script>
+      const theme = new URLSearchParams(location.search).get("theme") || "flox-dark";
+      if (theme !== "none") {
+        document.documentElement.classList.add("theme-" + theme);
+        document.write(`<link rel="stylesheet" href="themes/${theme}.css" />`);
+      }
+    </script>
     <style>
       .reveal h1 {
         font-size: 2em;
@@ -96,6 +103,7 @@
         right: -20px;
         bottom: -12px;
       }
+      .theme-flox-light .reveal .logo .mark { filter: invert(0.88); }
       .reveal pre code {
         font-size: 0.55em;
         line-height: 1.4;

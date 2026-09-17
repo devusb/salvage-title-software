@@ -1,0 +1,320 @@
+/* ─────────────────────────────────────────────────────────────
+   We Like Things Predictable. So Does AI.
+   JCON & MakeIT Portorož, Slovenia 2026 — reveal.js theme
+   Flox brand: bg #0c0c0c, accent #af54ff, Geist font.
+   ───────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
+
+/* Reveal container */
+.reveal,
+.reveal-viewport,
+html, body {
+  background-color: #0c0c0c !important;
+  color: #ffffff;
+  font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* All slides centered (the "lead" treatment from Marp, now default) */
+.reveal .slides section,
+.reveal .slides section > section {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 40px 80px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+.reveal h1,
+.reveal h2 {
+  color: #ffffff;
+  font-family: "Geist", sans-serif;
+  font-weight: 600;
+  line-height: 1.05;
+  text-transform: none;
+}
+.reveal h1 {
+  font-size: 64px;
+  letter-spacing: -0.04em;
+}
+.reveal h2 {
+  font-size: 48px;
+  letter-spacing: -0.035em;
+}
+.reveal h3 {
+  font-size: 36px;
+  color: #af54ff;
+  font-family: "Geist", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-transform: none;
+}
+
+/* strong stays white (deliberate read-trap avoidance) */
+.reveal strong,
+.reveal h1 strong,
+.reveal h2 strong,
+.reveal h3 strong,
+.reveal blockquote strong,
+.reveal section strong {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+/* Display sizes */
+.reveal .huge {
+  font-size: 96px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  display: inline-block;
+}
+
+/* Single accent color */
+.reveal .accent {
+  color: #af54ff;
+}
+
+/* Muted captions / sources */
+.reveal .quiet {
+  color: #9b9b9b;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+}
+
+/* Blockquotes */
+.reveal blockquote {
+  border-left: 4px solid #af54ff;
+  padding-left: 24px;
+  font-style: italic;
+  background: transparent;
+  box-shadow: none;
+  width: auto;
+  margin: 24px auto;
+  text-align: left;
+  max-width: 90%;
+}
+
+/* Code */
+.reveal code,
+.reveal pre,
+.reveal kbd {
+  font-family: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: -0.2px;
+}
+.reveal pre {
+  background-color: #1b1b1b;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  text-align: left;
+  margin: 24px auto;
+  max-width: 92%;
+  box-shadow: none;
+  width: auto;
+  font-size: 24px;
+  line-height: 1.4;
+}
+.reveal pre code {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 20px;
+  max-height: none;
+  white-space: pre;
+}
+.reveal code {
+  color: #ffffff;
+  background-color: #1b1b1b;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Tables */
+.reveal table {
+  color: #ffffff;
+  margin: 24px auto;
+  border-collapse: collapse;
+}
+.reveal table th,
+.reveal table td {
+  border-color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  padding: 12px 20px;
+  text-align: left;
+}
+.reveal table th {
+  background-color: #1b1b1b;
+}
+
+/* Links */
+.reveal a {
+  color: #af54ff;
+}
+.reveal a:hover {
+  color: #f47bff;
+}
+
+/* Source links — muted, dotted underline */
+.reveal .source-link,
+.reveal .source-link:visited {
+  color: #888 !important;
+  text-decoration: underline;
+  text-decoration-color: #555;
+  text-decoration-style: dotted;
+}
+.reveal .source-link:hover {
+  color: #af54ff !important;
+  text-decoration-color: #af54ff;
+  text-decoration-style: solid;
+}
+
+/* Bar charts */
+.reveal .bars {
+  margin: 32px auto;
+  max-width: 92%;
+}
+.reveal .bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 16px;
+}
+.reveal .bar-label {
+  width: 320px;
+  text-align: right;
+  color: #bbb;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+.reveal .bar-track {
+  flex: 1;
+  height: 44px;
+  background: #1b1b1b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.reveal .bar-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #5a2691, #af54ff);
+  border-radius: 4px;
+}
+.reveal .bar-peak .bar-fill {
+  background: linear-gradient(90deg, #af54ff, #f47bff);
+  box-shadow: 0 0 24px rgba(244, 123, 255, 0.4);
+}
+.reveal .bar-fill.w-31 { width: 31.4% !important; }
+.reveal .bar-fill.w-34 { width: 34.2% !important; }
+.reveal .bar-fill.w-43 { width: 43.2% !important; }
+.reveal .bar-fill.w-60 { width: 59.8% !important; }
+.reveal .bar-fill.w-77 { width: 77.2% !important; }
+.reveal .bar-fill.w-82 { width: 82.0% !important; }
+.reveal .bar-fill.w-49 { width: 49.0% !important; }
+.reveal .bar-fill.w-100 { width: 100% !important; }
+.reveal .bar-fill.w-97 { width: 97% !important; }
+.reveal .bar-fill.w-42 { width: 42% !important; }
+
+/* "Harm" bar variant — semantic warning color for negative-direction data.
+   Used sparingly (skills swing slide). Distinct from the violet accent so
+   the audience reads it as "this is bad" without ambiguity. */
+.reveal .bar-harm .bar-fill {
+  background: linear-gradient(90deg, #4a1c1c, #e84d3d) !important;
+  box-shadow: 0 0 24px rgba(232, 77, 61, 0.25);
+}
+.reveal .bar-harm .bar-value {
+  color: #e84d3d;
+}
+.reveal .bar-value {
+  min-width: 100px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+/* Stacked-layer diagram (slide: "What's actually moving underneath your AI?") */
+.reveal .stack {
+  margin: 24px auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.reveal .stack-layer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-family: "Geist Mono", monospace;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+}
+.reveal .stack-layer.ai {
+  background: linear-gradient(90deg,
+    rgba(175, 84, 255, 0.18),
+    rgba(175, 84, 255, 0.05));
+  border-left: 5px solid #af54ff;
+  color: #ffffff;
+}
+.reveal .stack-layer.substrate {
+  background: #161616;
+  border-left: 5px solid #333;
+  color: #777;
+}
+.reveal .stack-name {
+  font-weight: 600;
+}
+.reveal .stack-note {
+  font-size: 20px;
+  color: #9b9b9b;
+}
+.reveal .stack-layer.ai .stack-note {
+  color: #af54ff;
+}
+.reveal .stack-divider {
+  margin: 12px auto 4px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #666;
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-family: "Geist", sans-serif;
+}
+.reveal .stack-divider::before,
+.reveal .stack-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #333;
+}
+
+/* Reveal progress bar — match accent */
+.reveal .progress {
+  color: #af54ff;
+}
+.reveal .progress span {
+  background: #af54ff;
+}
+
+/* Reveal controls */
+.reveal .controls {
+  color: #af54ff;
+}
+
+/* Slide number */
+.reveal .slide-number {
+  background-color: rgba(27, 27, 27, 0.6);
+  color: #888;
+  font-family: "Geist Mono", monospace;
+}
+
+/* Speaker notes styling (only visible in speaker view) */
+.reveal aside.notes {
+  display: none;
+}
