@@ -39,17 +39,18 @@ Note: Claude Code: skills are a folder, marketplaces are git repos, and a plugin
 <ul class="gap">
 <li>An agent, with your credentials</li>
 <li>Payload is text, not a binary</li>
-<li><strong>It's the <code>~/bin</code> script again</strong></li>
+<li><strong>It's the shell script again</strong></li>
 </ul>
 
-Note: It runs as you, except now it's an agent with your credentials. If a skill is malicious, the payload is text: an instruction to fetch and run something. Your EDR is looking for a binary. It's the tilde-bin script again.
+Note: It runs as you, except now it's an agent with your credentials. If a skill is malicious, the payload is text: an instruction to fetch and run something. Your EDR is looking for a binary. It's the shell script again.
 
 <!--
 ============================================================
 BACKMATTER / RAW NOTES
 ============================================================
 
-The bookend is the last bullet of the risk slide, bold.
+The bookend ("the shell script again") is the last bullet of
+the risk slide, bold.
 Land it and stop; the next slide is the quiet one.
 
 "Nothing in your stack sees this layer" was cut for length;

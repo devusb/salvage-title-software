@@ -1,4 +1,4 @@
-## `~/bin`
+## Shell scripts
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
@@ -18,7 +18,7 @@ Note: This one's mine, I did it for years. Someone posts a shell script in Slack
 
 ---
 
-## `~/bin`
+## Shell scripts
 
 <p class="eyebrow">Jank</p>
 
@@ -32,7 +32,7 @@ Note: Bring your own dependencies. Whatever it needs, jq, aws, a particular Pyth
 
 ---
 
-## `~/bin`
+## Shell scripts
 
 <p class="eyebrow">Risk</p>
 
@@ -50,7 +50,7 @@ BACKMATTER / RAW NOTES
 ============================================================
 
 Pattern 1 of 4. The skills risk slide ends on "it's the
-~/bin script again."
+shell script again."
 
 GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
 cel-off.svg positioned over the mark by .logo CSS.
