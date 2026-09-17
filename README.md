@@ -144,5 +144,5 @@ Matches `nixos-handheld-talk` and `nix-k8s-talk`:
   another slide.
 - Each slide file ends in a backmatter comment block with scope notes,
   graphics needed, and things to verify.
-- Goonco and any other former employer stay in the narration, not on
+- Former employers stay in the narration if they appear at all, never on
   the slide.

@@ -4,17 +4,16 @@
 <div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
-<pre><code class="language-bash">brew install libpq openssl postgresql@15
+<pre><code class="language-bash">brew install libpq openssl                 # system libs
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install 3.12
 uv sync
-npm install -g @acme/cli
-./scripts/setup.sh
-./scripts/seed.sh        # in this order</code></pre>
+npm install -g @acme/cli                   # node
+go install github.com/acme/tool@latest     # go</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. uv, npm, cargo, go install, whatever your language hands you. I worked somewhere the dev environment was a virtualenv and a stack of scripts you ran in order. Get the order wrong, start over.
+Note: Pattern two: language ecosystem tooling. uv, npm, cargo, go install, whatever your language hands you. It manages the language. A repo is rarely one language, so you usually have two or three of these, each with its own install story.
 
 ---
 
@@ -25,10 +24,10 @@ Note: Pattern two: language ecosystem tooling. uv, npm, cargo, go install, whate
 <ul class="gap">
 <li>Covers the language, not the machine</li>
 <li>Plus apt, brew, a README</li>
-<li>Package manager for the package manager</li>
+<li>One per language in the repo</li>
 </ul>
 
-Note: It covers the language, not the machine. uv is great, and you still need libpq and twenty things from brew first, so setup is a README: install these, in this order. And the package manager itself arrives by curl pipe sh.
+Note: It covers the language, not the machine. uv is great, and libpq and openssl still come from brew, so setup is a README that starts with first, install these. And the package manager itself arrives by curl pipe sh.
 
 ---
 
@@ -58,7 +57,9 @@ unnamed; the title slide says Flox and that is enough.
 Jank slide is the heaviest in the deck at 17 words. If it
 has to lose one, the third bullet goes to narration only.
 
-Goonco stays in the mouth. Python leads; no Rust beyond the
+No scripts on this slide: setup.sh is pattern one. The
+Goonco venv-plus-scripts story blends the two patterns, so
+it is out of this narration. Python leads; no Rust beyond the
 cargo mention.
 
 Terraform "which version" beat survives as "every laptop's
