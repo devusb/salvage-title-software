@@ -5,16 +5,16 @@
 <div class="code">
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
 <pre><code class="language-bash">brew install libpq openssl postgresql@15
-pyenv install 3.11 &amp;&amp; pyenv local 3.11
-python -m venv .venv &amp;&amp; source .venv/bin/activate
-pip install -r requirements.txt
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv python install 3.12
+uv sync
 npm install -g @acme/cli
 ./scripts/setup.sh
 ./scripts/seed.sh        # in this order</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. pip, virtualenvs, npm, nvm, cargo, whatever your language hands you. I worked somewhere the dev environment was a virtualenv and a stack of scripts you ran in order. Get the order wrong, start over.
+Note: Pattern two: language ecosystem tooling. uv, npm, cargo, go install, whatever your language hands you. I worked somewhere the dev environment was a virtualenv and a stack of scripts you ran in order. Get the order wrong, start over.
 
 ---
 
@@ -28,7 +28,7 @@ Note: Pattern two: language ecosystem tooling. pip, virtualenvs, npm, nvm, cargo
 <li>Package manager for the package manager</li>
 </ul>
 
-Note: It covers the language, not the machine. You still need libpq, a compiler, twenty things from brew, so setup is a README: first, install these. Every laptop's a different version, so: a version manager for the package manager, via curl pipe sh.
+Note: It covers the language, not the machine. uv is great, and you still need libpq and twenty things from brew first, so setup is a README: install these, in this order. And the package manager itself arrives by curl pipe sh.
 
 ---
 
@@ -71,6 +71,8 @@ VERIFIED (2026-09-11):
   - npm runs preinstall/install/postinstall by default,
     including for npm install -g. docs.npmjs.com/cli/v10/
     using-npm/scripts.
+  - uv:    curl -LsSf https://astral.sh/uv/install.sh | sh
+    (screenshot astral.sh the week of the talk)
   - mise:  curl https://mise.run | sh
     pyenv: curl https://pyenv.run | bash
     nvm:   curl -o- .../install.sh | bash
