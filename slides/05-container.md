@@ -8,8 +8,7 @@ RUN apt-get update &amp;&amp; apt-get install -y \
       python3-pip nodejs npm
 RUN curl -fsSL https://sh.rustup.rs | sh -s -- -y
 RUN pip install -r requirements.txt
-RUN npm install -g @acme/devtools
-RUN curl -fsSL https://mise.run | sh</code></pre>
+RUN npm install -g @acme/devtools</code></pre>
 </div>
 
 Note: Pattern three, the one that's supposed to be the fix. Here's the Dockerfile. From ubuntu latest, apt-get everything, curl pipe sh, pip, npm. The last two slides, baked into one image. And this is genuinely good. Reproducible, one-click onboarding.
