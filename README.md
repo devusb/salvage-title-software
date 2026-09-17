@@ -27,7 +27,8 @@ Press `Esc` for the overview.
 http://localhost:3000/?practice
 ```
 
-Auto-advances every 15 seconds with a short tick, and shows a counter in the
+Nothing moves until you press `0` or click **start** in the corner. Then it
+auto-advances every 15 seconds with a short tick, and shows a counter in the
 corner: slide number, seconds left on this slide, total elapsed.
 
 - `M` marks the end of your narration for the current slide. Press it on your
@@ -35,7 +36,7 @@ corner: slide number, seconds left on this slide, total elapsed.
   you finish and it counts against the slide you overran.
 - `P` pauses and resumes (red outline while paused).
 - `R` shows the report early; it appears on its own after the last slide.
-- `0`, or the button in the corner, restarts the run from slide one.
+- `0`, or the button in the corner, starts the run, or restarts it from slide one.
 
 The report is one line per slide: seconds spoken, margin against 15, and
 `tight` or `OVER`. Copy it and paste it back to get graded on pacing.

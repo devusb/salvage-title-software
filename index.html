@@ -93,6 +93,7 @@
         const budget = () => parseInt(Reveal.getCurrentSlide().dataset.timing || Reveal.getConfig().defaultTiming, 10);
         let timer = null;
         let paused = false;
+        let started = false;
         let pausedAt = 0;
         let slideStart = 0;
         let runStart = 0;
@@ -186,12 +187,16 @@
         hud.style.cssText = "position:fixed;right:14px;bottom:10px;font:14px/1.35 monospace;color:#aaa;background:rgba(0,0,0,.55);padding:6px 10px;border-radius:4px;z-index:50;text-align:right;white-space:pre";
         const hudText = document.createElement("span");
         const restartBtn = document.createElement("button");
-        restartBtn.textContent = "restart";
+        restartBtn.textContent = "start";
         restartBtn.style.cssText = "display:block;margin:6px 0 0 auto;font:12px monospace;background:#333;color:#ccc;border:1px solid #555;border-radius:3px;padding:2px 8px;cursor:pointer";
         restartBtn.onclick = () => { restartBtn.blur(); restart(); };
         hud.append(hudText, restartBtn);
         document.body.appendChild(hud);
         setInterval(() => {
+          if (!started) {
+            hudText.textContent = "practice mode\n0 or start to begin";
+            return;
+          }
           if (!log.length) return;
           const now = paused ? pausedAt : performance.now();
           const left = Math.max(0, budget() - (now - slideStart) / 1000);
@@ -212,16 +217,17 @@
           document.body.style.outline = "";
           log.length = 0;
           runStart = 0;
+          started = true;
+          restartBtn.textContent = "restart";
           const atStart = Reveal.getIndices().h === 0 && Reveal.getIndices().v === 0;
           Reveal.slide(0, 0);
           if (atStart) enter();
         }
 
-        Reveal.on("ready", enter);
-        Reveal.on("slidechanged", enter);
+        Reveal.on("slidechanged", () => { if (started) enter(); });
         Reveal.addKeyBinding({ keyCode: 77, key: "M", description: "Mark end of narration" }, mark);
         Reveal.addKeyBinding({ keyCode: 82, key: "R", description: "Show practice report" }, report);
-        Reveal.addKeyBinding({ keyCode: 48, key: "0", description: "Restart practice run" }, restart);
+        Reveal.addKeyBinding({ keyCode: 48, key: "0", description: "Start or restart practice run" }, restart);
         Reveal.addKeyBinding({ keyCode: 80, key: "P", description: "Pause/resume practice timer" }, () => {
           if (paused) {
             const delta = performance.now() - pausedAt;
