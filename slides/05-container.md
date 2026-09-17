@@ -37,7 +37,7 @@ Note: Somebody built it by hand and pushed it to latest, so nobody knows which c
 <p class="eyebrow">Risk</p>
 
 <ul class="gap">
-<li>Prod: built in CI. Dev: pushed from a laptop</li>
+<li>Prod: scanned. Dev: pushed from a laptop</li>
 <li>Mounts <code>~</code>. Credentials included</li>
 <li>Least scrutiny, most access</li>
 </ul>
@@ -51,7 +51,7 @@ BACKMATTER / RAW NOTES
 
 PROTECT: the inversion line (least scrutiny, most access).
 
-"Prod: built in CI" calls back to the caption on 02.
+"Prod: scanned" calls back to the caption on 02.
 
 GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
 cel-off.svg positioned over the mark by .logo CSS.

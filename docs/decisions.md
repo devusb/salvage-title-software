@@ -61,7 +61,7 @@ backmatter.
 
 ## Production caption
 
-- The line under the unlit light is "Built in CI. Reviewed. Tested.
+- The line under the unlit light is "Reviewed. Scanned. Tested.
   Versioned." Plain words for the care taken with a production artifact.
   Two earlier sets were rejected: security vocabulary (signed, attested,
   scanned, pinned) as the wrong register, and release-process verbs (cut,

@@ -2,9 +2,9 @@
 
 ### Production <!-- .element: style="font-size: 1.1em; margin-top: 0.6em" -->
 
-Built in CI. Reviewed. Tested. Versioned. <!-- .element: style="font-size: 0.65em; opacity: 0.7" -->
+Reviewed. Scanned. Tested. Versioned. <!-- .element: style="font-size: 0.65em; opacity: 0.7" -->
 
-Note: We take care with what we ship to users. It is built in CI, not on a laptop. Somebody reviewed it. Tests gate it. It has a version, and it can be rolled back. Every light off.
+Note: We take care with what we ship to users. Somebody reviewed it. It gets scanned. Tests gate it. It has a version, and it can be rolled back. It was built in CI, not on a laptop. Every light off.
 
 ---
 
@@ -30,7 +30,7 @@ same pattern in myself." Production stays "we"; Ours is
 talk is a confession and this is where it has to be
 unmistakable.
 
-CAPTION: "Built in CI. Reviewed. Tested. Versioned." The care
+CAPTION: "Reviewed. Scanned. Tested. Versioned." The care
 taken with a prod artifact, in plain words. Earlier versions
 (security terms, release-process verbs) were rejected as the
 wrong register. Called back on the container risk slide.
