@@ -4,14 +4,14 @@
 <div class="logo cluster"><img class="minor a" src="slides/logos/go.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
-<pre><code class="language-bash">brew install libpq                        # psycopg2 won't build
+<pre><code class="language-bash">direnv allow                              # loads .envrc
+brew install libpq                        # psycopg2 won't build
 poetry install                            # python
 source $(poetry env info --path)/bin/activate
 go mod tidy                               # go
 helm repo add acme https://charts.acme.dev
 helm upgrade --install journal -n dev \
-  -f values-dev.yaml acme/journal
-direnv allow                              # glue</code></pre>
+  -f values-dev.yaml acme/journal</code></pre>
 </div>
 </div>
 
@@ -29,7 +29,7 @@ Note: Pattern two: language ecosystem tooling. I worked on a repo where setup to
 <li>Glued together by a README</li>
 </ul>
 
-Note: Each tool covers its language and stops at the edge. Every one is fine. It's the seams: three activation models in one shell, system libraries from brew, a README or direnv holding it together. Nothing owns the whole environment.
+Note: Each tool covers its language and stops at the edge. Every one is fine. It's the seams: three activation models in one shell, system libraries from brew, direnv on top to load the rest. Nothing owns the whole environment.
 
 ---
 
