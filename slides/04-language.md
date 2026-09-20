@@ -1,21 +1,21 @@
 ## Ecosystem tooling
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
-<div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
+<div class="logo cluster"><img class="minor a" src="slides/logos/go.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
 <pre><code class="language-bash">brew install libpq                        # psycopg2 won't build
 poetry install                            # python
 source $(poetry env info --path)/bin/activate
-nvm install 20 &amp;&amp; npm ci                  # node
-terraform init                            # terraform
+go mod tidy                               # go
+helm repo add prometheus-community https://…/helm-charts
 helm upgrade --install prometheus-operator -n monitoring \
   -f values.yaml prometheus-community/prometheus-operator
 direnv allow                              # glue</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry, activate it, and psycopg2 would not build without libpq from brew. The prometheus operator by helm, a hundred and fifty times.
+Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry, activate it, psycopg2 would not build without libpq from brew. The prometheus operator, a hundred and fifty times.
 
 ---
 
@@ -43,7 +43,7 @@ Note: Each tool covers its language and stops at the edge. Every one is fine. It
 <li>Scanners cover the repo, not your laptop</li>
 </ul>
 
-Note: Half of what that README installs is in no lockfile: brew, nvm, the terraform binary. And helm. I went back through my own history: four hundred twenty-nine helm upgrades, a hundred thirty-seven with a version pinned. Two-thirds of my cluster deploys were at-latest.
+Note: Half of what that README installs is in no lockfile: brew, the helm repo, direnv. And helm. I went back through my own history: four hundred twenty-nine helm upgrades, a hundred thirty-seven with a version pinned. Two-thirds of my cluster deploys were at-latest.
 
 <!--
 ============================================================

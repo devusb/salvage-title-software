@@ -96,3 +96,11 @@ backmatter.
   representative, not from history; it replaced a real wget-and-untar of a
   binary because a binary is not a shell script. The slide's caption is
   just `~/bin` for that reason, not "from my shell history".
+- Terraform is not on the ecosystem slide. `terraform init` pins providers
+  in `.terraform.lock.hcl`, so it contradicts the slide's claim; its real
+  tell (`apply -var-file` from a laptop, 64 times in history) is a fifth
+  pattern the deck has no slot for. Helm stays: unpinned repos, no
+  `--version` on 292 of 429 upgrades, no lockfile for installed charts.
+- Node left the ecosystem block for Go: nvm never appears in history and
+  npm barely does, while `go mod tidy` and `go run` are constant. The logo
+  cluster is Python, Go, Kubernetes.

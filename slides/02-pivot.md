@@ -8,7 +8,7 @@ Note: We take care with what we ship to users. Somebody reviewed it. It gets sca
 
 ---
 
-<div class="logos"><div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-on.svg" /></div></div>
+<div class="logos"><div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo cluster"><img class="minor a" src="slides/logos/go.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-on.svg" /></div><div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-on.svg" /></div></div>
 
 ### Ours <!-- .element: style="font-size: 1.1em; margin-top: 0.6em" -->
 
