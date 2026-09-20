@@ -78,7 +78,7 @@ Reveal is set to 1280x720 so the render is 16:9 like the venue deck.
 | `03-bin.md` | 3 | Pattern 1: shell scripts (method, jank, risk) |
 | `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |
 | `05-container.md` | 3 | Pattern 3: the container (method, jank, risk) |
-| `06-skills.md` | 3 | Pattern 4: skills and MCP (method, jank, risk + bookend) |
+| `06-skills.md` | 3 | Pattern 4: skills (method, jank, risk ending on "Skills are software") |
 | `07-take-stock.md` | 1 | xz and Nx Console |
 | `08-close.md` | 2 | Him (kids moved away), us dark + contact |
 
@@ -92,8 +92,9 @@ The close is him (photo), then us with the lights off and the contact line.
 Lighthearted; the metaphor is never explained and nothing is asked of the
 room.
 
-Pattern 1 and pattern 4 are the same pattern; the last bullet of the skills
-risk slide is "it's the shell script again."
+Pattern 1 and pattern 4 are the same pattern; the skills risk narration says
+"it's the shell script again" and the slide's last bullet is the talk's assertion,
+"Skills are software."
 
 ## Word budget
 
