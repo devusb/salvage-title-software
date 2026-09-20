@@ -38,7 +38,7 @@ Note: Claude Code: skills are a folder, marketplaces are git repos, and a plugin
 
 <ul class="gap">
 <li>An agent, with your credentials</li>
-<li>The program is written in English</li>
+<li>No scanner reads English</li>
 <li><strong>Skills are software</strong></li>
 </ul>
 
