@@ -3,18 +3,17 @@
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
-<p class="path">Dockerfile</p>
-<pre><code class="language-dockerfile">FROM ubuntu:latest
-RUN apt-get update &amp;&amp; apt-get install -y \
-      build-essential git curl jq \
-      python3-pip nodejs npm
-RUN curl -fsSL https://sh.rustup.rs | sh -s -- -y
-RUN pip install -r requirements.txt
-RUN npm install -g @acme/devtools</code></pre>
+<p class="path">docker run &nbsp;·&nbsp; from my shell history</p>
+<pre><code class="language-bash">aws ecr get-login-password | docker login --password-stdin $ECR
+docker pull registry.internal/platform/vmware-build:latest
+docker run --rm -it \
+  -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  registry.internal/platform/vmware-build:latest</code></pre>
 </div>
 </div>
 
-Note: Pattern three, the one that's supposed to be the fix. Everyone has one; I've had several. From ubuntu latest, apt-get everything, curl pipe sh, pip, npm. The last two slides, baked into one image. And it's genuinely good.
+Note: Pattern three, the one that's supposed to be the fix. Everyone has one; I've had several. This one I pulled twelve times, at latest, with my AWS keys passed in and the docker socket mounted, because that's what made it work.
 
 ---
 

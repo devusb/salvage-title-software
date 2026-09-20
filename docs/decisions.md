@@ -77,3 +77,18 @@ backmatter.
   in `themes/flox-light.css` and reachable with `?theme=flox-light`;
   `?theme=none` gives the plain reveal black theme. Logos are inverted by
   CSS under the light theme only.
+
+## Real examples from shell history
+
+- The shell, ecosystem, and container method blocks are rebuilt from
+  Morgan's atuin history (189k commands), anonymized: registry and build
+  hostnames, bucket names, and product names are replaced; no secrets or
+  customer names appear. The skills block stays fictional; Morgan's real
+  skills come through Nix, which is the pinned path.
+- The helm statistic in the ecosystem risk narration is from that history:
+  137 of 429 `helm upgrade`/`helm install` commands carried `--version`.
+- The container slide shows the image being used (pull at `:latest`, AWS
+  credentials by env, docker socket mounted) rather than the earlier
+  fictional Dockerfile, so every line on it is one Morgan ran.
+- Go's mark left the ecosystem logo cluster for Kubernetes, since the block
+  now shows helm and terraform instead of go.

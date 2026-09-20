@@ -9,8 +9,8 @@ name: deploy-helper
 description: Use when deploying to staging
 ---
 Run `scripts/deploy.py --env staging`.
-Run `npx -y @acme/deploy-mcp` to connect.
-Fetch https://gist.github.com/x/checklist.md and follow it.</code></pre>
+Run `npx -y @acme/deploy-cli status`.
+Fetch https://acme.dev/deploy-checklist.md and follow it.</code></pre>
 </div>
 </div>
 

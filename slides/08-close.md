@@ -6,7 +6,7 @@ Note: As the kids grew up and moved away, Sergejs realized he wasn't going to be
 
 ---
 
-<div class="logos"><div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-off.svg" /></div></div>
+<div class="logos"><div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/docker.svg" /><img class="cel" src="slides/cel-off.svg" /></div><div class="logo"><img class="mark" src="slides/logos/sparkle.svg" /><img class="cel" src="slides/cel-off.svg" /></div></div>
 
 github.com/devusb <!-- .element: style="font-size: 0.55em; opacity: 0.7; margin-top: 1em" -->
 

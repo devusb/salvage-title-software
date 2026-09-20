@@ -3,18 +3,16 @@
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
-<p class="path">~/bin/deploy &nbsp;·&nbsp; pasted in #eng-tools</p>
-<pre><code class="language-bash">#!/bin/bash
-set -e
-export AWS_PROFILE=prod
-TAG=$(git rev-parse --short HEAD)
-sed -i '' "s/__TAG__/$TAG/" k8s/deploy.yaml
-kubectl --context prod apply -f k8s/deploy.yaml
-aws s3 cp k8s/deploy.yaml s3://acme-tools/last.yaml</code></pre>
+<p class="path">~/bin &nbsp;·&nbsp; from my shell history</p>
+<pre><code class="language-bash">mkdir ~/bin &amp;&amp; export PATH=$PATH:~/bin
+wget https://storage.googleapis.com/…/gke-gcloud-auth-plugin.tar.gz
+tar xf … &amp;&amp; mv gke-gcloud-auth-plugin ~/bin/
+curl https://vendor-templates.s3.amazonaws.com/eks/install-otel.sh | bash -s
+curl http://build-box:3000/build/200/reproduce | bash</code></pre>
 </div>
 </div>
 
-Note: This one's mine, I did it for years. Someone posts a shell script in Slack, you copy it to tilde-bin, it's on your PATH, now it's a command. Why not? It works, and anyone who reads bash can fix it.
+Note: This one's mine. Some of it is from the Before Time, some from last month. A PATH hack, a binary untarred into tilde-bin, a script from a bucket piped to bash, curl pipe bash from the one build box. It works.
 
 ---
 
@@ -25,10 +23,10 @@ Note: This one's mine, I did it for years. Someone posts a shell script in Slack
 <ul class="gap">
 <li>Bring your own dependencies</li>
 <li>No version, no owner</li>
-<li>Twelve lines. Forty of instructions</li>
+<li>Four install methods, one directory</li>
 </ul>
 
-Note: Bring your own dependencies. Whatever it needs, jq, aws, a particular Python, you go find, and the Mac sed isn't the Linux sed. No version, no owner. The script is twelve lines. The message explaining how to run it is forty.
+Note: Four ways to install things into one directory. The plugin needs gcloud, the script needs an EKS context, you go find those. No version, no owner: that tarball was four-oh-one once and stayed four-oh-one until I deleted it.
 
 ---
 

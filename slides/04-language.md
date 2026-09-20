@@ -1,20 +1,19 @@
 ## Ecosystem tooling
 
 <div style="display: flex; align-items: center; gap: 1.5em;">
-<div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/go.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
+<div class="logo cluster"><img class="minor a" src="slides/logos/npm.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
-<pre><code class="language-bash">brew install libpq openssl                # system libs
-uv python install 3.12 &amp;&amp; uv sync         # python
-source .venv/bin/activate
-nvm install 20 &amp;&amp; nvm use 20              # node
-npm ci
-go mod download                           # go
+<pre><code class="language-bash">brew install libpq                        # psycopg2 won't build
+poetry install                            # python
+nvm install 20 &amp;&amp; npm ci                  # node
+terraform init                            # terraform
+helm repo update &amp;&amp; helm upgrade kong kong/kong -f values.yaml
 direnv allow                              # glue</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. A working shell is a ritual per language: pick the version, activate, fetch the deps.
+Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry for Python, and psycopg2 would not build without libpq from brew. nvm for Node. terraform init. helm.
 
 ---
 
@@ -42,7 +41,7 @@ Note: Each tool covers its language and stops at the edge. Every one is fine. It
 <li>Scanners cover the repo, not your laptop</li>
 </ul>
 
-Note: npm ci still runs install scripts, as you. Half of what that README installs is in no lockfile: brew, the curl pipe sh, the interpreter itself. Your scanner watches the repo. Nothing watches the tools you installed.
+Note: Half of what that README installs is in no lockfile: brew, nvm, the terraform binary. And helm. I went back through my own history: four hundred twenty-nine helm upgrades, a hundred thirty-seven with a version pinned. Two-thirds of my cluster deploys were at-latest.
 
 <!--
 ============================================================
