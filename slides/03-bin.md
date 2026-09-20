@@ -3,16 +3,15 @@
 <div style="display: flex; align-items: center; gap: 1.5em;">
 <div class="logo"><img class="mark" src="slides/logos/terminal.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
-<p class="path">~/bin &nbsp;·&nbsp; from my shell history</p>
+<p class="path">~/bin</p>
 <pre><code class="language-bash">mkdir ~/bin &amp;&amp; export PATH=$PATH:~/bin
-wget https://storage.googleapis.com/…/gke-gcloud-auth-plugin.tar.gz
-tar xf … &amp;&amp; mv gke-gcloud-auth-plugin ~/bin/
-curl https://vendor-templates.s3.amazonaws.com/eks/install-otel.sh | bash -s
+cp ~/Downloads/refresh-kubeconfig.sh ~/bin/ &amp;&amp; chmod +x ~/bin/*.sh
+curl https://vendor-templates.s3.amazonaws.com/eks/install-otel.sh | bash
 curl http://build-box:3000/build/200/reproduce | bash</code></pre>
 </div>
 </div>
 
-Note: This one's mine. Some of it is from the Before Time, some from last month. A PATH hack, a binary untarred into tilde-bin, a script from a bucket piped to bash, curl pipe bash from the one build box. It works.
+Note: This one's mine. Some of it is from the Before Time, some from last month. A PATH hack, a script from Slack via Downloads into tilde-bin, a script from a bucket piped to bash, curl pipe bash from the one build box. It works.
 
 ---
 
@@ -23,10 +22,10 @@ Note: This one's mine. Some of it is from the Before Time, some from last month.
 <ul class="gap">
 <li>Bring your own dependencies</li>
 <li>No version, no owner</li>
-<li>Four install methods, one directory</li>
+<li>Every one installed differently</li>
 </ul>
 
-Note: Four ways to install things into one directory. The plugin needs gcloud, the script needs an EKS context, you go find those. No version, no owner: that tarball was four-oh-one once and stayed four-oh-one until I deleted it.
+Note: Three ways to install things into one directory, none of them the same. The Slack script needs kubectl and jq, the bucket script needs an EKS context; you go find those. No version, no owner: nobody knows which copy of that script is current.
 
 ---
 

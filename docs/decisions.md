@@ -92,3 +92,7 @@ backmatter.
   fictional Dockerfile, so every line on it is one Morgan ran.
 - Go's mark left the ecosystem logo cluster for Kubernetes, since the block
   now shows helm and terraform instead of go.
+- The shell block's `cp ~/Downloads/refresh-kubeconfig.sh ~/bin/` line is
+  representative, not from history; it replaced a real wget-and-untar of a
+  binary because a binary is not a shell script. The slide's caption is
+  just `~/bin` for that reason, not "from my shell history".
