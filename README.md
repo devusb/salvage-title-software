@@ -86,6 +86,8 @@ Every pattern gets three slides: the logo with the check engine light plus
 a short code block showing the artifact (script, README, Dockerfile, SKILL.md)
 with a caption saying where it lives, then **Jank**, then **Risk**, each three bullets of
 two to six words. The why lives in the narration and is always a real reason.
+Every risk slide has the same three ideas in the same order: what it can
+reach, where it came from, who is watching.
 Jank is what's broken. Risk is what's exposed.
 
 The close is him (photo), then us with the lights off and the contact line.

@@ -37,12 +37,12 @@ Note: Each tool covers its language and stops at the edge. Every one is fine. It
 <p class="eyebrow">Risk</p>
 
 <ul class="gap">
-<li>Lockfiles cover deps, not tools</li>
-<li>System libs at whatever version</li>
+<li>Install scripts run as you</li>
+<li>Half the setup is in no lockfile</li>
 <li>Scanners cover the repo, not your laptop</li>
 </ul>
 
-Note: The lockfiles cover the dependencies, not uv, nvm, brew, or direnv. The system libraries underneath are whatever version brew had that day, and the language links against them. Your scanner watches the repo. Nothing watches the tools you installed.
+Note: npm ci still runs install scripts, as you. Half of what that README installs is in no lockfile: brew, the curl pipe sh, the interpreter itself. Your scanner watches the repo. Nothing watches the tools you installed.
 
 <!--
 ============================================================

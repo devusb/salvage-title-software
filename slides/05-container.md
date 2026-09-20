@@ -37,12 +37,12 @@ Note: Somebody built it by hand and pushed it to latest, so nobody knows which c
 <p class="eyebrow">Risk</p>
 
 <ul class="gap">
-<li>Prod: scanned. Dev: pushed from a laptop</li>
 <li>Mounts <code>~</code>. Credentials included</li>
+<li>Pushed from a laptop</li>
 <li>Least scrutiny, most access</li>
 </ul>
 
-Note: Here's the indictment. Your production image can't reach that registry without passing a scanner. Your dev image was docker push from a laptop. And it mounts your whole home directory, credentials included. The image you look at least can reach the most.
+Note: It mounts your whole home directory, credentials included. It was pushed from a laptop. Your production image can't reach that registry without passing a scanner. The image you look at least can reach the most.
 
 <!--
 ============================================================
@@ -51,7 +51,7 @@ BACKMATTER / RAW NOTES
 
 PROTECT: the inversion line (least scrutiny, most access).
 
-"Prod: scanned" calls back to the caption on 02.
+"Passing a scanner" in the narration calls back to the caption on 02.
 
 GRAPHICS: done. Marks in slides/logos/, light is cel-on.svg /
 cel-off.svg positioned over the mark by .logo CSS.

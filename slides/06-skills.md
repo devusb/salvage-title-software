@@ -38,19 +38,21 @@ Note: Claude Code: skills are a folder, marketplaces are git repos, and a plugin
 
 <ul class="gap">
 <li>An agent, with your credentials</li>
-<li>No scanner reads English</li>
-<li><strong>Skills are software</strong></li>
+<li>Fetches more instructions at runtime</li>
+<li>Nothing for a scanner to match</li>
 </ul>
 
-Note: It runs as you, except now it's an agent with your credentials. The program is written in English. Your EDR is looking for code. It's the shell script again. Skills are software. Reviewed, scanned, tested, versioned: you already know how.
+<p style="font-size: 1.15em; margin-top: 0.8em;"><strong>Skills are software</strong></p>
+
+Note: It runs as you, except now it's an agent with your credentials. It can fetch more instructions at runtime. Your scanners match versions and hashes; a skill has none. It's the shell script again. Skills are software.
 
 <!--
 ============================================================
 BACKMATTER / RAW NOTES
 ============================================================
 
-The assertion "Skills are software" is the last bullet of
-the risk slide, bold. The bookend ("the shell script again")
+The assertion "Skills are software" is a bold line under
+the three risk bullets. The bookend ("the shell script again")
 stays in the mouth right before it.
 Land it and stop; the next slide is the quiet one.
 

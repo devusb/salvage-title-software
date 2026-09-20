@@ -38,11 +38,11 @@ Note: Bring your own dependencies. Whatever it needs, jq, aws, a particular Pyth
 
 <ul class="gap">
 <li>Runs as you</li>
-<li>Anyone could post "the fix"</li>
+<li>No upstream to check against</li>
 <li>In no inventory</li>
 </ul>
 
-Note: And it runs as you. On this laptop, you are the AWS keys, the kubeconfig, prod. Anyone in that channel could have posted the fix. And it's in no inventory anywhere. Your SBOM doesn't know tilde-bin exists.
+Note: And it runs as you. On this laptop, you are the AWS keys, the kubeconfig, prod. There's no upstream to check your copy against; you have whatever was in the thread that day. And it's in no inventory anywhere.
 
 <!--
 ============================================================
