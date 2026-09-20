@@ -8,14 +8,14 @@
 poetry install                            # python
 source $(poetry env info --path)/bin/activate
 go mod tidy                               # go
-helm repo add prometheus-community https://…/helm-charts
-helm upgrade --install prometheus-operator -n monitoring \
-  -f values.yaml prometheus-community/prometheus-operator
+helm repo add acme https://charts.acme.dev
+helm upgrade --install journal -n dev \
+  -f values-dev.yaml acme/journal
 direnv allow                              # glue</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry, activate it, psycopg2 would not build without libpq from brew. The prometheus operator, a hundred and fifty times.
+Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry, activate it, psycopg2 would not build without libpq from brew. Then the chart, from a repo you added by URL.
 
 ---
 

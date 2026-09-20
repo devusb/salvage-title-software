@@ -96,6 +96,9 @@ backmatter.
   representative, not from history; it replaced a real wget-and-untar of a
   binary because a binary is not a shell script. The slide's caption is
   just `~/bin` for that reason, not "from my shell history".
+- The helm lines on the ecosystem slide are a synthetic chart for the same
+  repo, so the README reads as one project; the real prometheus-operator
+  upgrades (150, 38 pinned) stay in the narration and backmatter.
 - Terraform is not on the ecosystem slide. `terraform init` pins providers
   in `.terraform.lock.hcl`, so it contradicts the slide's claim; its real
   tell (`apply -var-file` from a laptop, 64 times in history) is a fifth
