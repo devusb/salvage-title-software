@@ -79,7 +79,7 @@ Reveal is set to 1280x720 so the render is 16:9 like the venue deck.
 | `04-language.md` | 3 | Pattern 2: language ecosystem tooling (method, jank, risk) |
 | `05-container.md` | 3 | Pattern 3: the container (method, jank, risk) |
 | `06-skills.md` | 3 | Pattern 4: skills (method, jank, risk ending on "Skills are software") |
-| `07-take-stock.md` | 1 | xz and Nx Console |
+| `07-take-stock.md` | 1 | xz and the Nx Console VS Code extension |
 | `08-close.md` | 2 | Him (kids moved away), us dark + contact |
 
 Every pattern gets three slides: the logo with the check engine light plus

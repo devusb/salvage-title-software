@@ -5,13 +5,13 @@
 </div>
 <div style="text-align: center;">
 <img src="slides/cel-on.svg" style="height: 200px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
-<p style="font-size: 0.95em; margin: 0.5em 0 0 0;">Nx Console</p>
+<p style="font-size: 0.95em; margin: 0.5em 0 0 0;">Nx Console VS Code extension</p>
 </div>
 </div>
 
 ### Did anything change? <!-- .element: style="font-size: 0.9em; margin-top: 0.8em" -->
 
-Note: xz: two years earning trust to backdoor a library that ends up inside sshd. In May, Nx Console, poisoned, on one GitHub laptop: thirty-eight hundred internal repos. Neither was broken. They worked perfectly, for someone else. Do you have sandbox hygiene? I don't.
+Note: xz: two years earning trust to backdoor a library that ends up inside sshd. In May, the Nx Console VS Code extension, poisoned, on one GitHub laptop: thirty-eight hundred internal repos. Neither was broken. They worked perfectly, for someone else. Do you have sandbox hygiene? I don't.
 
 <!--
 ============================================================

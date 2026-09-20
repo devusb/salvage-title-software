@@ -15,7 +15,7 @@ direnv allow                              # glue</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry for Python, activate it, and psycopg2 would not build without libpq from brew. nvm for Node. terraform init. The prometheus operator, by helm, a hundred times.
+Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry, activate it, and psycopg2 would not build without libpq from brew. The prometheus operator by helm, a hundred and fifty times.
 
 ---
 
