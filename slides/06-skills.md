@@ -92,6 +92,9 @@ VERIFIED (2026-09-17):
   - No lockfile, integrity hash, or version mechanism in the
     spec. Only an optional free-form metadata map (the
     example shows version: "1.0" as a string in it).
+  The SKILL.md on the method slide passes the spec's own validator
+  (`uvx --from skills-ref agentskills validate`, 2026-09-20): name
+  matches the directory in the caption, required fields present.
   So "Skills are software" and "Unpinned by default" are both
   the spec, not an opinion.
 
