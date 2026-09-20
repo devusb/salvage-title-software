@@ -25,7 +25,7 @@ Note: Pattern three, the one that's supposed to be the fix. Everyone has one; I'
 <ul class="gap">
 <li>Built by hand, pushed to <code>:latest</code></li>
 <li>On macOS, runs inside a Linux VM</li>
-<li>Nobody can rebuild it</li>
+<li>Lost Dockerfile, nobody can rebuild</li>
 </ul>
 
 Note: Somebody built it by hand and pushed it to latest, so nobody knows which commit it is. On a Mac it runs in a Linux VM, so every build and every file sync pays for that. And the Dockerfile drifted, or it's gone.
