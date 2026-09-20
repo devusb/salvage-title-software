@@ -1,4 +1,6 @@
-<img src="slides/sergey-fender.jpg" style="max-height: 660px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<img src="slides/sergey-fender.jpg" style="max-height: 580px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+
+<p style="font-size: 0.8em; margin: 0.4em 0 0 0;">He fixed them.</p>
 
 Note: As the kids grew up and moved away, Sergejs realized he wasn't going to be around to fix those cars anymore. So he took inventory, and made all the check engine lights go away.
 

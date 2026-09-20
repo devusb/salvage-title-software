@@ -1,4 +1,8 @@
-<img src="slides/sergey-grinding.jpg" style="max-height: 660px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+<img src="slides/sergey-grinding.jpg" style="max-height: 580px; display: block; margin: 0 auto; border: none; box-shadow: none; background: none;" />
+
+<p style="font-size: 0.8em; margin: 0.4em 0 0 0;">My father-in-law.</p>
+
+<p class="quiet" style="margin: 0;">Can fix anything.</p>
 
 Note: This is my father-in-law, Sergejs. He buys salvage-title cars at insurance auction, fixes them up, and sells them. Takes real pride in it. They're good cars when he's done. He does the family's cars too.
 

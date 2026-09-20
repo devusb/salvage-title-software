@@ -161,7 +161,7 @@ the handheld deck's `mkgif`:
 
 - Slide titles are flat descriptive labels, not jokes. Bits go in the
   speaker's mouth, not on the slide.
-- No first person in slide text, except the label "Ours" on `02`. Commentary
+- No first person in slide text, except "Ours" on `02` and the photo captions. Commentary
   is voiceover.
 - Speaker notes are the actual narration, in prose.
 - Theme is `themes/flox-dark.css` (the Flox marketing deck theme) over reveal's
