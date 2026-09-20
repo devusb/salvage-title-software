@@ -38,11 +38,11 @@ Note: Claude Code: skills are a folder, marketplaces are git repos, and a plugin
 
 <ul class="gap">
 <li>An agent, with your credentials</li>
-<li>Payload is text, not a binary</li>
+<li>The program is written in English</li>
 <li><strong>It's the shell script again</strong></li>
 </ul>
 
-Note: It runs as you, except now it's an agent with your credentials. If a skill is malicious, the payload is text: an instruction to fetch and run something. Your EDR is looking for a binary. It's the shell script again.
+Note: It runs as you, except now it's an agent with your credentials. If a skill is malicious, the program is written in English: an instruction to fetch and run something. Your EDR is looking for code. It's the shell script again.
 
 <!--
 ============================================================
