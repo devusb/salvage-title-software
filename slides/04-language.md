@@ -6,14 +6,16 @@
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
 <pre><code class="language-bash">brew install libpq                        # psycopg2 won't build
 poetry install                            # python
+source $(poetry env info --path)/bin/activate
 nvm install 20 &amp;&amp; npm ci                  # node
 terraform init                            # terraform
-helm repo update &amp;&amp; helm upgrade kong kong/kong -f values.yaml
+helm upgrade --install prometheus-operator -n monitoring \
+  -f values.yaml prometheus-community/prometheus-operator
 direnv allow                              # glue</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry for Python, and psycopg2 would not build without libpq from brew. nvm for Node. terraform init. helm.
+Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. Poetry for Python, activate it, and psycopg2 would not build without libpq from brew. nvm for Node. terraform init. The prometheus operator, by helm, a hundred times.
 
 ---
 

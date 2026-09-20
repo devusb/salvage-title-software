@@ -11,7 +11,7 @@ curl http://build-box:3000/build/200/reproduce | bash</code></pre>
 </div>
 </div>
 
-Note: This one's mine. Some of it is from the Before Time, some from last month. A PATH hack, a script from Slack via Downloads into tilde-bin, a script from a bucket piped to bash, curl pipe bash from the one build box. It works.
+Note: This one's mine. Some of it is from the Before Time, some from last month. A PATH hack, a script from Slack into tilde-bin, a script from a bucket piped to bash, curl pipe bash from the one build box.
 
 ---
 
@@ -25,7 +25,7 @@ Note: This one's mine. Some of it is from the Before Time, some from last month.
 <li>Every one installed differently</li>
 </ul>
 
-Note: Three ways to install things into one directory, none of them the same. The Slack script needs kubectl and jq, the bucket script needs an EKS context; you go find those. No version, no owner: nobody knows which copy of that script is current.
+Note: Three ways to install things into one directory. The Slack script needs kubectl and jq, the bucket script needs an EKS context; you go find those. No version, no owner: nobody knows which copy of that script is current.
 
 ---
 
