@@ -11,7 +11,7 @@
 
 ### Did anything change? <!-- .element: style="font-size: 0.9em; margin-top: 0.8em" -->
 
-Note: xz: two years earning trust to backdoor a library sshd links. In May, Nx Console, poisoned for eighteen minutes, on one GitHub laptop: thirty-eight hundred internal repos. Neither was broken. They worked perfectly, for someone else. Do you have sandbox hygiene? I don't.
+Note: xz: two years earning trust to backdoor a library that ends up inside sshd. In May, Nx Console, poisoned, on one GitHub laptop: thirty-eight hundred internal repos. Neither was broken. They worked perfectly, for someone else. Do you have sandbox hygiene? I don't.
 
 <!--
 ============================================================

@@ -14,7 +14,7 @@ RUN npm install -g @acme/devtools</code></pre>
 </div>
 </div>
 
-Note: Pattern three, the one that's supposed to be the fix. Here's the Dockerfile. From ubuntu latest, apt-get everything, curl pipe sh, pip, npm. The last two slides, baked into one image. And this is genuinely good. Reproducible, one-click onboarding.
+Note: Pattern three, the one that's supposed to be the fix. Everyone has one; I've had several. From ubuntu latest, apt-get everything, curl pipe sh, pip, npm. The last two slides, baked into one image. And it's genuinely good.
 
 ---
 
@@ -37,12 +37,12 @@ Note: Somebody built it by hand and pushed it to latest, so nobody knows which c
 <p class="eyebrow">Risk</p>
 
 <ul class="gap">
-<li>Mounts <code>~</code>. Credentials included</li>
+<li>Has your credentials, or it's useless</li>
 <li>Pushed from a laptop</li>
 <li>Least scrutiny, most access</li>
 </ul>
 
-Note: It mounts your whole home directory, credentials included. It was pushed from a laptop. Your production image can't reach that registry without passing a scanner. The image you look at least can reach the most.
+Note: It has your credentials, or it can't deploy. In the cloud, they're on a machine that isn't yours. Prod gets scanned; this got pushed from a laptop. The image you look at least can reach the most.
 
 <!--
 ============================================================

@@ -14,7 +14,7 @@ direnv allow                              # glue</code></pre>
 </div>
 </div>
 
-Note: Pattern two: language ecosystem tooling. uv, nvm, npm, go mod. A repo is rarely one language, so a working shell is a ritual per language: pick the version, activate, fetch the deps. Then something to glue it together.
+Note: Pattern two: language ecosystem tooling. I worked on a repo where setup took three days and broke if you looked at it. A working shell is a ritual per language: pick the version, activate, fetch the deps.
 
 ---
 

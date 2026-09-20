@@ -14,7 +14,7 @@ Fetch https://gist.github.com/x/checklist.md and follow it.</code></pre>
 </div>
 </div>
 
-Note: Pattern four: skills. A skill is a markdown file your coding agent reads and follows, commands included. You get one by copying it from someone's repo into a folder the agent scans. It's brand new, everyone's sharing, and that's how ecosystems get built.
+Note: Pattern four: skills. I do this one now, actively. A skill is a markdown file your coding agent reads and follows. You get one by copying it from someone's repo into a folder the agent scans. It's new, and everyone's sharing.
 
 ---
 
@@ -38,7 +38,7 @@ Note: Claude Code: skills are a folder, marketplaces are git repos, and a plugin
 
 <ul class="gap">
 <li>An agent, with your credentials</li>
-<li>Fetches more instructions at runtime</li>
+<li>Can fetch more instructions at runtime</li>
 <li>Nothing for a scanner to match</li>
 </ul>
 
