@@ -4,8 +4,7 @@
 <div class="logo cluster"><img class="minor a" src="slides/logos/go.svg" /><img class="minor b" src="slides/logos/kubernetes.svg" /><img class="mark" src="slides/logos/python.svg" /><img class="cel" src="slides/cel-on.svg" /></div>
 <div class="code">
 <p class="path">README.md &nbsp;·&nbsp; Getting started</p>
-<pre><code class="language-bash">direnv allow                              # loads .envrc
-brew install libpq                        # psycopg2 won't build
+<pre><code class="language-bash">brew install libpq                        # psycopg2 won't build
 poetry install                            # python
 source $(poetry env info --path)/bin/activate
 go mod tidy                               # go
@@ -29,7 +28,7 @@ Note: Pattern two: language ecosystem tooling. I worked on a repo where setup to
 <li>Glued together by a README</li>
 </ul>
 
-Note: Each tool covers its language and stops at the edge. Every one is fine. It's the seams: three activation models in one shell, system libraries from brew, direnv on top to load the rest. Nothing owns the whole environment.
+Note: Each tool covers its language and stops at the edge. Every one is fine. It's the seams: three activation models in one shell, system libraries from brew, and something on top to hold it together. Nothing owns the whole environment.
 
 ---
 
@@ -43,7 +42,7 @@ Note: Each tool covers its language and stops at the edge. Every one is fine. It
 <li>Scanners cover the repo, not your laptop</li>
 </ul>
 
-Note: Half of what that README installs is in no lockfile: brew, the helm repo, direnv. And helm. I went back through my own history: four hundred twenty-nine helm upgrades, a hundred thirty-seven with a version pinned. Two-thirds of my cluster deploys were at-latest.
+Note: Half of what that README installs is in no lockfile: brew, the helm repo, the activation itself. And helm. I went back through my own history: four hundred twenty-nine helm upgrades, a hundred thirty-seven with a version pinned. Two-thirds of my cluster deploys were at-latest.
 
 <!--
 ============================================================
@@ -53,7 +52,7 @@ BACKMATTER / RAW NOTES
 The thesis of this pattern is the seams between language
 tools: each covers its language, and the repo has three of
 them plus system libs, so onboarding is a ritual per
-language glued by a README or direnv. That is the mixed-
+language glued by a README. That is the mixed-
 environment problem Flox solves; it stays unnamed. The
 ecosystem tool manages the language and nothing beneath it,
 so the real setup is an amalgam: venv plus apt plus brew
